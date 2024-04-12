@@ -41,7 +41,11 @@ class Admin_model extends CI_Model {
      redirect('admin/index','refresh');
 }
 
-        
+    //     public function get_user_count() 
+    //     {
+    //     $query = $this->db->query('SELECT COUNT(*) as count FROM admininfo');
+    //     return $query->row()->count;
+    // }
 
     }
     

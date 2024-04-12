@@ -59,6 +59,11 @@ $route['home_view']='Admin/index';
 $route['home_view']='Admin/login';
 $route['home_view']='Admin/dashboard';
 $route['home_view']='Admin/logout';
+$route['home_view']='Admin/category';
+$route['home_view']='Admin/studentclasses';
+
+
+
 
 
 /*---------- User Section routes ---------------------- */
@@ -66,6 +71,7 @@ $route['home_view']='Auth/index';
 $route['home_view']='Auth/signin';
 $route['home_view']='Auth/dashboard';
 $route['home_view']='Auth/logout';
+$route['home_view']='Auth/input_error';
 $route['home_view']='Auth/user_details';
 
 

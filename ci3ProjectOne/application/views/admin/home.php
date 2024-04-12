@@ -184,12 +184,11 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link">
+            <a href="<?php echo base_url();?>admin/admin_dashboard" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
-                
-              </p>
+                </p>
             </a>
             
           </li>
@@ -204,7 +203,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="<?php echo base_url();?>admin/category" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Category</p>
                 </a>
@@ -479,7 +478,9 @@
               <div class="inner">
                 
                 <h3>2</h3>
-                <p>Registered Users</p>
+                <p>Registered Admin
+                  
+                </p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>

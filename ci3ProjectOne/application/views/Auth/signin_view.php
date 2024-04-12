@@ -40,32 +40,38 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session!!</p>
       <p class="login-box-msg"></p>
+      <form method="POST" action="<?php echo base_url();?>Auth/signin_form">
       
       <?php echo validation_errors(); ?>
       <?php echo form_open('Auth/signin_form'); ?>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email">
+          <input type="email" class="form-control" id="email" name="email" value="<?php echo set_value('email');?>" placeholder="Email" required="">
+          <?php echo form_error('email'); ?>          
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
             </div>
           </div>
         </div>
+        <p class="error" style="color:red;">Email is required.</p>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password">
+          <input type="password" class="form-control" id="password" name="password" value="<?php echo set_value('password');?>" placeholder="Password"required="">
+          <?php echo form_error('password'); ?>
+          
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
+        <p class="error" style="color:red;">Password is required.</p>
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
-              <label for="remember">
+              <!-- <label for="remember">
                 Remember Me
-              </label>
+              </label> -->
             </div>
           </div>
           <!-- /.col -->
@@ -99,7 +105,7 @@
 </div>
 <?php echo form_close(); ?>
 <!-- /.login-box -->
-
+</form>
 <!-- jQuery -->
 <script src="<?php echo base_url();?>/assets/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->

@@ -24,8 +24,22 @@ class Auth extends CI_Controller {
            $this->load->view('Auth/signin_view');
         }   
 
-        public function signin_form(){
-            $this->auth_model->signin_user();
+        public function signin_form()
+        {
+            if($this->input->post()){
+                $this->form_validation->set_rules('email','Email','required|valid_email');
+                $this->form_validation->set_rules('password','Password','required|valid_email');
+               
+                if($this->form_validation->run()== FALSE){
+                // echo "error";
+                echo validation_errors();
+                }
+                else{
+                    echo "success";
+
+                }
+            }  
+           $this->auth_model->signin_user();
         }
 
         public function signup()
@@ -40,6 +54,7 @@ class Auth extends CI_Controller {
           
 
             $this->auth_model->signup_user();
+              
         }
 
         public function user_dashboard()
@@ -54,6 +69,8 @@ class Auth extends CI_Controller {
             $this->auth_model->user_logout();
 
         }
+
+        
 
         public function user_details()
         {
@@ -84,10 +101,12 @@ class Auth extends CI_Controller {
 
         }
 
+       
+        
+    }  
 
-      
+
 
 
 
                     
-    }  
