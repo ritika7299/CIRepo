@@ -1,0 +1,3381 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Apply Leave</title>
+
+  <!-- Global stylesheets -->
+  <link rel="shortcut icon" type="image/x-icon" href="http://10.199.31.113/layersweb/assets/images/layerslogo.png">
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+  <link href="http://10.199.31.113/layersweb/assets/fonts/robo/style.css" rel="stylesheet" type="text/css">
+  <link href="http://10.199.31.113/layersweb/assets/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+  <link href="http://10.199.31.113/layersweb/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="http://10.199.31.113/layersweb/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+  <link href="http://10.199.31.113/layersweb/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+  <link href="http://10.199.31.113/layersweb/assets/css/components.css" rel="stylesheet" type="text/css">
+  <!--<link href=http://10.199.31.113/layersweb/assets/css/components.min.css rel="stylesheet" type="text/css">-->
+  <link href="http://10.199.31.113/layersweb/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+  <link href="http://10.199.31.113/layersweb/assets/global_assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+  <!-- /global stylesheets -->
+
+  <!-- Core JS files -->
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/main/jquery.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/main/bootstrap.bundle.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/loaders/blockui.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/ui/ripple.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/tables/datatables/datatables.min.js">
+  </script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js">
+  </script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/demo_pages/form_multiselect.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/demo_pages/form_select2.js"></script>
+  <!-- <script src=http://10.199.31.113/layersweb/assets/global_assets/js/demo_pages/datatables_basic.js></script> -->
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/demo_pages/dashboard.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js">
+  </script>
+  <!-- <script src=http://10.199.31.113/layersweb/assets/global_assets/js/demo_pages/picker_date.js></script> -->
+  <script src="http://10.199.31.113/layersweb/assets/js/app.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/demo_pages/form_layouts.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+
+  <!-- /Date picker files JS files -->
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/jQueryUI/jquery-ui.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/pickers/anytime.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/pickers/pickadate/picker.date.js">
+  </script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/pickers/pickadate/picker.time.js">
+  </script>
+  <!-- Theme JS files -->
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/extensions/session_timeout.min.js">
+  </script>
+  <script src="http://10.199.31.113/layersweb/assets/js/cryptojs-aes.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/js/cryptojs-aes-format.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/js/sha256.js" type="text/javascript"></script>
+  <script src="http://10.199.31.113/layersweb/assets/js/jQuery.print.min.js"></script>
+
+  <!-- Theme JS files -->
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/ui/fullcalendar/core/main.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/ui/fullcalendar/daygrid/main.min.js">
+  </script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/ui/fullcalendar/timegrid/main.min.js">
+  </script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/ui/fullcalendar/list/main.min.js"></script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/ui/fullcalendar/interaction/main.min.js">
+  </script>
+  <!-- /theme JS files -->
+
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js">
+  </script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/tables/datatables/extensions/pdfmake/pdfmake.min.js">
+  </script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js">
+  </script>
+  <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/tables/datatables/extensions/buttons.min.js">
+  </script>
+
+
+
+  <style>
+  .hidden {
+      display: none;
+  }
+  </style>
+</head>
+<body class="sidebar-xs">
+  <!-- Nav bar -->
+  
+<!-- Main navbar -->
+<div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
+  <div class="navbar-brand">
+      <a href="http://10.199.31.113/layersweb/app/dashboard" class="d-inline-block">
+          <img src="http://10.199.31.113/layersweb/assets/images/LayersLogoApp.png" alt="">
+      </a>
+  </div>
+
+  <div class="d-md-none">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+          <i class="icon-user"></i>
+      </button>
+      <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+          <i class="icon-paragraph-justify3"></i>
+      </button>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbar-mobile">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block legitRipple">
+                  <i class="icon-paragraph-justify3"></i>
+              </a>
+          </li>
+      </ul>
+      <center><span class="navbar-text ml-md-3">
+      <span class="badge badge-mark border-orange-300 mr-2"></span>
+      <strong>IT CELL HQS, TIS HAZARI</strong>
+      </span></center>
+      <ul class="navbar-nav ml-md-auto">
+
+          <li class="nav-item dropdown">
+              <a href="#" class="navbar-nav-link dropdown-toggle legitRipple" data-toggle="dropdown">
+                  <i class="icon-user mr-2"></i>
+                  AMIT KUMAR                </a>
+
+              <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-250" style="background: url(http://10.199.31.113/layersweb/assets/global_assets/images/backgrounds/user_bg2.jpg) center center no-repeat;">
+                  <div class="card-body text-center">
+                      <a href="#">
+                          <img src="http://10.199.31.113/layersweb/assets/global_assets/images/placeholders/placeholder.jpg" class="img-fluid rounded-circle shadow-1 mb-3" width="80" height="80" alt="">
+                      </a>
+                      <h6 class="mb-0 text-white text-shadow-dark">AMIT KUMAR</h6>
+                      <span class="font-size-sm text-white text-shadow-dark">System Analyst Group I Executive : 55393147</span>
+                  </div>
+
+                  <div class="sidebar-user-material-footer">
+                      <a href="#user-nav" class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle legitRipple" data-toggle="collapse"><span>My account</span></a>
+                  </div>
+                  <div class="collapse" id="user-nav">
+                      <ul class="nav nav-sidebar">
+                          <li class="nav-item">
+                              <a href="#" class="nav-link legitRipple" id="emp_personal_qual_detail_update_btn">
+                                  <i class="icon-user-plus"></i>
+                                  <span>My profile</span>
+                              </a>
+                          </li>
+
+<!--                            <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                  <i class="icon-comment-discussion"></i>
+                                  <span>Messages</span>
+                                  <span class="badge bg-teal-400 badge-pill align-self-center ml-auto">58</span>
+                              </a>
+                          </li>-->
+                          <li class="nav-item">
+                              <a href="#" class="nav-link legitRipple">
+                                  <i class="icon-cog5"></i>
+                                  <span>Account settings</span>
+                              </a>
+                          </li>
+
+                      </ul>
+                  </div>
+                  <a href="http://10.199.31.113/layersweb/auth/logout">
+                      <div class="dropdown-content-footer bg-light">
+                          <span class="font-size-sm line-height-sm text-uppercase font-weight-semibold text-grey mr-auto">Log Out</span>
+
+
+                          <div>
+                              <span href="#" class="text-grey" data-popup="tooltip" title="Log Out"><i class="icon-switch2"></i></span>
+
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </li>
+
+
+      </ul>
+  </div>
+</div>
+<!-- /main navbar -->
+  <!-- Page content -->
+  <div class="page-content">
+      <!-- Main sidebar -->
+<div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
+
+  <!-- Sidebar mobile toggler -->
+  <div class="sidebar-mobile-toggler text-center">
+      <a href="#" class="sidebar-mobile-main-toggle">
+          <i class="icon-arrow-left8"></i>
+      </a>
+      <span class="font-weight-semibold">Navigation</span>
+      <a href="#" class="sidebar-mobile-expand">
+          <i class="icon-screen-full"></i>
+          <i class="icon-screen-normal"></i>
+      </a>
+  </div>
+  <!-- /sidebar mobile toggler -->
+
+  <!-- Sidebar content -->
+  <div class="sidebar-content">
+
+      <!-- Main navigation -->
+      <div class="card card-sidebar-mobile">
+          <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+              <!-- Main -->
+              <li class="nav-item-header">
+                  <div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i>
+              </li>
+              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/app/dashboard" class="nav-link legitRipple">
+                      <i class="text-pink-800 icon-home2"></i>
+                      <span>
+                          Home
+                      </span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/accounts/dashboard" class="nav-link legitRipple">
+                      <i class="text-indigo fa fa-rupee-sign"></i>
+                      <span>
+                          Accounts
+                      </span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/circular/circulars" class="nav-link legitRipple">
+                      <i class="text-pink icon-clipboard3"></i>
+                      <span>
+                          Circulars
+                      </span>
+                  </a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/employees/employees" class="nav-link legitRipple">
+                      <i class="text-pink icon-users4"></i>
+                      <span>
+                          Employees
+                      </span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/hierarchy/hierarchy/configure_hierarchy" class="nav-link legitRipple" title="Hierarchy">
+                      <i class="text-blue icon-sort"></i>
+                      <span>
+                          Hierarchy
+                      </span>
+                  </a>
+              </li>
+              
+
+
+                              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/unit/courtAdmin/courtUnitDashboard" class="nav-link legitRipple">
+                      <i class="text-orange-800 icon-graduation "></i>
+                      <span> Court Admin</span>
+                  </a>
+              </li>
+
+
+              <!-- <li class="nav-item">
+                          <a href="http://10.199.31.113/layersweb/courtAdmin/digitalCourtJudgesList" class="nav-link ">
+                              <i class="text-orange-800 icon-graduation "></i>
+                              <span> Digital Court Admin</span>
+                          </a>
+                      </li> -->
+
+              
+                              <!-- Inventory Employee / User Item Issued -->
+                              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/inventory/InventoryReports/reportEmployeeIssuedToItemDetails" class="nav-link legitRipple">
+                      <i class="text-pink icon-calendar"></i>
+                      <span>Inventory</span>
+                  </a>
+
+              </li>
+                              <!-- Inventory Employee / User Item Issued -->
+              <!-- Server Status for System Analysts -->
+                              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/app/core/servers_status" class="nav-link legitRipple">
+                      <i class="text-pink icon-wrench3"></i>
+                      <span>Servers Status</span>
+                  </a>
+
+              </li>
+                              <!-- Server Status for System Analysts -->
+              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/app/dashboard/phone_directory" class="nav-link legitRipple">
+                      <i class="text-pink-800 icon-phone"></i>
+                      <span>Extension Phone Numbers</span>
+                  </a>
+              </li>
+              <!-- /main -->
+                              <li class="nav-item">
+                  <a href="http://10.199.31.113/layersweb/library/acts" class="nav-link legitRipple">
+                      <i class="icon-paragraph-justify3"></i>
+                      <span>Library</span>
+                  </a>
+              </li>
+                                              <li class="nav-item">
+                  <a accesskey="k" href="http://10.199.31.113/layersweb/ca/dashboard" class="nav-link legitRipple">
+                      <i class="icon-copy4"></i>
+                      <span>Certified Copy</span>
+                  </a>
+
+              </li>
+                                              <li class="nav-item">
+                  <a accesskey="k" href="http://10.199.31.113/layersweb/filemgmt/list_files" class="nav-link legitRipple">
+                      <i class="icon-copy2"></i>
+                      <span>File Management</span>
+                  </a>
+
+              </li>
+              
+              <li class="nav-item">
+                  <a accesskey="k" href="http://10.199.31.113/layersweb/leave/empleaves/dashboard" class="nav-link legitRipple">
+                      <i class="icon-copy3 text-orange-800"></i>
+                      <span>Leaves</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a accesskey="k" href="http://10.199.31.113/layersweb/recruitment/departmental/dashboard" class="nav-link legitRipple">
+                      <i class="icon-file-text  text-danger-800"></i>
+                      <span>Recruitment</span>
+                  </a>
+              </li>
+                              <li class="nav-item">
+                  <a accesskey="k" href="http://10.199.31.113/layersweb/misc/dashboard" class="nav-link legitRipple">
+                      <i class="icon-file-text  text-danger-600"></i>
+                      <span>Misc Forms</span>
+                  </a>
+              </li>
+              <!--?php// } ?-->
+          </ul>
+      </div>
+      <!-- /main navigation -->
+
+  </div>
+  <!-- /sidebar content -->
+
+</div>
+<!-- /main sidebar -->
+      <!-- Main content -->
+      <div class="content-wrapper">
+
+          
+          <!-- Page header -->
+<div class="page-header page-header-light">
+  <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+      <div class="d-flex">
+          <div class="breadcrumb">
+              <a href="http://10.199.31.113/layersweb/app/dashboard" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+              <span class="breadcrumb-item">Leave</span><span class="breadcrumb-item">Apply Leave</span>            </div>
+          <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+      </div>
+      <!-- <div class="header-elements d-none">
+          <div class="breadcrumb justify-content-center">
+              <a href="#" class="breadcrumb-elements-item">
+                  <i class="icon-help text-warning-300 mr-2"></i><i class="icon-file-text text-indigo-300 mr-2"></i><i
+                      class="icon-file-presentation2 text-info-600 mr-2"></i></i><i
+                      class="icon-play3 text-green-600 mr-2"></i>
+                  Help
+              </a>
+          </div>
+      </div> -->
+  </div>
+</div>
+<!-- /page header -->
+<script>
+$("body").addClass('sidebar-xs');
+</script>
+<!-- Content area -->
+<div class="content">
+
+  <!-- Inner container -->
+  <div class="d-md-flex align-items-md-start">
+
+      <!-- Left sidebar content -->
+      <div class="sidebar sidebar-light sidebar-component sidebar-component-left sidebar-expand-md mb-3">
+
+  <!-- Sidebar content -->
+  <div class="sidebar-content">
+
+      <!-- Quarter Selection -->
+      <div class="card card-collapsed">
+          <div class="card-header bg-orange header-elements-inline">
+              <a href="http://10.199.31.113/layersweb/leave/empleaves/dashboard" style="color:#fff;">
+                  <span class="text-uppercase font-size-lg font-weight-bold">
+                      <i class="icon-home mr-2 "></i>Leave
+                  </span>
+              </a>
+          </div>
+      </div>
+      <!-- /Quarter Selection -->
+
+      <!-- Leave Apply -->
+      <div class="card card-collapsed">
+          <div class="card-header bg-transparent header-elements-inline">
+              <a href="http://10.199.31.113/layersweb/leave/empleaves/applyleave" style="color:#333">
+                  <span class="text-uppercase font-size-sm font-weight-semibold">
+                      <i class="icon-diff-added mr-2 text-orange"></i> Apply Leave
+                  </span>
+              </a>
+          </div>
+      </div>
+      <!-- /Leave Apply -->
+      <!-- Leave Intimation -->
+      <div class="card card-collapsed">
+          <div class="card-header bg-transparent header-elements-inline">
+              <a href="http://10.199.31.113/layersweb/leave/empintimations/applyintimation" style="color:#333">
+                  <span class="text-uppercase font-size-sm font-weight-semibold">
+                      <i class="icon-envelop3 mr-2 text-orange"></i> Intimate Leave
+                  </span>
+              </a>
+          </div>
+      </div>
+      <!-- /Leave Intimation -->
+      <!-- Leave Balance -->
+      <div class="card card-collapsed">
+          <div class="card-header bg-transparent header-elements-inline">
+              <a href="http://10.199.31.113/layersweb/leave/empleaves/leave_application" style="color:#333">
+                  <span class="text-uppercase font-size-sm font-weight-semibold">
+                      <i class="icon-profile mr-2 text-orange"></i> Leave Applications
+                  </span>
+              </a>
+          </div>
+      </div>
+      <!-- /Leave Balance -->
+      <!-- Leave Balance -->
+      <div class="card card-collapsed">
+          <div class="card-header bg-transparent header-elements-inline">
+              <a href="http://10.199.31.113/layersweb/leave/empintimations/leave_intimation" style="color:#333">
+                  <span class="text-uppercase font-size-sm font-weight-semibold">
+                      <i class="icon-profile mr-2 text-orange"></i> Leave Intimations
+                  </span>
+              </a>
+          </div>
+      </div>
+      <!-- /Leave Balance -->
+      <!-- Leave Balance -->
+      <div class="card card-collapsed">
+          <div class="card-header bg-transparent header-elements-inline">
+              <a href="http://10.199.31.113/layersweb/leave/empleaves/userbalanceleaves" style="color:#333">
+                  <span class="text-uppercase font-size-sm font-weight-semibold">
+                      <i class="icon-file-text  mr-2 text-orange"></i>My Leave Register
+                  </span>
+              </a>
+          </div>
+      </div>
+      <!-- /Leave Balance -->
+
+      <!-- Judicial Officer Leave -->
+      <!-- <div class="card card-collapsed">
+          <div class="card-header bg-transparent header-elements-inline">
+              <span class="text-uppercase font-size-sm font-weight-semibold"><i
+                      class="icon-diff-added mr-2 text-orange"></i> Add Compensatory Leave</span>
+          </div>
+      </div> -->
+      <!-- /Judicial Officer Leave -->
+
+      <!-- Setting -->
+              <!-- /Setting -->
+
+                      <!--Reports -->
+      <div class="card card-collapsed">
+          <div class="card-header bg-transparent header-elements-inline">
+              <span class="text-uppercase font-size-sm font-weight-semibold"><i class="icon-fold  mr-2 text-orange-700"></i> Reports</span>
+              <div class="header-elements">
+                  <div class="list-icons">
+                      <a class="list-icons-item rotate-180" data-action="collapse"></a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card-body p-0" style="display: none;">
+              <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+                  <!-- <li class="nav-item">
+                      <a href="http://10.199.31.113/layersweb/leave/empleavereports/leave_intimation_reports"
+                          class="nav-link"><i class="icon-fold  text-orange-700"></i>Leave and Intimation
+                          Applications</a>
+                  </li> -->
+                                                                                              </ul>
+          </div>
+      </div>
+      <!-- Reports -->
+  </div>
+  <!-- /sidebar content -->
+
+</div>        <input type="hidden" id="hidMethodName" value="empleaves">
+
+      <!-- /left sidebar content -->
+
+      <!-- Right content -->
+      <div class="" style="width: 100%;">
+                      
+          <!-- Button classes -->
+          <div class="card">
+              <form action="http://10.199.31.113/layersweb/leave/empleaves/applyleave" name="leavefrm" method="post" accept-charset="utf-8" autocomplete="off">
+<input type="hidden" name="csrf_test_lalit" value="0d5afe44efc057c9cc5727506e08be16">                             
+
+              <input type="hidden" name="emp_uuid" value="5ac9ef7f2ac56a99d0d3e8c5b7e747c4">
+              <input type="hidden" name="totalleaves" id="hidTotalLeaves" value="0">
+              <input type="hidden" name="leavemode" value="Apply"> <!-- Apply Leave -->
+              <input type="hidden" name="desg_id" value="5"> <!-- Apply Leave -->
+              <input type="hidden" name="desg" value="System Analyst Group I Executive"> <!-- Apply Leave -->
+              <div class="card-header bg-orange-600 header-elements-inline">
+                  <h5 class="card-title">Applying Leave</h5>
+              </div>
+              <div class="card-body">
+
+                  <!-- Progress counters -->
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <div class="table-responsive table-bordered" data-select2-id="41">
+                              <table class="table text-nowrap">
+                                  <tbody data-select2-id="40">
+                                      <tr data-select2-id="39">
+                                          <td style="width: 25%;">
+                                              <a href="#" class="text-default font-weight-semibold">Nature of
+                                                  Leave</a>
+                                          </td>
+                                          <td style="width: 75%;" data-select2-id="38">
+                                              <select class="form-control select select2-hidden-accessible" id="leave_t" name="leavetype" data-fouc="" required="" data-select2-id="leave_t" tabindex="-1" aria-hidden="true">
+                                                  <option value="" data-select2-id="2">Select</option><option value="1~Casual Leave" data-select2-id="42">Casual Leave</option>                                                </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" data-select2-id="1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-leave_t-container"><span class="select2-selection__rendered" id="select2-leave_t-container" role="textbox" aria-readonly="true" title="Casual Leave">Casual Leave</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                          </td>
+                                      </tr>
+                                      <tr class="trShortLeave hidden">
+                                          <td>
+                                              <a href="#" class="text-default font-weight-semibold">Short Leave
+                                                  Date</a>
+                                          </td>
+                                          <td>
+                                              <input type="text" name="leavedate" id="leavedate" class="form-control hasDatepicker">
+                                          </td>
+                                      </tr>
+                                      <tr class="trCasualLeave">
+                                          <td>
+                                              <a href="#" class="text-default font-weight-semibold">Leave Details</a>
+                                          </td>
+                                          <td>
+                                              <div class="table-responsive table-bordered">
+                                                  <table class="table text-nowrap" id="itemtable">
+                                                      <tbody>
+                                                          <tr>
+                                                              <th style="width:15%"><a href="#" class="text-default font-weight-semibold">Halfday
+                                                                  </a></th>
+                                                              <th style="width:20%"><span class="font-weight-semibold mb-0">F/Afternoon</span>
+                                                              </th>
+                                                              <th><span class="font-weight-semibold mb-0">From</span>
+                                                              </th>
+                                                              <th><span class="font-weight-semibold mb-0">To</span>
+                                                              </th>
+                                                              <th><span class="font-weight-semibold mb-0">#</span>
+                                                              </th>
+                                                          </tr>
+                                                          <tr id="tr1">
+                                                              <td>
+                                                                  <select class="form-control select halfday select2-hidden-accessible" name="halfday[]" onchange="halfdayChange(this);" data-fouc="" data-select2-id="3" tabindex="-1" aria-hidden="true">
+                                                                      <option value="N" data-select2-id="5">No</option>
+                                                                      <option value="Y">Yes</option>
+                                                                  </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="4" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-halfday-1v-container"><span class="select2-selection__rendered" id="select2-halfday-1v-container" role="textbox" aria-readonly="true" title="No">No</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                              </td>
+                                                              <td>
+                                                                  <select class="form-control select noon select2-hidden-accessible" name="dpnoon[]" disabled="" onchange="noonChange(this);" data-fouc="" data-select2-id="6" tabindex="-1" aria-hidden="true">
+                                                                      <option value="" data-select2-id="8">Select</option>
+                                                                      <option value="F/N">Forenoon</option>
+                                                                      <option value="A/N">Afternoon</option>
+                                                                  </select><span class="select2 select2-container select2-container--default select2-container--disabled" dir="ltr" data-select2-id="7" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="true" aria-labelledby="select2-dpnoon-au-container"><span class="select2-selection__rendered" id="select2-dpnoon-au-container" role="textbox" aria-readonly="true" title="Select">Select</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                                  <input type="hidden" name="noon[]">
+                                                              </td>
+                                                              <td>
+                                                                  <div class="input-group">
+                                                                      <span class="input-group-prepend">
+                                                                          <span class="input-group-text"><i class="icon-calendar"></i></span>
+                                                                      </span>
+                                                                      <input type="text" readonly="" name="from[]" value="" class="form-control from hasDatepicker" id="dp1706684298105" required="">
+                                                                  </div>
+                                                              </td>
+                                                              <td>
+                                                                  <div class="input-group">
+                                                                      <span class="input-group-prepend">
+                                                                          <span class="input-group-text"><i class="icon-calendar"></i></span>
+                                                                      </span>
+                                                                      <input type="text" readonly="" name="to[]" class="form-control to hasDatepicker" id="dp1706684298106" required="">
+                                                                  </div>
+                                                              </td>
+                                                              <th><button class="btn btn-sm btn-danger legitRipple" disabled=""><i class="icon-trash"></i></button> </th>
+                                                          </tr>
+                                                          <tr class="grand-total"></tr>
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                              <button type="button" style="float:right;" class="mt-2 btn btn-sm btn-success addCF legitRipple"><i class="icon-add"></i></button>
+                                          </td>
+                                      </tr>
+                                      <tr class="trCasualLeave">
+                                          <td>
+                                              <a href="#" class="text-default font-weight-semibold">Total No. of
+                                                  Leave(s)</a>
+                                          </td>
+                                          <td>
+                                              <span class="font-weight-semibold mb-0" id="TotalLeaves" name="TotalLeaves">Total Leaves : 0</span>
+                                          </td>
+                                      </tr>
+                                      <tr class="trCasualLeave">
+                                          <td>
+                                              <a href="#" class="text-default font-weight-semibold">Whether going
+                                                  outstation?</a>
+                                          </td>
+                                          <td>
+                                              <div class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" class="custom-control-input" id="optOutstationNo" name="outstation" value="no" checked="">
+                                                  <label class="custom-control-label" for="optOutstationNo">No</label>
+                                              </div>
+
+                                              <div class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" class="custom-control-input" id="optOutstationYes" name="outstation" value="yes">
+                                                  <label class="custom-control-label" for="optOutstationYes">Yes</label>
+                                              </div>
+                                          </td>
+                                      </tr>
+                                      <tr class="trOutstationDetail hidden">
+                                          <td><a href="#" class="text-default font-weight-semibold">Select One</a>
+                                          </td>
+                                          <td>
+                                              <div class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" class="custom-control-input" id="optGoingOther" name="outstationdetail" value="other" checked="">
+                                                  <label class="custom-control-label" for="optGoingOther">Other</label>
+                                              </div>
+                                              <div class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" class="custom-control-input" id="optGoingHometown" name="outstationdetail" value="hometown">
+                                                  <label class="custom-control-label" for="optGoingHometown">Hometown</label>
+                                              </div>
+                                              <div class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" class="custom-control-input" id="optGoingLTC" name="outstationdetail" value="ltc">
+                                                  <label class="custom-control-label" for="optGoingLTC">LTC</label>
+                                              </div>
+                                              <div class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" class="custom-control-input" id="optGoingAbroad" name="outstationdetail" value="abroad">
+                                                  <label class="custom-control-label" for="optGoingAbroad">Abroad</label>
+                                              </div>
+                                          </td>
+                                      </tr>
+                                      <tr class="trOutstationDetail hidden">
+                                          <td>
+                                              <a href="#" class="text-default font-weight-semibold">
+                                                  <label id="lblAddress">Address during outstation (Other)</label>
+                                              </a>
+                                          </td>
+                                          <td>
+                                              <input type="text" class="form-control" placeholder="Enter address during outstation...." id="txtOutstationAddress" name="outstationaddress">
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <a href="#" class="text-default font-weight-semibold">Reason for
+                                                  Leave</a>
+                                          </td>
+                                          <td>
+                                              <input type="text" class="form-control" placeholder="Please enter reason for leave ..." id="txtLeaveReason" name="leavereason" required="">
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <a href="#" class="text-default font-weight-semibold">Whether availed
+                                                  already?</a>
+                                          </td>
+                                          <td>
+                                              <div class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" class="custom-control-input" id="optUndertakingNo" name="undertaking" value="no" checked="">
+                                                  <label class="custom-control-label" for="optUndertakingNo">No</label>
+                                              </div>
+
+                                              <div class="custom-control custom-radio custom-control-inline">
+                                                  <input type="radio" class="custom-control-input" id="optUndertakingYes" name="undertaking" value="yes">
+                                                  <label class="custom-control-label" for="optUndertakingYes">Yes</label>
+                                              </div>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td style="width: 30%;">
+                                              <a href="#" class="text-default font-weight-semibold">Officer for
+                                                  forwarding this Leave</a>
+                                          </td>
+                                          <td style="width: 70%;">
+                                              <select class="form-control select select2-hidden-accessible" id="forwarder_id" name="forwarder_id" data-fouc="" required="" data-select2-id="forwarder_id" tabindex="-1" aria-hidden="true">
+                                                  <option value="" data-select2-id="10">Select</option><option value="d18b9bd21875d9b15e2850650884e421">PAWAN KUMAR JAIN -------- ( Chairman )</option><option value="1b3308e433fa611faf4f8f84ae14b77a">SUNIL KUMAR SHARMA -------- ( O. I. C. )</option><option value="47f21e9bf361548a0a58b6d01482360b">YOGESH KUMAR -------- ( B. I. )</option><option value="cef3c57c45ddfc9faf964c993c269e5b">LALIT SINGH -------- ( L.S.A )</option><option value="944a7fa7a5dc23a83969f31a577e1559">AMIT KUMAR -------- ( PO )</option><option value="2106a4b04b9ae70a1db71d6820ce4d48">MUKUL CHAUDHARY -------- ( B. I. - IV )</option><option value="2106a4b04b9ae70a1db71d6820ce4d48">MUKUL CHAUDHARY -------- ( L.S.A. (Link) )</option>                                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="9" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-forwarder_id-container"><span class="select2-selection__rendered" id="select2-forwarder_id-container" role="textbox" aria-readonly="true" title="Select">Select</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- /progress counters -->
+
+              </div>
+              <div class="card-footer text-right" id="searchCardFooter">
+                  <button type="submit" class="btn bg-primary legitRipple" id="btnSubmit">Submit<i class="icon-circle-right2 ml-2"></i></button>
+              </div>
+              </form>            </div>
+          <!-- /button classes -->
+
+      </div>
+      <!-- /right content -->
+
+  </div>
+  <!-- /inner container -->
+</div>
+<!-- /content area -->
+
+<!-- <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/forms/validation/validate.min.js " type="text/javascript"></script>
+<script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/forms/validation/additional_methods.min.js" type="text/javascript"></script> -->
+<script src="http://10.199.31.113/layersweb/assets/js/leave.js"></script>
+
+<script>
+$(document).ready(function() {
+  changeDate();
+}); //end document
+
+
+$("#btnSubmit").on("click", function() {
+  $("form[name=leavefrm]").validate({
+      ignore: 'input[type=hidden], .select2-search__field', // ignore hidden fields
+      errorClass: 'validation-invalid-label',
+      validClass: 'validation-valid-label',
+      highlight: function(element, errorClass) {
+          $(element).removeClass(errorClass);
+      },
+      unhighlight: function(element, errorClass) {
+          $(element).removeClass(errorClass);
+      },
+      errorPlacement: function(error, element) {
+          //console.log(error);
+          // Unstyled checkboxes, radios
+          if (element.parents().hasClass('form-check')) {
+              error.appendTo(element.parents('.form-check').parent());
+          }
+
+          // Input with icons and Select2
+          else if (element.parents().hasClass('form-group-feedback') || element.hasClass(
+                  'select2-hidden-accessible')) {
+              error.appendTo(element.parent());
+          }
+
+          // Input group, styled file input
+          else if (element.parent().is('.uniform-uploader, .uniform-select') || element.parents()
+              .hasClass('input-group')) {
+              error.appendTo(element.parent().parent());
+          }
+
+          // Other elements
+          else {
+              error.insertAfter(element);
+          }
+      },
+      rules: {
+          leavetype: "required",
+          leavereason: {
+              required: true,
+          },
+          outstationaddress: {
+              required: isOutstationAddressRequired
+          },
+          'from[]': {
+              required: true
+          }
+          // depends: function(element) {
+          //     console.log(element);
+          //     return true; //$("#bonus-material").is(":checked");
+          // }
+      },
+      messages: {
+          leavetype: "Please select leave type",
+          leavereason: {
+              required: "Please enter reason for leave",
+          },
+          outstationaddress: {
+              required: "Please enter outstation address",
+          }
+      },
+      submitHandler: function(form) {
+          $.ajax({
+              type: 'POST',
+              url: 'http://10.199.31.113/layersweb/leave/empleaves/applyleave_save',
+              data: $("form[name=leavefrm]").serialize(),
+              dataType: "json", // request type (html/json/xml)
+              beforeSend: function() {
+                  $("#btnSubmit").text("Please wait...");
+                  $("#btnSubmit").append('<i class="icon-spinner2 spinner"></i>');
+                  $("#btnSubmit").attr("disabled", "disabled");
+              },
+              success: function(res) {
+                  $("input[name=csrf_test_lalit]").val(res.csrfHash)
+                  if (res.success) {
+                      alert(res.msg);
+                      window.location.replace(
+                          'http://10.199.31.113/layersweb/leave/empleaves/leave_application'
+                      );
+                  } else {
+                      alert(res.msg);
+                      $("#btnSubmit").text("Submit");
+                      $("#btnSubmit").append(
+                          '<i class="icon-circle-right2 ml-2"></i>');
+                      $("#btnSubmit").removeAttr("disabled");
+                      return false;
+                  }
+              },
+          });
+          return false;
+      }
+  });
+
+  // $("form[name=leavefrm] input[name='from']").each(function() {
+  //     $(this).rules("add", {
+  //         required: true
+  //     });
+  // });
+});
+
+function isOutstationAddressRequired() {
+  return $("#optOutstationYes").prop("checked");
+}
+
+$('input[name="outstationdetail"]').on('click', function() {
+  var selectedOption = this.parentElement.innerText.trim();
+  $("#lblAddress").text("Address during outstation (" + selectedOption + ")");
+});
+
+$("#leave_t").on("change", function() {
+  var id = $(this).val();
+  $(this).data("id", id);
+  //reset the form
+  resetForm(this);
+  $(this).val($(this).data("id"));
+  var _option = $(this).find('option:selected').text();
+  if (_option == "Short Leave") {
+      $(".trShortLeave").removeClass('hidden');
+      $(".trCasualLeave").addClass('hidden');
+      $(".trOutstationDetail").addClass('hidden');
+      $("input[name='from[]']").prop('required', false);
+      $("input[name='to[]']").prop('required', false);
+      $("#leavedate").prop('required', true);
+      $("#hidTotalLeaves").val(1);
+  } else if (_option == "Casual Leave" || _option == "Sick Leave") {
+      $(".trCasualLeave").removeClass('hidden');
+      $(".trShortLeave").addClass('hidden');
+      $("#optOutstationNo").prop("checked", true);
+      $("input[name='from[]']").prop('required', true);
+      $("input[name='to[]']").prop('required', true);
+      $("#leavedate").prop('required', false);
+      $("#hidTotalLeaves").val(0);
+  }
+});
+
+function resetForm(obj) {
+  if ($("#itemtable").find("tr:gt(1)").not(".grand-total").length > 0) {
+      $("#itemtable").find("tr:gt(1)").not(".grand-total").remove();
+      obj.form.reset();
+      $("#optOutstationNo").click();
+      console.log("clicked");
+      $("select[name='dpnoon[]']").prop('required', false).prop('disabled', true);
+  }
+}
+
+$("#optOutstationNo").on("click", function() {
+  $("#txtOutstationAddress").val("");
+  $(".trOutstationDetail").addClass('hidden');
+  $("input[name='outstationdetail']").prop("checked", false);
+});
+
+$("#optOutstationYes").on("click", function() {
+  $("#txtOutstationAddress").val("");
+  $(".trOutstationDetail").removeClass('hidden');
+  $("#txtOutstationAddress").prop('required', true);
+  $("#optGoingOther").prop("checked", true);
+});
+
+$(".addCF").click(function() {
+  event.preventDefault();
+  tr = document.getElementById("itemtable").rows.length;
+  $("#itemtable tr.grand-total")
+  $("#itemtable tr.grand-total").before('<tr id="tr' + tr +
+      '"><td><select class="form-control select halfday" name="halfday[]" required onchange="halfdayChange(this);" data-fouc><option value="N">No</option><option value="Y">Yes</option></select></td><td><select class="form-control select noon" name="dpnoon[]" disabled onchange="noonChange(this);" data-fouc><option value="">Select</option><option value="F/N">Forenoon</option><option value="A/N">Afternoon</option></select><input type="hidden" name="noon[]"></td><td><div class="input-group"><span class="input-group-prepend"><span class="input-group-text"><i class="icon-calendar"></i></span></span><input type="text" readonly name="from[]" class="form-control from" required></div></td><td><div class="input-group"><span class="input-group-prepend"><span class="input-group-text"><i class="icon-calendar"></i></span></span><input type="text" readonly name="to[]" class="form-control to" required></div></td><td><button class="btn btn-sm btn-danger remCF"><i class="icon-trash"></i></button></td></tr>'
+  );
+  changeDate();
+  // Default initialization
+  $('.select').select2({
+      minimumResultsForSearch: Infinity
+  });
+});
+
+$("#itemtable").on('click', '.remCF', function() {
+  $(this).parent().parent().remove();
+  //recalculate the days
+  calculateDays();
+});
+var year = (new Date).getFullYear();
+
+function changeDate() {
+  var dateFormat = "dd-mm-yy",
+      from = $(".from").datepicker({
+          minDate: new Date(year, 0, 1),
+          maxDate: new Date(year, 11, 31),
+          dateFormat: 'dd-mm-yy',
+          yearRange: '1950:+0'
+      })
+      .on("change", function() {
+          calculateDays();
+          if ($(this).parent().closest('tr').find('.halfday').val() == 'Y') {
+              $(this).parent().closest('tr').find('.to').datepicker("option", "minDate", getDate(
+                  this));
+              $(this).parent().closest('tr').find('.to').datepicker("option", "maxDate", getDate(
+                  this));
+          } else {
+              $(this).parent().closest('tr').find('.to').datepicker("option", "minDate", getDate(
+                  this));
+          }
+      }).keyup(function(e) {
+          if (e.keyCode == 8 || e.keyCode == 46) {
+              $.datepicker._clearDate(this);
+              $("#dt_to").datepicker("option", "minDate", "today");
+          }
+      });
+  to = $(".to").datepicker({
+          minDate: new Date(year, 0, 1),
+          maxDate: new Date(year, 11, 31),
+          dateFormat: 'dd-mm-yy',
+          yearRange: '1950:+0'
+      })
+      .on("change", function() {
+          calculateDays();
+          //alert($(this).val());
+          if ($(this).parent().closest('tr').find('.halfday').val() == 'Y') {
+              $(this).parent().closest('tr').find('.from').datepicker("option", "minDate", getDate(
+                  this));
+              $(this).parent().closest('tr').find('.from').datepicker("option", "maxDate", getDate(
+                  this));
+          } else {
+              $(this).parent().closest('tr').find('.from').datepicker("option", "maxDate", getDate(
+                  this));
+          }
+
+      }).keyup(function(e) {
+          if (e.keyCode == 8 || e.keyCode == 46) {
+              $.datepicker._clearDate(this);
+              $("#dt_from").datepicker("option", "maxDate", "");
+          }
+      });
+
+  leavedate = $("#leavedate").datepicker({
+      minDate: new Date(year, 0, 1),
+      maxDate: new Date(year, 11, 31),
+      dateFormat: 'dd-mm-yy',
+      yearRange: '1950:+0'
+  });
+
+  function getDate(element) {
+      var date;
+      try {
+          date = $.datepicker.parseDate(dateFormat, element.value);
+      } catch (error) {
+          date = null;
+      }
+      return date;
+  }
+}
+
+function halfdayChange(event) {
+  //clear date on change of halfday        
+  $(event).parent().closest('tr').find('.from').val("");
+  $(event).parent().closest('tr').find('.to').val("");
+
+  if ($(event).val() == 'Y') {
+      $(event).parent().closest('tr').find('.noon').prop('required', true).prop('disabled', false);
+  } else {
+      $(event).parent().closest('tr').find('.noon').val("").prop('required', false).prop('disabled', true);
+      $(event).parent().closest('tr').find('.noon').trigger("change");
+  }
+  //call calculate days
+  calculateDays();
+}
+
+
+function calculateDays() {
+  var days = 0;
+  var rows = $("#itemtable").find("tr").length;
+  $("#itemtable").find("tr").each(function(index) {
+      if ($(this).find('.from').length > 0 && $(this).find('.from').val() &&
+          $(this).find('.to').length > 0 && $(this).find('.to').val()) {
+          var final = $(this).find('.to').datepicker('getDate');
+          start = $(this).find('.from').datepicker('getDate');
+          var oneDay = 24 * 60 * 60 * 1000;
+          var diff = 0;
+
+          if (final && start) {
+              diff = Math.round(Math.abs((final.getTime() - start.getTime()) / (oneDay))) + 1;
+          }
+
+          if (diff > 1) {
+              days += diff;
+          } else if (diff == 1) {
+              if ($(this).find('.halfday').val() == 'Y')
+                  days += 0.5;
+              else
+                  days += 1;
+          }
+      }
+  });
+
+  $("#TotalLeaves").text("Total Leaves : " + days);
+  $("#hidTotalLeaves").val(days);
+}
+
+function days(from, to) {
+  var result = 0;
+  var final = $(to).datepicker('getDate');
+  var start = $(from).datepicker('getDate');
+}
+
+function noonChange(event) {
+  if ($(event).val() != '') {
+      selectVal = $(event).val();
+      $(event).parent().closest('tr').find("[name='noon[]']").val(selectVal);
+  }
+}
+</script>
+
+<style>
+.hidden {
+  display: none !important;
+}
+</style>
+          <!--Code of Sandeep footer added here /-->
+          <script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/forms/validation/validate.min.js " type="text/javascript"></script>
+<script src="http://10.199.31.113/layersweb/assets/global_assets/js/plugins/forms/validation/additional_methods.min.js" type="text/javascript"></script>
+
+<!--Search Employee Modal Start-->
+<!-- Primary modal -->
+<div id="modal_theme_primary_model" class="modal fade" tabindex="-1">
+  <div class="modal-dialog" id="modal_large_model">
+      <div class="modal-content">
+          <div class="modal-header bg-indigo">
+              <h6 class="modal-title"><i class="fa fa-search"></i> Employee Search </h6>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+
+          <div class="modal-body loaderdiv_unit">
+              <!--<div class="card">-->
+              <div class="card-body">
+                  <div class="form-group row">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Search Type</label>
+                      <div class="col-lg-9">
+                          <input type="hidden" id="redirect_link">
+                          <select class="form-control select select2-hidden-accessible" id="dpSearchTypes_model" data-select2-id="dpSearchTypes_model" tabindex="-1" aria-hidden="true">
+                              
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="11" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpSearchTypes_model-container"><span class="select2-selection__rendered" id="select2-dpSearchTypes_model-container" role="textbox" aria-readonly="true"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDistrict_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select District</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpDistrict" id="dpDistricts_model" data-placeholder="Select a District..." data-select2-id="dpDistricts_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="12" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpDistricts_model-container"><span class="select2-selection__rendered" id="select2-dpDistricts_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a District...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divBranch_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Branch</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpBranch" id="dpBranchs_model" data-placeholder="Select a Branch..." data-select2-id="dpBranchs_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="13" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpBranchs_model-container"><span class="select2-selection__rendered" id="select2-dpBranchs_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Branch...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divBranchRole_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Role In Branch</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpBranchRole" id="dpBranchRoles_model" data-placeholder="Select a Role In Branch..." data-select2-id="dpBranchRoles_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="14" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpBranchRoles_model-container"><span class="select2-selection__rendered" id="select2-dpBranchRoles_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Role In Branch...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divCourtType_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Court Type</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpCourt" id="dpCourts_model" data-placeholder="Select a Court Type..." data-select2-id="dpCourts_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="15" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpCourts_model-container"><span class="select2-selection__rendered" id="select2-dpCourts_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Court Type...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divJudge_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Judge</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpJudge" id="dpJudges_model" data-placeholder="Select a Judge..." data-select2-id="dpJudges_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="16" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpJudges_model-container"><span class="select2-selection__rendered" id="select2-dpJudges_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Judge...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divCourtRole_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Role In Court</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpCourtRole" id="dpCourtRoles_model" data-placeholder="Select a Role In Court..." data-select2-id="dpCourtRoles_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="17" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpCourtRoles_model-container"><span class="select2-selection__rendered" id="select2-dpCourtRoles_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Role In Court...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDesignation_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Designation</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpDesignation" id="dpDesignations_model" data-placeholder="Select a Designation..." data-select2-id="dpDesignations_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="18" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpDesignations_model-container"><span class="select2-selection__rendered" id="select2-dpDesignations_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Designation...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divRole_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Role</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpRole" id="dpRoles_model" data-placeholder="Select a Role..." data-select2-id="dpRoles_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="19" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpRoles_model-container"><span class="select2-selection__rendered" id="select2-dpRoles_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Role...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divFilterOption_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Filter Option</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" name="dpOption" id="dpOptions_model" style="width:100%" data-select2-id="dpOptions_model" tabindex="-1" aria-hidden="true">
+                              <option value="ecode" data-select2-id="21">Employee Code</option>
+                              <option value="ename">Name</option>
+                              <option value="efname">Father Name</option>
+                              <!--<option value="edob_model">Date of Birth</option>-->
+                              <option value="emobile">Mobile</option>
+                              <!--<option value="epan">PAN</option>-->
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="20" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpOptions_model-container"><span class="select2-selection__rendered" id="select2-dpOptions_model-container" role="textbox" aria-readonly="true" title="Employee Code">Employee Code</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divFilterText_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Enter Filter Text</label>
+                      <div class="col-lg-9">
+                          <input type="text" class="form-control" name="txtOption" id="txtOptions_model" required="" placeholder="Enter Employee Code">
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDivertedPosting_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Posting</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpDivertedPosting" id="dpDivertedPostings_model" data-placeholder="Select a Posting..." data-select2-id="dpDivertedPostings_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="22" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpDivertedPostings_model-container"><span class="select2-selection__rendered" id="select2-dpDivertedPostings_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Posting...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDeputationsPosting_model">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Posting</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpDeputationsPosting" id="dpDeputationsPostings_model" data-placeholder="Select a Posting..." data-select2-id="dpDeputationsPostings_model" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="23" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpDeputationsPostings_model-container"><span class="select2-selection__rendered" id="select2-dpDeputationsPostings_model-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Posting...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-footer" style="text-align: right">
+                  <button type="button" class="btn bg-indigo legitRipple" id="btnSearch_model"> Search <i class="icon-search4 ml-1"></i></button>
+              </div>
+              <div class="blockui-message bg-slate-700 text-white rounded px-3 py-2" style="display: none;">
+      <i class="icon-spinner10 spinner mt-1"></i>
+      <span class="font-weight-semibold d-block mt-2">Please Wait...</span>
+  </div>
+              <!--                </div>-->
+              <div class="hidden" id="searchTableCard_model">
+                  <div id="divSearchTables_model">
+                  </div>
+              </div>
+          </div>    
+          <div class="modal-footer">
+          </div>
+      </div>
+  </div>
+</div>
+<!-- /primary modal -->
+<!--Search Employee Modal End-->
+
+<!--Employee Personal & Qualification Detail Update Model Start-->
+<div id="emp_personal_qual_detail_update_model" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header bg-primary">
+              <h6 class="modal-title">Employee Details Edit</h6>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+
+          <div class="modal-body">
+              <ul class="nav nav-tabs nav-tabs-bottom">
+                  <li class="nav-item"><a href="#bottom-tab1_emp_detail" class="nav-link active" data-toggle="tab"><i class="icon-user-check text-pink-300"></i>&nbsp;&nbsp;Personal Details</a></li>
+                  <li class="nav-item"><a href="#bottom-tab2_emp_detail" class="nav-link" data-toggle="tab" id="qualification_tab"><i class="icon-graduation text-pink-300"></i>&nbsp;&nbsp;Qualification Details</a></li>
+                  <!--<li class="nav-item"><a href="#bottom-tab3_emp_detail" class="nav-link" data-toggle="tab" id="profile_pic_tab"><i class="icon-picassa text-pink-300"></i>&nbsp;&nbsp;Profile Picture</a></li>-->
+              </ul>
+              <div class="tab-content">
+                  <div class="tab-pane fade show active" id="bottom-tab1_emp_detail">
+                      <form action="http://10.199.31.113/layersweb/employees/Employeesmgmt/update_employee_details_model" name="personaldetailupdateform_model" method="post" accept-charset="utf-8" novalidate="novalidate" autocomplete="off">
+                                                                                           <input type="hidden" name="csrf_test_lalit" value="0d5afe44efc057c9cc5727506e08be16">
+                      <div class="card-body">
+                          <fieldset class="mb-3">
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee Code/Pin<em class="text-danger-800"><b> *</b></em></label>
+                                  <div class="col-lg-9">
+                                      <input type="hidden" name="uuid" id="uuid">
+                                      <input type="text" class="form-control" name="employee_code_pin_model" id="employee_code_pin_model" placeholder="Enter Employee Code/Pin" maxlength="8" minlength="5" onkeypress="return isNumber_model(event)">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee Name<em class="text-danger-800"><b> *</b></em></label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control" name="employee_name_model" id="employee_name_model" placeholder="Enter Employee Name" maxlength="80">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Father Name<em class="text-danger-800"><b> *</b></em></label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control" name="father_name_model" id="father_name_model" placeholder="Enter Employee's Father Name" maxlength="50">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Mother Name</label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control" name="mother_name_model" id="mother_name_model" placeholder="Enter Employee's Mother Name" maxlength="50">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Spouse Name</label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control" name="spouse_name_model" id="spouse_name_model" placeholder="Enter Employee's Spouse Name" maxlength="50">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Date of Birth<em class="text-danger-800"><b> *</b></em></label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control daterange-single dob_model" name="dob_model" id="dob_model" placeholder="Select Date Of Birth" readonly="">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Gender</label>
+                                  <div class="col-lg-9">
+                                      <select class="form-control" name="employee_gender_model" id="employee_gender_model">
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Marital Status</label>
+                                  <div class="col-lg-9">
+                                      <select class="form-control" name="marital_status_model" id="marital_status_model">
+                                          <option value=""> Select Employee Marital Status </option>
+                                          
+                                      </select>
+                                  </div>
+                              </div>
+
+                              <div class="form-group row hidden">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee's Aadhar</label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control" name="employee_aadhar_model" id="employee_aadhar_model" placeholder="Enter Employee's AADHAR" maxlength="12" minlength="12" onkeypress="return isNumber_model(event)">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Initial Date of Joining<em class="text-danger-800"><b> *</b></em></label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control daterange-single doj" name="employee_initial_doj_model" id="employee_initial_doj_model" placeholder="Select Employee's Initial Date Of Joining" readonly="">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee's E-mail</label>
+                                  <div class="col-lg-9">
+                                      <input type="email" class="form-control" name="employee_email_model" id="employee_email_model" placeholder="Enter Employee's Email" maxlength="80">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee's Alternet E-mail</label>
+                                  <div class="col-lg-9">
+                                      <input type="email" class="form-control" name="employee_alt_email_model" id="employee_alt_email_model" placeholder="Enter Employee's Alternet Email" maxlength="80">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee's Mobile</label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control" name="employee_mobile_model" id="employee_mobile_model" placeholder="Enter Employee's Mobile" readonly="" maxlength="10" minlength="10">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee's Alternet Mobile</label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control" name="employee_alt_mobile_model" id="employee_alt_mobile_model" placeholder="Enter Employee's Alternet Mobile" maxlength="10" minlength="10" onkeypress="return isNumber_model(event)">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee's Other Alternet Mobile</label>
+                                  <div class="col-lg-9">
+                                      <input type="text" class="form-control" name="employee_other_alt_mobile_model" id="employee_other_alt_mobile_model" placeholder="Enter Employee's Other Alternet Mobile" maxlength="10" minlength="10" onkeypress="return isNumber_model(event)">
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee's Postal Address</label>
+                                  <div class="col-lg-9">
+                                      <textarea class="form-control" name="employee_postal_address_model" id="employee_postal_address_model" placeholder="Entar Employee's Postal Address" rows="2" maxlength="150"></textarea>
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold"></label>
+                                  <div class="col-lg-3">
+                                      <input type="text" class="form-control" name="postal_pin_model" id="postal_pin_model" placeholder="Enter Pin" maxlength="6" minlength="6" onkeypress="return isNumber_model(event)">
+                                  </div>
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">State</label>
+                                  <div class="col-lg-3">
+                                      <select class="form-control" name="postal_state_model" id="postal_state_model">
+                                          <option value="">Select Postal State</option>
+                                      </select>
+                                  </div>
+                              </div>
+<!--                                <div class="form-group row">
+                                  <div class="col-lg-3">
+                                      Is Same For Permanent Address
+
+                                  </div>
+                                  <div class="col-lg-9">
+                                      <input type="checkbox" id="same_addredd" value="Y">
+                                  </div>
+                              </div>-->
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">Employee's Permanent Address</label>
+                                  <div class="col-lg-9">
+                                      <textarea class="form-control" name="employee_permanent_address_model" id="employee_permanent_address_model" placeholder="Entar Employee's Permanent Address" rows="2" maxlength="150"></textarea>
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label class="col-form-label col-lg-3 font-weight-semibold"></label>
+                                  <div class="col-lg-3">
+                                      <input type="text" class="form-control" name="permanent_pin_model" id="permanent_pin_model" placeholder="Enter Pin" maxlength="6" minlength="6" onkeypress="return isNumber_model(event)">
+                                  </div>
+                                  <label class="col-form-label col-lg-3 font-weight-semibold">State</label>
+                                  <div class="col-lg-3">
+                                      <select class="form-control" name="permanent_state_model" id="permanent_state_model">
+                                          <option value="">Select Permanent State</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+
+                              </div>
+                          </fieldset>
+                      </div>
+                      <div class="card-footer text-right">
+                          <button type="submit" name="btnsubmit_model" class="btn bg-blue-700 btn-xs legitRipple">Update Details</button>
+                      </div>
+                      </form>                    </div>
+                  <div class="tab-pane fade" id="bottom-tab2_emp_detail">
+                      <div class="card">
+                          <div class="card-body loaderdiv_emp_edu_loder">
+                              <div id="qual_mess_model"></div>
+                                                              <fieldset>
+                                  <div class="form-group row">
+                                      <label class="col-form-label col-lg-3 font-weight-semibold">Qualification</label>
+                                      <div class="col-lg-9">
+                                          <input type="hidden" name="emp_uuid" id="emp_uuid" value="5ac9ef7f2ac56a99d0d3e8c5b7e747c4">
+                                          <select class="form-control" name="qualification_model" id="qualification_model">
+                                              <option value="">Select Qualification</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="form-group row hidden" id="qual_stream_model_div">
+                                      <label class="col-form-label col-lg-3 font-weight-semibold">Qual. Stream</label>
+                                      <div class="col-lg-9">
+                                          <select class="form-control" name="qualification_stream_model" id="qualification_stream_model">
+                                              <option value="">Select Qualification Stream</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label class="col-lg-3 col-form-label font-weight-semibold">Examination Board / University</label>
+                                      <div class="col-lg-9">
+                                          <input type="text" id="board_name_model" name="board_name_model" maxlength="50" class="form-control" placeholder="Board/ University Name">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label class="col-lg-3 col-form-label font-weight-semibold">School / Collage</label>
+                                      <div class="col-lg-9">
+                                          <input type="text" name="school_or_collage_name_model" maxlength="100" id="school_or_collage_name_model" palceholder="School/ Collage Name" class="form-control" placeholder="School/ Collage Name">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label class="col-lg-3 col-form-label font-weight-semibold">Percentage</label>
+                                      <div class="col-lg-9">
+                                          <input type="text" name="marks_obtain_model" id="marks_obtain_model" class="form-control" placeholder="Obtain % in Exams" onkeypress="return isNumber_model(event)" maxlength="5">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label class="col-lg-3 col-form-label font-weight-semibold">Passing Year</label>
+                                      <div class="col-lg-9">
+                                          <select class="form-control" name="passing_year_model" id="passing_year_model">
+                                              <option value="">Select Passing Year</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="blockui-message bg-slate-700 text-white rounded px-3 py-2" style="display: none;">
+                                      <i class="icon-spinner10 spinner mt-1"></i>
+                                      <span class="font-weight-semibold d-block mt-2">Please Wait...</span>
+                                  </div>
+                                  
+                                  <div class="text-right">
+                                      <button type="button" name="education_detail_btn_model" id="education_detail_btn_model" class="btn btn-primary btn-flat education_detail_btn_model legitRipple">Save Qualification</button>
+                                  </div>
+                              </fieldset>
+                              <div class="hidden" id="edu_detail_table_model">
+                                  <table class="table table-hover">
+                                      <thead>
+                                          <tr>
+                                              <th>#</th>
+                                              <th>Qualification</th>
+                                              <th>Qualification Stream</th>
+                                              <th>Board / University</th>
+                                              <th>School / Collage</th>
+                                              <th>Marks Obtain</th>
+                                              <th>Passing Year</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody id="edu_table_body_model">
+                                      </tbody>
+                                  </table>
+                              </div>
+                                                          </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="bottom-tab3_emp_detail">
+                      <div class="card">
+                          <div class="card-body">
+                              <form action="http://10.199.31.113/layersweb/employees/Employeesmgmt/save_employee_profile_image" name="emp_image_save" enctype="multipart/form-data" method="post" accept-charset="utf-8" autocomplete="off">
+                                                                                             <input type="hidden" name="csrf_test_lalit" value="0d5afe44efc057c9cc5727506e08be16">
+                              <div class="form-group row">
+                                  <label class="col-lg-3 col-form-label font-weight-semibold">Select Profile Picture</label>
+                                  <div class="col-lg-9">
+                                      <input type="file" class="form-control" name="doc_file[]" id="profile_pic_model" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                                      
+                                  </div>
+                              </div>
+                              <div class="form-group row text-center">
+                                  <input type="hidden" name="emp_uuid" value="5ac9ef7f2ac56a99d0d3e8c5b7e747c4">
+                                  <img id="blah" style="margin-left: 40%" width="130px" height="150px">
+                              </div>
+                              <div class="text-right">
+                                  <input type="submit" class="btn btn-primary btn-sm btn-flat legitRipple legitRipple-empty" name="emp_image_save" value="Save Image">
+                                  <a href="#" id="profile_final_submit" class="btn btn-warning btn-sm btn-flat legitRipple" onclick="return confirm(&quot;After Submit You Cannot Update Any Changes in Your Personal Details&quot;);">Final Submit</a>
+                              </div>
+                          </form></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="modal-footer">
+<!--                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+              <button type="button" class="btn bg-primary">Save changes</button>-->
+          </div>
+      </div>
+  </div>
+</div>
+<!--Employee Personal & Qualification Detail Update Model End-->
+
+
+
+<script>
+  function isNumber_model(evt){
+      evt = (evt) ? evt : window.event;
+      var charCode = (evt.which) ? evt.which : evt.keyCode;
+      if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+          return false;
+      }
+      return true;
+  }
+//    $('#employee_initial_doj_model,#dob_model').on('change', function (){ 
+//    value_model = $('#dob_model').val();
+//    valuev_model = $('#employee_initial_doj_model').val();
+//    todays_model = new Date(valuev_model.replace(/(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3"));
+//    dob_model = new Date(value_model.replace(/(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3"));
+//    age_model = todays_model.getFullYear() - dob_model.getFullYear();
+////    alert(age);
+//     if (age_model < 18) {
+//            $('#employee_initial_doj_model').val('');
+//            alert("Date of birth should not be less than 18 years");
+//            return false;
+//        }
+//    });
+  
+  
+  //Form Validation Of Employee Details Edit From Model
+  $('form[name=personaldetailupdateform_model]').validate({
+      ignore: 'input[type=hidden], .select2-search__field', // ignore hidden fields
+      errorClass: 'validation-invalid-label',
+      successClass: 'validation-valid-label',
+      validClass: 'validation-valid-label',
+      highlight: function (element, errorClass) {
+          $(element).removeClass(errorClass);
+      },
+      unhighlight: function (element, errorClass) {
+          $(element).removeClass(errorClass);
+      },
+      success: function (label) {
+          label.addClass('validation-valid-label').text('Success.'); // remove to hide Success message
+      },
+
+      // Different components require proper error label placement
+      errorPlacement: function (error, element) {
+          //console.log(error);
+          // Unstyled checkboxes, radios
+          if (element.parents().hasClass('form-check')) {
+              error.appendTo(element.parents('.form-check').parent());
+          }
+
+          // Input with icons and Select2
+          else if (element.parents().hasClass('form-group-feedback') || element.hasClass('select2-hidden-accessible')) {
+              error.appendTo(element.parent());
+          }
+
+          // Input group, styled file input
+          else if (element.parent().is('.uniform-uploader, .uniform-select') || element.parents().hasClass('input-group')) {
+              error.appendTo(element.parent().parent());
+          }
+
+          // Other elements
+          else {
+              error.insertAfter(element);
+          }
+      },
+      rules: {
+          employee_code_pin_model:{
+              required: true,
+              minlength: 5,
+              maxlength:8
+          },
+          employee_name_model: {
+              required: true,
+              minlength: 4,
+              maxlength:80,
+              pattern: /^[a-zA-Z. ]*$/,
+              normalizer: function (value) {
+                  return $.trim(value);
+              }
+          },
+          father_name_model: {
+              required: true,
+              minlength: 4,
+              maxlength:50,
+              pattern: /^[a-zA-Z. ]*$/,
+              normalizer: function (value) {
+                  return $.trim(value);
+              }
+          },
+          mother_name_model: {
+//                required: true,
+              minlength: 4,
+              maxlength:50,
+              pattern: /^[a-zA-Z. ]*$/,
+              normalizer: function (value) {
+                  return $.trim(value);
+              }
+          },
+          spouse_name_model: {
+              required: false,
+              minlength: 4,
+              maxlength:50,
+              pattern: /^[a-zA-Z. ]*$/,
+              normalizer: function (value) {
+                  return $.trim(value);
+              }
+          },
+          dob_model: {
+              required: true
+          },
+          employee_aadhar_model: {
+              required: false,
+              minlength: 12,
+              maxlength: 12,
+              pattern: /^[0-9]*$/
+          },
+          employee_initial_doj_model: {
+              required: true
+          },
+          employee_postal_address_model: {
+              required: false,
+              maxlength:150,
+              pattern: /^[a-zA-Z0-9&-/ ]*$/
+          },
+          postal_pin_model: {
+              required: false,
+              maxlength:6,
+              minlength:6
+//                pattern: /^[a-zA-Z0-9&-/ ]*$/
+          },
+          postal_state_model: {
+              required: false,
+//                maxlength:6,
+              minlength:1
+//                pattern: /^[a-zA-Z0-9&-/ ]*$/
+          },
+          employee_permanent_address_model: {
+              required: false,
+              maxlength:150,
+              pattern: /^[a-zA-Z0-9&-/ ]*$/
+          },
+          permanent_pin_model: {
+              required: false,
+              maxlength:6,
+              minlength:6
+//                pattern: /^[a-zA-Z0-9&-/ ]*$/
+          },
+          permanent_state_model: {
+              required: false,
+//                maxlength:6,
+              minlength:1
+//                pattern: /^[a-zA-Z0-9&-/ ]*$/
+          }
+      },
+      messages: {
+          employee_code_pin_model: {
+              required: "Please enter the Employee Code/Pin",
+              minlength:"Please Enter 5 Or 8 Digit Pin / Code",
+              maxlength:"Please Enter Only 8 Digit Pin / Code"
+          },
+          employee_name_model: {
+              required: "Please enter the Employee Name",
+              minlength: 'At least {0} character required',
+              pattern: "(*, @, #, $, =, ?, !, %, /, ^, 0-9) are not allowed"
+          },
+          father_name_model: {
+              required: "Please enter the Father Name",
+              minlength: 'At least {0} character required',
+              pattern: "(*, @, #, $, =, ?, !, %, /, ^, 0-9) are not allowed"
+          },
+          mother_name_model: {
+//                required: "Please enter the Mother Name",
+              minlength: 'At least {0} character required',
+              pattern: "(*, @, #, $, =, ?, !, %, /, ^, 0-9) are not allowed"
+          },
+          spouse_name_model: {
+              required: "Please enter the Spouse Name",
+              minlength: 'At least {0} character required',
+              pattern: "(*, @, #, $, =, ?, !, %, /, ^, 0-9) are not allowed"
+          },
+          dob_model: {
+              required: "Please enter the Date Of Birth"
+          },
+          employee_aadhar_model: {
+              required: "Please enter the Aadhar Number",
+              minlength: 'At least {0} character required',
+              maxlength: 'Only {0} character required',
+              pattern: "Special Character not allowed"
+          },
+          employee_initial_doj_model: {
+              required: "Please enter the Initial Joining Date"
+          },
+          employee_postal_address_model: {
+              required: "Please enter the Postal Address",
+              pattern: "Special Character not allowed"
+          },
+          postal_pin_model: {
+//                required: "Please enter the Permanent Address",
+              minlength: 'At least {0} character required',
+              maxlength: 'Only {0} character required',
+              pattern: "Special Character not allowed"
+          },
+          postal_state_model: {
+//                required: "Please enter the Permanent Address",
+              minlength: 'At least {0} character required',
+//                maxlength: 'Only {0} character required',
+              pattern: "Special Character not allowed"
+          },
+          employee_permanent_address_model: {
+              required: "Please enter the Permanent Address",
+              pattern: "Special Character not allowed"
+          },
+          permanent_pin_model: {
+//                required: "Please enter the Permanent Address",
+              minlength: 'At least {0} character required',
+              maxlength: 'Only {0} character required',
+              pattern: "Special Character not allowed"
+          },
+          permanent_state_model: {
+//                required: "Please enter the Permanent Address",
+              minlength: 'At least {0} character required',
+//                maxlength: 'Only {0} character required',
+              pattern: "Special Character not allowed"
+          }
+      },
+      submitHandler: function (form) {
+          $(form.elements.btnsubmit_model).text('Please wait...')
+          $(form.elements.btnsubmit_model).append('<i class="icon-spinner2 spinner"></i>')
+          $(form.elements.btnsubmit_model).attr('disabled', 'disabled')
+          form.submit();
+      }
+  });
+</script>
+<!--For Employee Qualifications Details-->
+<script>
+  $("#qualification_tab").on('click',function(){
+      //for Educational Passing Year
+      for (i = new Date().getFullYear(); i > 1950; i--)
+      {
+          $('#passing_year_model').append($('<option />').val(i).html(i));
+}
+const emp_uuid = $('input[name=emp_uuid]').val();
+//get_employee_education('5ac9ef7f2ac56a99d0d3e8c5b7e747c4');
+get_employee_education(emp_uuid);
+  })
+  
+  //qualification Stream 
+  $("#qualification_model").on('change',function(){
+      var qualification=$(this).val();
+      if(qualification != '1' && qualification != '5')
+      {
+          $("#qual_stream_model_div").removeClass('hidden');
+      }else{
+          $("#qual_stream_model_div").addClass('hidden');
+          $("#qualification_stream_model").val("");
+      }
+  })
+  //
+  $('#marks_obtain_model').keyup(function(){
+      if ($(this).val() > 100){
+        alert("Percentage Not More Then 100% ");
+        $(this).val('');
+      }
+  });
+</script>
+
+<script>
+  function searchemployee_model(redirect_url)
+  {
+      hideall_model();
+      $("#dpSearchTypes_model").html("");
+      $("#searchTableCard_model").addClass('hidden');
+      $("#txtOptions_model").val("");
+      opt = '';
+      opt += '<option value="">Select Search Type</option>';
+                  opt += '<option value="all">All Employees</option>';
+          opt += '<option value="branch">Branch</option>';
+          opt += '<option value="court">Court</option>';
+          opt += '<option value="both">Court + Branch</option>';
+          opt += '<option value="deputation">Deputation</option>';
+          opt += '<option value="diverted">Diverted</option>';
+              opt += '<option value="individual">Individual</option>';
+      $("#dpSearchTypes_model").html(opt);
+      $("#searchTbls_model").html("");
+      $("#modal_large_model").removeClass('modal-full');
+      $('#dpSearchTypes_model').removeAttr('selected');
+      $("#redirect_link").val(redirect_url);
+      $("#modal_theme_primary_model").modal('show');
+      $('#modal_theme_primary_model').modal({backdrop: 'static', keyboard: false})
+      var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+              csrfHash = $('input[name="csrf_test_lalit"]').val();
+      $.ajax({
+
+          url: 'http://10.199.31.113/layersweb/employees/Employees/get_master',
+          dataType: 'json',
+          contentType: 'application/json',
+          type: 'GET',
+          data: {
+              csrf_test_lalit: csrfHash,
+              options: 'districts~designations~roles~branches~branchroles~courttypes~judges~courtroles~deputations~diverted'
+          },
+          beforeSend: function () {},
+          success: function (data) {
+              csrfName = data['csrfName'];
+              csrfHash = data['csrfHash'];
+              $('input[name="' + csrfName + '"]').val(csrfHash);
+              console.log(data);
+              if (data['status'])
+              {
+
+                  if (data['districts'])
+                  {
+                      opt = '<option value="">Select District</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['districts'].length; i++)
+                      {
+                          opt += '<option value="' + data['districts'][i]['id'] + '">' + data['districts'][i]['district'] + '</option>';
+                      }
+                      $("#dpDistricts_model").html('');
+                      $("#dpDistricts_model").html(opt);
+                  }
+                  if (data['designations'])
+                  {
+                      console.log(data['designations']);
+                      opt = '<option value="">Select Designation</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['designations'].length; i++)
+                      {
+                          opt += '<option value="' + data['designations'][i]['id'] + '">' + data['designations'][i]['desg'] + '</option>';
+                      }
+                      $("#dpDesignations_model").html('');
+                      $("#dpDesignations_model").html(opt);
+                  }
+                  if (data['roles'])
+                  {
+                      opt = '<option value="">Select Role</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['roles'].length; i++)
+                      {
+                          opt += '<option value="' + data['roles'][i]['id'] + '">' + data['roles'][i]['posting_role'] + '</option>';
+                      }
+                      $("#dpRoles_model").html('');
+                      $("#dpRoles_model").html(opt);
+                  }
+                  if (data['branches'])
+                  {
+                      opt = '<option value="">Select Branch</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['branches'].length; i++)
+                      {
+                          opt += '<option value="' + data['branches'][i]['id'] + '">' + data['branches'][i]['branch_name'] + '</option>';
+                      }
+                      $("#dpBranchs_model").html('');
+                      $("#dpBranchs_model").html(opt);
+                  }
+                  if (data['branchroles'])
+                  {
+                      opt = '<option value="">Select Branch Role</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['branchroles'].length; i++)
+                      {
+                          opt += '<option value="' + data['branchroles'][i]['id'] + '">' + data['branchroles'][i]['posting_role'] + '</option>';
+                      }
+                      $("#dpBranchRoles_model").html('');
+                      $("#dpBranchRoles_model").html(opt);
+                  }
+                  if (data['courttypes'])
+                  {
+                      opt = '<option value="">Select Court Type</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['courttypes'].length; i++)
+                      {
+                          opt += '<option value="' + data['courttypes'][i]['id'] + '">' + data['courttypes'][i]['desg_name'] + '</option>';
+                      }
+                      $("#dpCourts_model").html('');
+                      $("#dpCourts_model").html(opt);
+                  }
+                  if (data['judges'])
+                  {
+                      opt = '<option value="">Select Judge</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['judges'].length; i++)
+                      {
+                          opt += '<option value="' + data['judges'][i]['jocode'] + '">' + data['judges'][i]['title'] + ' ' + data['judges'][i]['judge_name'] + ' (' + data['judges'][i]['jocode'] + ')</option>';
+                      }
+                      $("#dpJudges_model").html('');
+                      $("#dpJudges_model").html(opt);
+                  }
+                  if (data['courtroles'])
+                  {
+                      opt = '<option value="">Select Court Role</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['courtroles'].length; i++)
+                      {
+                          opt += '<option value="' + data['courtroles'][i]['posting_role'] + '">' + data['courtroles'][i]['posting_role'] + '</option>';
+                      }
+                      $("#dpCourtRoles_model").html('');
+                      $("#dpCourtRoles_model").html(opt);
+                  }
+                  if (data['deputations'])
+                  {
+                      opt = '<option value="">Select Deputation</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['deputations'].length; i++)
+                      {
+                          opt += '<option value="' + data['deputations'][i]['id'] + '">' + data['deputations'][i]['office_name'] + '</option>';
+                      }
+                      $("#dpDeputationsPostings_model").html('');
+                      $("#dpDeputationsPostings_model").html(opt);
+                  }
+                  if (data['diverted'])
+                  {
+                      opt = '<option value="">Select Diverted</option>';
+                      opt += '<option value="All">All</option>';
+                      for (i = 0; i < data['diverted'].length; i++)
+                      {
+                          opt += '<option value="' + data['diverted'][i]['id'] + '">' + data['diverted'][i]['office_name'] + '</option>';
+                      }
+                      $("#dpDivertedPostings_model").html('');
+                      $("#dpDivertedPostings_model").html(opt);
+                  }
+
+              } else {
+                  alert('Please Refresh Your Page');
+              }
+          },
+          error: function (data) {
+              console.log(data);
+          }
+      })
+
+  }
+
+  $("#dpSearchTypes_model").on("change", function () {
+      //hide all divs
+      hideall_model();
+      var _option = $(this).val();
+      console.log(_option);
+      if (_option == "all") {
+          $("#divDistrict_model").removeClass('hidden');
+      } else if (_option == "branch") {
+          $("#divDistrict_model").removeClass('hidden');
+          $("#divBranch_model").removeClass('hidden');
+          $("#divBranchRole_model").removeClass('hidden');
+          $("#divDistrict_model").removeClass('hidden');
+      } else if (_option == "court") {
+          $("#divDistrict_model").removeClass('hidden');
+          $("#divCourtType_model").removeClass('hidden');
+          $("#divJudge_model").removeClass('hidden');
+          $("#divCourtRole_model").removeClass('hidden');
+          $("#divDistrict_model").removeClass('hidden');
+      } else if (_option == "both") {
+          $("#divDistrict_model").removeClass('hidden');
+          $("#divDistrict_model").removeClass('hidden');
+          $("#divDistrict_model").removeClass('hidden');
+      } else if (_option == "individual") {
+          $("#divFilterOption_model").removeClass('hidden');
+          $("#divFilterText_model").removeClass('hidden');
+      } else if (_option == "deputation") {
+          $("#divDeputationsPosting_model").removeClass('hidden');
+      } else if (_option == "diverted") {
+          $("#divDivertedPosting_model").removeClass('hidden');
+      }
+  });
+
+  function hideall_model() {
+      $("#divDistrict_model").addClass('hidden');
+      $("#divBranch_model").addClass('hidden');
+      $("#divBranchRole_model").addClass('hidden');
+      $("#divCourtType_model").addClass('hidden');
+      $("#divJudge_model").addClass('hidden');
+      $("#divCourtRole_model").addClass('hidden');
+      $("#divDistrict_model").addClass('hidden');
+      $("#divDistrict_model").addClass('hidden');
+      $("#divFilterOption_model").addClass('hidden');
+      $("#divFilterText_model").addClass('hidden');
+      $("#divDivertedPosting_model").addClass('hidden');
+      $("#divDeputationsPosting_model").addClass('hidden');
+  }
+
+  $("#btnSearch_model").on("click", function () {
+      objSelectedEmployees = [];
+      var redirect_link = $("#redirect_link").val();
+      $("#divSearchTable_model").html("");
+      var _option = $("#dpSearchTypes_model").val();
+      console.log(_option);
+
+      if (_option == "all") {
+          district = $("#dpDistricts_model").val();
+          designation = $("#dpDesignations_model").val();
+          role = $("#dpRoles_model").val();
+          employee_list_model(redirect_link, _option, district, null, null, null, designation, role);
+      } else if (_option == "branch") {
+          district = $("#dpDistricts_model").val();
+          branch = $("#dpBranchs_model").val();
+          designation = $("#dpDesignations_model").val();
+          role = $("#dpBranchRoles_model").val();
+          employee_list_model(redirect_link, _option, district, branch, null, null, designation, role);
+      } else if (_option == "court") {
+          district = $("#dpDistricts_model").val();
+          court = $("#dpCourts_model").val();
+          judge = $("#dpJudges_model").val();
+          designation = $("#dpDesignations_model").val();
+          role = $("#dpCourtRoles_model").val();
+          employee_list_model(redirect_link, _option, district, null, court, judge, designation, role);
+      } else if (_option == "both") {
+          district = $("#dpDistricts_model").val();
+          designation = $("#dpDesignations_model").val();
+          role = $("#dpRoles_model").val();
+          employee_list_model(redirect_link, _option, district, null, null, null, designation, role);
+      } else if (_option == "individual") {
+          searchoptions = $("#dpOptions_model :selected").val();
+          searchoptiontext = $("#dpOptions_model :selected").text();
+          searchtexts = $('#txtOptions_model').val().trim();
+          var err = validateform_model(searchoptions, searchtexts, searchoptiontext);
+          // if any validation fail then show error
+          if (err) {
+              alert(err);
+              return false;
+          }
+          
+          employee_list_model(redirect_link, _option, null, null, null, null, null, null, searchoptions, searchtexts);
+      } else if (_option == "deputation") {
+          posting = $("#dpDeputationsPosting_model").val();
+          employee_list_model(redirect_link, _option, null, null, null, null, null, null, null, null, posting);
+      } else if (_option == "diverted") {
+          posting = $("#dpDivertedPosting_model").val();
+          employee_list_model(redirect_link, _option, null, null, null, null, null, null, null, null, posting);
+      } else if (_option == '') {
+          alert('Please Select Searching Type');
+      }
+  });
+  
+  function validateform_model(searchoptions, searchtexts, searchoptiontext) {
+      var errors = "";
+      if (searchtexts == "") {
+          errors = "Please Enter " + searchoptiontext;
+          return errors;
+      }
+
+      if ((searchoptions == "ename" || searchoptions == "efname") && searchtexts.length < 3)
+          errors = "Please " + searchoptiontext;
+      if ((searchoptions == "emobile" || searchoptions == "epan") && searchtexts.length < 10)
+          errors = "Invalid " + searchoptiontext;
+
+
+      if ((searchoptions == "emobile" || searchoptions == 'ecode') && !$.isNumeric(searchtexts))
+          errors = "Please Enter Valid " + searchoptiontext;
+
+      return errors;
+  }
+  
+  function employee_list_model(redirect_link, searchtype, district, branch, court, judge, designation, role, searchoption, searchtext, posting) {
+      console.log(arguments);
+      var block = $('.loaderdiv_unit');
+      $(block).block({
+          message: block.find('.blockui-message'),
+          overlayCSS: {
+              backgroundColor: '#fff',
+              opacity: 0.8,
+              cursor: 'wait'
+          },
+          css: {
+              width: 'auto',
+              '-webkit-border-radius': 2,
+              '-moz-border-radius': 2,
+              padding: 0,
+              border: 0,
+              backgroundColor: 'transparent'
+          }
+      });
+      
+      var urls = 'http://10.199.31.113/layersweb/';
+      
+      objSelectionList = [];
+      objSelectionList.push({
+          'searchtype': searchtype,
+          'district': district,
+          'branch': branch,
+          'court': court,
+          'judge': judge,
+          'designation': designation,
+          'role': role,
+          'searchoption': searchoption,
+          'searchtext': searchtext,
+          'posting': posting
+      });
+
+      $.ajax({
+
+          url: 'http://10.199.31.113/layersweb/employees/search_employee_list_new/',
+          dataType: 'json',
+          contentType: 'application/json',
+          type: 'GET',
+          data: {
+              searchtype: searchtype, //all, branch, court, both, individual, deputation & diverted
+              district: district,
+              branch: branch,
+              court: court,
+              judge: judge,
+              designation: designation,
+              role: role,
+              searchoption: searchoption,
+              searchtext: searchtext,
+              posting: posting
+          },
+          beforeSend: function () {},
+          success: function (data) {
+              console.log(data);
+          },
+          error: function (data) {
+              console.log(data);
+          }
+      }).done(function (data) {
+          console.log(data);
+          
+          if (data['status'] != '')
+          {
+              opt = '<table class="table table-bordered" id="searchTbls_model" width="100%"  data-ordering="false">';
+              opt += '<thead>';
+              opt += '<tr>';
+              opt += '<th>Emp Code</th>';
+              opt += '<th>Name</th>';
+              opt += '<th>Father Name</th>';
+              opt += '<th>Designation</th>';
+              opt += '<th>Posting</th>';
+              opt += '<th>District</th>';
+              opt += '</tr>';
+              opt += '</thead>';
+
+              if (data && data['response']) {
+                  if (data['response'].length > 0) {
+                      opt += '<tbody>';
+                      $.each(data['response'], function (i, res) {
+                          opt += '<tr>';
+                          opt += '<td><a href="' + urls + redirect_link + '?id=' + res['emp_uuid'] + '">' + res['emp_code'] + '</a></td>';
+                          opt += '<td>' + res['emp_name'] + '</td>';
+                          opt += '<td>' + res['father_name'] + '</td>';
+                          opt += '<td>' + res['desg'] + '</td>';
+                          opt += '<td>' + res['posting'] + '</td>';
+                          opt += '<td>' + res['district'] + '</td>';
+                          opt += '</tr>';
+                      });
+                      opt += '</tbody>';
+                  }
+              }
+              opt += '</table>';
+              
+              $("#searchTableCard_model").removeClass('hidden');
+              $("#divSearchTables_model").html('');
+              $("#divSearchTables_model").html(opt);
+              $("#modal_large_model").addClass('modal-full');
+              $("#searchTbls_model").DataTable({
+                  "order": [[0, "asc"]]
+              });
+              $('.loaderdiv_unit').unblock();
+          } else {
+              $('.loaderdiv_unit').unblock();
+              alert('No Employee Found.');
+              $("#searchTableCard_model").addClass('hidden');
+              $("#divSearchTables_model").html(opt);
+              $("#modal_large_model").removeClass('modal-full');
+          }
+      });
+  }
+</script>
+
+<script>
+  $("#emp_personal_qual_detail_update_btn").on('click',function(){
+      var block = $('.loaderdiv');
+      $(block).block({
+          message: block.find('.blockui-message'),
+          overlayCSS: {
+              backgroundColor: '#fff',
+              opacity: 0.8,
+              cursor: 'wait'
+          },
+          css: {
+              width: 'auto',
+              '-webkit-border-radius': 2,
+              '-moz-border-radius': 2,
+              padding: 0,
+              border: 0,
+              backgroundColor: 'transparent'
+          }
+      });
+      var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+      csrfHash = $('input[name="csrf_test_lalit"]').val();
+      $.ajax({
+
+          url: 'http://10.199.31.113/layersweb/employees/Employeesmgmt/get_employee_details_from_id',
+          dataType: 'json',
+          contentType: 'application/json',
+          type: 'GET',
+          data: {
+              csrf_test_lalit: csrfHash,
+              id:'5ac9ef7f2ac56a99d0d3e8c5b7e747c4'
+          },
+          beforeSend: function () {},
+          success: function (detail) {
+              csrfName = detail['csrfName'];
+              csrfHash = detail['csrfHash'];
+              $('input[name="' + csrfName + '"]').val(csrfHash);
+              console.log(detail);
+              var photo=detail['employee'][0]['photo_id'];
+              var is_complete=detail['employee'][0]['is_complete'];
+              if(is_complete!='N')
+              {
+                  var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+                  csrfHash = $('input[name="csrf_test_lalit"]').val();
+                  $.ajax({
+                      url: 'http://10.199.31.113/layersweb/employees/Employeesmgmt/get_all_emp_qualification',
+                      type: 'GET',
+                      dataType:'json',
+                      data: {
+                          csrf_test_lalit:csrfHash,
+                          emp_uuid:detail['employee'][0]['uuid']
+                      },
+                       beforeSend: function() 
+                       {
+
+                       },
+                       success: function (edu) {
+                           csrfName = edu['csrfName'];
+                           csrfHash = edu['csrfHash'];
+                           $('input[name="'+csrfName+'"]').val(csrfHash)
+                           console.log(edu);
+                           if(edu['status'])
+                           {
+                              if(edu['res'].length>0)
+                              {
+                                  var education=edu['res'].length;
+                                  if(photo!='' && education>0 && is_complete!='N'){
+                                      window.location.href = 'http://10.199.31.113/layersweb/employees/Employeesmgmt/employee_profile?id='+detail['employee'][0]['uuid'];
+                                  }else{
+                                      $("#emp_personal_qual_detail_update_model").modal('show');
+                                      $('.loaderdiv').unblock();
+                                      employee_detail(detail['employee'][0]['uuid']);
+                                  }
+                              }else{
+                                  $("#emp_personal_qual_detail_update_model").modal('show');
+                                  $('.loaderdiv').unblock();
+                                  employee_detail(detail['employee'][0]['uuid']);
+                              }
+                           }
+                       },
+                       error:function(edu){
+                           console.log(edu);
+                       },
+                  })
+              }else{
+                  $("#emp_personal_qual_detail_update_model").modal('show');
+                  $('.loaderdiv').unblock();
+                  employee_detail(detail['employee'][0]['uuid']);
+              }
+          },
+          error: function (detail) {
+              console.log(detail);
+          }
+      })
+      
+      
+  });
+  
+  function employee_detail(uuid){
+//        $(document).ready(function(){
+      $('.daterange-single').datepicker({
+          beforeShow: function(input, inst) {
+              $(document).off('focusin.bs.modal');
+          },
+          onClose:function(){
+              $(document).on('focusin.bs.modal');
+          },
+          dateFormat: 'dd-mm-yy',
+          changeYear: true,
+          maxDate:0,
+          changeMonth: true
+      });
+//    })
+      var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+      csrfHash = $('input[name="csrf_test_lalit"]').val();
+      $.ajax({
+
+          url: 'http://10.199.31.113/layersweb/employees/Employeesmgmt/get_employee_details_from_id',
+          dataType: 'json',
+          contentType: 'application/json',
+          type: 'GET',
+          data: {
+              csrf_test_lalit: csrfHash,
+              id:uuid
+          },
+          beforeSend: function () {},
+          success: function (data) {
+              csrfName = data['csrfName'];
+              csrfHash = data['csrfHash'];
+              $('input[name="' + csrfName + '"]').val(csrfHash);
+              console.log(data);
+              if (data['status'])
+              {
+//                    console.log(data['employee']);
+                  if(data['qualification'])
+                  {
+//                        qul='<option value="">Select Qualification</option>';
+                      for(i=0;i<data['qualification'].length;i++)
+                      {
+//                            if(data['employee'][0][''])
+                          $('#qualification_model').append($('<option />').val(data['qualification'][i]['id']).html(data['qualification'][i]['qual_short_name']));
+                      }
+//                        $('select[name=qualification_model]').html(qul);
+                  }
+
+                  
+                  $("input[name=uuid]").val(data['employee'][0]['uuid']);
+                  if($.trim(data['employee'][0]['emp_code'])!=''){
+                      var emp_code=$.trim(data['employee'][0]['emp_code']);
+                  }else{
+                      var emp_code=$.trim(data['employee'][0]['emp_pin']);
+                  }
+                  $("input[name=employee_code_pin_model]").val(emp_code);
+                  $("input[name=employee_name_model]").val(data['employee'][0]['emp_name']);
+                  $("input[name=father_name_model]").val(data['employee'][0]['father_name']);
+                  $("input[name=mother_name_model]").val(data['employee'][0]['mother_name']);
+                  $("input[name=spouse_name_model]").val(data['employee'][0]['spouse_name']);
+                  $("input[name=dob_model]").val($.datepicker.formatDate('dd-mm-yy',new Date(data['employee'][0]['dob'])));
+                  opt='<option value="">Select Employee Gender</option>';
+                  if(data['employee'][0]['gender']=='m'){ 
+                      opt+='<option value="m" selected >Male</option>';
+                  }else{
+                      opt+='<option value="m" >Male</option>';
+                  }
+                  if(data['employee'][0]['gender']=='f'){ 
+                      opt+='<option value="f" selected >Female</option>';
+                  }else{
+                      opt+='<option value="f" >Female</option>';
+                  }
+                  if(data['employee'][0]['gender']=='o'){ 
+                      opt+='<option value="o" selected >Other</option>';
+                  }else{
+                      opt+='<option value="o" >Other</option>';
+                  }
+                  $("select[name='employee_gender_model']").html(opt);
+                  
+                  
+                  opt_mst='<option value="">Select Employee Marital Status </option>';
+                  if(data['employee'][0]['marital_status']=='u'){ 
+                      opt_mst+='<option value="u" selected >Unmarried</option>';
+                  }else{
+                      opt_mst+='<option value="u" >Unmarried</option>';
+                  }
+                  if(data['employee'][0]['marital_status']=='m'){ 
+                      opt_mst+='<option value="m" selected >Married</option>';
+                  }else{
+                      opt_mst+='<option value="m" >Married</option>';
+                  }
+                  if(data['employee'][0]['marital_status']=='d'){ 
+                      opt_mst+='<option value="d" selected >Divorced</option>';
+                  }else{
+                      opt_mst+='<option value="d" >Divorced</option>';
+                  }
+                  if(data['employee'][0]['marital_status']=='w'){ 
+                      opt_mst+='<option value="w" selected >Widow</option>';
+                  }else{
+                      opt_mst+='<option value="w" >Widow</option>';
+                  }
+                  $("select[name='marital_status_model']").html(opt_mst);
+                  $("input[name=employee_aadhar_model]").val(data['employee'][0]['aadhar']);
+                  if(data['employee'][0]['initdoj']!='')
+                  {
+                      var initdoj=data['employee'][0]['initdoj'];
+                      $("input[name=employee_initial_doj_model]").val($.datepicker.formatDate('dd-mm-yy',new Date(initdoj)));
+                  }
+                  $("input[name=employee_email_model]").val(data['employee'][0]['email']);
+                  $("input[name=employee_alt_email_model]").val(data['employee'][0]['email2']);
+                  $("input[name=employee_mobile_model]").val(data['employee'][0]['mobile']);
+                  $("input[name=employee_alt_mobile_model]").val(data['employee'][0]['mobile2']);
+                  $("input[name=employee_other_alt_mobile_model]").val(data['employee'][0]['mobile3']);
+                  $("textarea[name=employee_postal_address_model]").val(data['employee'][0]['postal_address']);
+                  $("input[name=postal_pin_model]").val(data['employee'][0]['postal_pin']);
+                  opt_state='<option value="">Select Postal State</option>';
+                  for(i=0;i<data['state'].length;i++)
+                  {
+                      if(data['employee'][0]['postal_state']==data['state'][i]['id'])
+                      {
+                          opt_state+='<option value="'+data['state'][i]['id']+'" selected >'+data['state'][i]['state_name'];
+                      }else{
+                          opt_state+='<option value="'+data['state'][i]['id']+'" >'+data['state'][i]['state_name'];
+                      }
+                  }
+                  $("select[name=postal_state_model]").html(opt_state);
+                  $("textarea[name=employee_permanent_address_model]").val(data['employee'][0]['permanent_address']);
+                  $("input[name=permanent_pin_model]").val(data['employee'][0]['permanent_pin']);
+                  opt_state_p='<option value="">Select Permanent State</option>';
+                  for(i=0;i<data['state'].length;i++)
+                  {
+                      if(data['employee'][0]['permanent_state']==data['state'][i]['id'])
+                      {
+                          opt_state_p+='<option value="'+data['state'][i]['id']+'" selected >'+data['state'][i]['state_name'];
+                      }else{
+                          opt_state_p+='<option value="'+data['state'][i]['id']+'" >'+data['state'][i]['state_name'];
+                      }
+                  }
+                  $("select[name=permanent_state_model]").html(opt_state_p);
+              } else {
+                  alert('Please Refresh Your Page');
+              }
+          },
+          error: function (data) {
+              console.log(data);
+          }
+      })
+  }
+  
+  //Get Qualification Stream
+  $("#qualification_model").on('change',function(){
+      var qual=$(this).val();
+      var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+      csrfHash = $('input[name="csrf_test_lalit"]').val();
+      $.ajax({
+          url: 'http://10.199.31.113/layersweb/employees/Employeesmgmt/get_qualification_stream',
+          type: 'GET',
+          dataType:'json',
+          data: {
+              csrf_test_lalit:csrfHash,
+              id:qual
+          },
+           beforeSend: function() 
+           {
+
+           },
+           success: function (data) {
+               csrfName = data['csrfName'];
+               csrfHash = data['csrfHash'];
+               $('input[name="'+csrfName+'"]').val(csrfHash)
+               console.log(data);
+               div='';
+               div+='<option value="">Select Stream</option>';
+               if(data['res']){
+                  for(i=0;i<data['res'].length;i++)
+                  {
+                      div+='<option value="'+data['res'][i]['id']+'">'+data['res'][i]['stream_short_name']+'</option>';
+                  }
+//                     $.each(data['resa'],function(i,resa){
+//                     });
+               }
+//                 $("#qual_stream_model").removeClass('hidden');
+               $("#qualification_stream_model").html(div);
+
+           },
+           error:function(data){
+               console.log(data);
+           },
+       })
+      
+  })
+  
+  //Save Employee Education Details
+  $("#education_detail_btn_model").on('click',function(){
+  
+      if ($("select[name=qualification_model] :selected").val() == "") {
+          alert('Please select qualification');
+          $("#qualification_model").focus();
+          return false;
+      }
+
+      if (($("select[name=qualification_model] :selected").val() != 1) && ($("select[name=qualification_model] :selected").val() != 5)) {
+          if ($("select[name=qualification_stream_model] :selected").val() == "") {
+              alert('Please select qualification stream');
+              $("#qualification_stream_model").focus();
+              return false;
+          }
+      }
+
+      var qualification=$("select[name=qualification_model] :selected").val();
+      var qualification_stream=$("select[name=qualification_stream_model] :selected").val();
+      var board_name=$("input[name=board_name_model]").val();
+      var school_or_collage_name=$("input[name=school_or_collage_name_model]").val();
+      var marks_obtain=$("input[name=marks_obtain_model]").val();
+      var passing_year=$("select[name=passing_year_model] :selected").val();
+      var emp_uuid=$("input[name=emp_uuid]").val();
+      var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+      csrfHash = $('input[name="csrf_test_lalit"]').val();
+//        alert('qualification');
+      $.ajax({
+          url: 'http://10.199.31.113/layersweb/employees/Employeesmgmt/save_emp_qualification',
+          type: 'GET',
+          dataType:'json',
+          data: {
+              csrf_test_lalit:csrfHash,
+              qualification:qualification,
+              qualification_stream:qualification_stream,
+              board_name:board_name,
+              school_or_collage_name:school_or_collage_name,
+              marks_obtain:marks_obtain,
+              passing_year:passing_year,
+              emp_uuid:emp_uuid
+          },
+           beforeSend: function() 
+           {
+               
+           },
+           success: function (data) {
+               csrfName = data['csrfName'];
+               csrfHash = data['csrfHash'];
+               $('input[name="'+csrfName+'"]').val(csrfHash)
+               console.log(data);
+               if(data['status'])
+               {
+                  $("select[name=qualification_model] option:selected").prop("selected", false);
+                  $("select[name=qualification_stream_model] option:selected").prop("selected", false);
+                  $("input[name=board_name_model]").val('');
+                  $("input[name=school_or_collage_name_model]").val('');
+                  $("input[name=marks_obtain_model]").val('');
+                  $("select[name=passing_year_model] option:selected").prop("selected", false);
+                  ms='';
+                  $("#qual_mess_model").html('');
+                  ms+='<div class="alert alert-success border-0">'+data['mess']+'</div>';
+                  $("#qual_mess_model").html('');
+                  $("#qual_mess_model").show();
+                  $("#qual_mess_model").html(ms).delay(5000).fadeOut('slow');
+                  get_employee_education(emp_uuid);
+//                    $("#qual_stream_model_div").addClass('hidden');
+              
+               }else{
+                   
+                   ms='';
+                   $("#qual_mess_model").html('');
+                   ms+='<div class="alert alert-danger border-0">'+data['mess']+'</div>';
+                   $("#qual_mess_model").show();
+                   $("#qual_mess_model").html(ms).delay(5000).fadeOut('slow');
+               }
+               $('.loaderdiv_emp_edu_loder').unblock();
+
+           },
+           error:function(data){
+               console.log(data);
+           },
+       })
+      
+  })
+  
+  //Get Employee All Education
+  function get_employee_education(emp_uuid)
+  {
+//        alert(emp_uuid)
+      var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+      csrfHash = $('input[name="csrf_test_lalit"]').val();
+      $.ajax({
+          url: 'http://10.199.31.113/layersweb/employees/Employeesmgmt/get_all_emp_qualification',
+          type: 'GET',
+          dataType:'json',
+          data: {
+              csrf_test_lalit:csrfHash,
+              emp_uuid:emp_uuid
+          },
+           beforeSend: function() 
+           {
+
+           },
+           success: function (data) {
+               csrfName = data['csrfName'];
+               csrfHash = data['csrfHash'];
+               $('input[name="'+csrfName+'"]').val(csrfHash)
+               console.log(data);
+               if(data['status'])
+               {
+                  if(data['res'].length>0)
+                  {
+                      edu='';
+                      for(i=0;i<data['res'].length;i++)
+                      {
+                          sn=i+1;
+                          edu+='<tr>';
+                          edu+='<td>'+sn+'</td>';
+                          edu+='<td>'+data['res'][i]['qual_short_name']+'</td>';
+                          if(data['res'][i]['stream_short_name']!=null){strm=data['res'][i]['stream_short_name'];}else{ strm='' }
+                          edu+='<td>'+strm+'</td>';
+                          edu += '<td>' + (data['res'][i]['board']==null?"":data['res'][i]['board'])+ '</td>';
+                          edu += '<td>' + (data['res'][i]['school']==null?"":data['res'][i]['school']) + '</td>';
+                          edu += '<td>' + (data['res'][i]['marks_percentage']==null?"":data['res'][i]['marks_percentage']) + '</td>';
+                          edu += '<td>' + (data['res'][i]['passing_year']==null?"":data['res'][i]['passing_year']) + '</td>';
+                          edu += '<td>' + '<a href="#" title="Delete" qualification_id="'+data['res'][i]['aid']+'" onclick="delete_qualification(this);"><i class="fas fa-trash-alt mr-3"></i></a>' + '</td>';
+                          edu+='</tr>';
+                      }
+                      $("#edu_table_body_model").html(edu);
+                      $("#edu_detail_table_model").removeClass('hidden');
+                  }
+               }
+               
+           },
+           error:function(data){
+               console.log(data);
+           },
+       })
+  }
+</script>
+<script type="text/javascript">
+  $("#education_detail_btn_model").click(function(){
+      if($("#qualification_model option:selected:contains('Select')").val()==''){
+//            alert('Please Select Valid Permanent Address State');
+          $('#qualification_model').focus();
+          qualification_model.style.borderColor = "red";
+          return false;
+      }else{
+          qualification_model.style.borderColor = "green";
+      }
+      var edu_str_model=$("#qualification_model").val();
+      if(edu_str_model!=1){
+          if($("#qualification_stream_model option:selected:contains('Select')").val()==''){
+  //            alert('Please Select Valid Permanent Address State');
+              $('#qualification_stream_model').focus();
+              qualification_stream_model.style.borderColor = "red";
+              return false;
+          }else{
+              qualification_stream_model.style.borderColor = "green";
+          }
+      }
+//        var regex = new RegExp("^[a-zA-Z ]+$");
+     if(($('input[name=board_name_model]').val()=='')||($('input[name=board_name_model]').val()=='null')||($('input[name=board_name_model]').val()=='NULL')||($('input[name=board_name_model]').val().length>49)||($('input[name=board_name_model]').val().length<3))
+     {
+//            alert('Please Enter Valid Mother Name');
+          $('#board_name_model').focus();
+          board_name_model.style.borderColor = "red";
+      return false;
+      }
+      else
+      {
+          board_name_model.style.borderColor = "green";
+      }
+      if(($('input[name=school_or_collage_name_model]').val()=='')||($('input[name=school_or_collage_name_model]').val()=='null')||($('input[name=school_or_collage_name_model]').val()=='NULL'))
+          {
+//            alert('Please Enter Valid Mother Name');
+          $('#school_or_collage_name_model').focus();
+          school_or_collage_name_model.style.borderColor = "red";
+      return false;
+      }
+      else
+      {
+          school_or_collage_name_model.style.borderColor = "green";
+      }
+      if(($('input[name=marks_obtain_model]').val()=='')||($('input[name=marks_obtain_model]').val()=='null')||($('input[name=marks_obtain_model]').val()=='NULL'))
+          {
+//            alert('Please Enter Valid Mother Name');
+          $('#marks_obtain_model').focus();
+          marks_obtain_model.style.borderColor = "red";
+      return false;
+      }
+      else
+      {
+          marks_obtain_model.style.borderColor = "green";
+      }
+      if($("#passing_year_model option:selected:contains('Select')").val()==''){
+//            alert('Please Select Valid Permanent Address State');
+          $('#passing_year_model').focus();
+          passing_year_model.style.borderColor = "red";
+          return false;
+      }else{
+          passing_year_model.style.borderColor = "green";
+          var block = $('.loaderdiv_emp_edu_loder');
+          $(block).block({
+              message: block.find('.blockui-message'),
+              overlayCSS: {
+                  backgroundColor: '#fff',
+                  opacity: 0.8,
+                  cursor: 'wait'
+              },
+              css: {
+                  width: 'auto',
+                  '-webkit-border-radius': 2,
+                  '-moz-border-radius': 2,
+                  padding: 0,
+                  border: 0,
+                  backgroundColor: 'transparent'
+              }
+          });
+      }
+  })
+  
+  $("#profile_final_submit").on('click',function(){
+      var uuid='5ac9ef7f2ac56a99d0d3e8c5b7e747c4';
+      var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+      csrfHash = $('input[name="csrf_test_lalit"]').val();
+      $.ajax({
+          url: 'http://10.199.31.113/layersweb/employees/Employeesmgmt/employee_profile_final_submit',
+          type: 'GET',
+          dataType:'json',
+          data: {
+              csrf_test_lalit:csrfHash,
+              emp_uuid:uuid
+          },
+           beforeSend: function() 
+           {
+
+           },
+           success: function (data) {
+               csrfName = data['csrfName'];
+               csrfHash = data['csrfHash'];
+               $('input[name="'+csrfName+'"]').val(csrfHash)
+               console.log(data);
+               if(data['status'])
+               {
+                  alert(data['mess']);
+                  location.reload(); 
+               }else{
+                   alert(data['mess']);
+               }
+               
+           },
+           error:function(data){
+               console.log(data);
+           },
+       })
+  })
+
+  //Save Employee Education Details
+  function delete_qualification(event){
+      if(confirm("Are you sure you want to delete this qualification")){
+          var qualification_id = $(event).attr('qualification_id');
+          var emp_uuid = $("input[name=emp_uuid]").val();
+
+          var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+                      csrfHash = $('input[name="csrf_test_lalit"]').val();
+
+          $.ajax({
+              url: 'http://10.199.31.113/layersweb/employees/employeesmgmt/delete_qualification',
+              dataType: 'json',
+              type: 'POST', // form submit method get/post
+              async: false, //for sync call
+              data: {
+                  csrf_test_lalit: csrfHash,
+                  qualification_id: qualification_id
+              },
+              beforeSend: function() {},
+              success: function(data) {
+                  csrfName = data['csrfName'];
+                  csrfHash = data['csrfHash'];
+                  $('input[name="' + csrfName + '"]').val(csrfHash);
+                  console.log(data);
+                  if (data['flag']) {
+                      ms = '';
+                      $("#qual_mess_model").html('');
+                      ms += '<div class="alert alert-success border-0">' + data['msg'] + '</div>';
+                      $("#qual_mess_model").html(ms).delay(5000).fadeOut('slow');                        
+                      get_employee_education(emp_uuid);
+                  }
+                  else {
+                      ms = '';
+                      $("#qual_mess_model").html('');
+                      ms += '<div class="alert alert-danger border-0">' + data['mess'] + '</div>';
+                      $("#qual_mess_model").show();
+                      $("#qual_mess_model").html(ms).delay(5000).fadeOut('slow');
+                  }
+                  $('.loaderdiv_emp_edu_loder').unblock();
+              },
+              error: function(data) {
+                  console.log(data);
+              }
+          });
+          
+      }
+      else
+          return false;
+  }
+
+</script>
+          <!-- Footer -->
+<div class="navbar navbar-expand-lg navbar-light">
+  <div class="text-center d-lg-none w-100">
+      <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+          <i class="icon-unfold mr-2"></i>
+          Footer
+      </button>
+  </div>
+
+  <div class="navbar-collapse collapse" id="navbar-footer">
+      <span class="navbar-text">
+          © 2024 <a href="#">Delhi District Courts</a> by <a href="#" target="_blank">IT-Cell
+              (HQs),Tis Hazari</a>
+      </span>
+
+      <!--        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link"
+                                  target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+          <li class="nav-item"><a href="http://demo.interface.club/limitless/docs/"
+                                  class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a>
+          </li>
+          <li class="nav-item"><a
+                  href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov"
+                  class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i
+                          class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+      </ul>-->
+  </div>
+</div>
+<!-- /footer -->
+
+<!--Search Employee Modal Start-->
+<!-- Primary modal -->
+<div id="modal_theme_primary" class="modal fade" tabindex="-1">
+  <div class="modal-dialog" id="modal_large">
+      <div class="modal-content">
+          <div class="modal-header bg-indigo">
+              <h6 class="modal-title"><i class="fa fa-search"></i> Employee Search </h6>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+
+          <div class="modal-body">
+              <!--<div class="card">-->
+              <div class="card-body">
+                  <div class="form-group row">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Search Type</label>
+                      <div class="col-lg-9">
+                          <input type="hidden" id="redirect_link">
+                          <select class="form-control select select2-hidden-accessible" id="dpSearchTypes" data-select2-id="dpSearchTypes" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="24" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpSearchTypes-container"><span class="select2-selection__rendered" id="select2-dpSearchTypes-container" role="textbox" aria-readonly="true"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDistrict">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select District</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpDistrict" id="dpDistricts" data-placeholder="Select a District..." data-select2-id="dpDistricts" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="25" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpDistricts-container"><span class="select2-selection__rendered" id="select2-dpDistricts-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a District...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divBranch">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Branch</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpBranch" id="dpBranchs" data-placeholder="Select a Branch..." data-select2-id="dpBranchs" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="26" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpBranchs-container"><span class="select2-selection__rendered" id="select2-dpBranchs-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Branch...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divBranchRole">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Role In Branch</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpBranchRole" id="dpBranchRoles" data-placeholder="Select a Role In Branch..." data-select2-id="dpBranchRoles" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="27" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpBranchRoles-container"><span class="select2-selection__rendered" id="select2-dpBranchRoles-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Role In Branch...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divCourtType">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Court Type</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpCourt" id="dpCourts" data-placeholder="Select a Court Type..." data-select2-id="dpCourts" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="28" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpCourts-container"><span class="select2-selection__rendered" id="select2-dpCourts-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Court Type...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divJudge">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Judge</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpJudge" id="dpJudges" data-placeholder="Select a Judge..." data-select2-id="dpJudges" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="29" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpJudges-container"><span class="select2-selection__rendered" id="select2-dpJudges-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Judge...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divCourtRole">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Role In Court</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpCourtRole" id="dpCourtRoles" data-placeholder="Select a Role In Court..." data-select2-id="dpCourtRoles" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="30" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpCourtRoles-container"><span class="select2-selection__rendered" id="select2-dpCourtRoles-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Role In Court...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDesignation">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Designation</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpDesignation" id="dpDesignations" data-placeholder="Select a Designation..." data-select2-id="dpDesignations" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="31" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpDesignations-container"><span class="select2-selection__rendered" id="select2-dpDesignations-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Designation...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divRole">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Role</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpRole" id="dpRoles" data-placeholder="Select a Role..." data-select2-id="dpRoles" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="32" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpRoles-container"><span class="select2-selection__rendered" id="select2-dpRoles-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Role...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divFilterOption">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Filter Option</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" name="dpOption" id="dpOptions" style="width:100%" data-select2-id="dpOptions" tabindex="-1" aria-hidden="true">
+                              <option value="ecode" data-select2-id="34">Employee Code</option>
+                              <option value="ename">Name</option>
+                              <option value="efname">Father Name</option>
+                              <!--<option value="edob">Date of Birth</option>-->
+                              <option value="emobile">Mobile</option>
+                              <!--<option value="epan">PAN</option>-->
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="33" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpOptions-container"><span class="select2-selection__rendered" id="select2-dpOptions-container" role="textbox" aria-readonly="true" title="Employee Code">Employee Code</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divFilterText">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Enter Filter Text</label>
+                      <div class="col-lg-9">
+                          <input type="text" class="form-control" name="txtOption" id="txtOptions" required="" placeholder="Enter Employee Code">
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDivertedPosting">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Posting</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpDivertedPosting" id="dpDivertedPostings" data-placeholder="Select a Posting..." data-select2-id="dpDivertedPostings" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="35" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpDivertedPostings-container"><span class="select2-selection__rendered" id="select2-dpDivertedPostings-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Posting...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDeputationsPosting">
+                      <label class="col-form-label col-lg-3 font-weight-semibold">Select Posting</label>
+                      <div class="col-lg-9">
+                          <select class="form-control select select2-hidden-accessible" data-fouc="" name="dpDeputationsPosting" id="dpDeputationsPostings" data-placeholder="Select a Posting..." data-select2-id="dpDeputationsPostings" tabindex="-1" aria-hidden="true">
+
+                          </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="36" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-dpDeputationsPostings-container"><span class="select2-selection__rendered" id="select2-dpDeputationsPostings-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select a Posting...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-footer" style="text-align: right">
+                  <button type="button" class="btn bg-indigo legitRipple" id="btnSearch"> Search <i class="icon-search4 ml-1"></i></button>
+              </div>
+
+              <!--                </div>-->
+              <div class="hidden" id="searchTableCard">
+                  <div id="divSearchTables">
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+      </div>
+  </div>
+</div>
+<!-- /primary modal -->
+<!--Search Employee Modal End-->
+      </div>
+      <!-- /main content -->
+
+  </div>
+  <!-- /page content -->
+  <script>
+document.title = 'Apply Leave';
+$('.alert').delay(4000).fadeOut();
+$('form').attr('autocomplete', 'off')
+
+document.onreadystatechange = function() {
+  var state = document.readyState
+  var block = $('.loaderdiv')
+  if (state == 'interactive') {
+      $(block).block({
+          message: block.find('.blockui-message'),
+          overlayCSS: {
+              backgroundColor: '#fff',
+              opacity: 0.8,
+              cursor: 'wait'
+          },
+          css: {
+              width: 'auto',
+              '-webkit-border-radius': 2,
+              '-moz-border-radius': 2,
+              padding: 0,
+              border: 0,
+              backgroundColor: 'transparent'
+          }
+      });
+  } else if (state == 'complete') {
+      $(block).unblock()
+      //            setTimeout(function () {
+      //                $(block).unblock()
+      //            }, 1000);
+  }
+}
+
+$('.example1tbl').DataTable();
+
+window.location.hash = "no-back-button";
+window.location.hash = "Again-No-back-button"; //again because google chrome don't insert first hash into history
+window.onhashchange = function() {
+  window.location.hash = "no-back-button";
+}
+</script>
+
+<script>
+$(document).ready(function() {})
+
+function searchemployee(redirect_url) {
+  hideall();
+  $("#dpSearchTypes").html("");
+  $("#txtOptions").val("");
+  opt = '';
+  opt += '<option value="">Select Search Type</option>';
+  //        opt+='<option value="all">All Employees</option>';
+  //        opt+='<option value="branch">Branch</option>';
+  //        opt+='<option value="court">Court</option>';
+  //        opt+='<option value="both">Court + Branch</option>';
+  opt += '<option value="individual">Individual</option>';
+  //        opt+='<option value="deputation">Deputation</option>';
+  //        opt+='<option value="diverted">Diverted</option>';
+  $("#dpSearchTypes").html(opt);
+  $("#searchTbls").html("");
+  $("#modal_large").removeClass('modal-full');
+  $('#dpSearchTypes').removeAttr('selected');
+  $("#redirect_link").val(redirect_url);
+  $("#modal_theme_primary").modal('show');
+  $('#modal_theme_primary').modal({
+      backdrop: 'static',
+      keyboard: false
+  })
+  var csrfName = $('input[name="csrf_test_lalit"]').attr('name'),
+      csrfHash = $('input[name="csrf_test_lalit"]').val();
+  $.ajax({
+
+      url: 'http://10.199.31.113/layersweb/employees/Employees/get_master',
+      dataType: 'json',
+      contentType: 'application/json',
+      type: 'GET',
+      data: {
+          csrf_test_lalit: csrfHash,
+          options: 'districts~designations~roles~branches~branchroles~courttypes~judges~courtroles~deputations~diverted'
+      },
+      beforeSend: function() {},
+      success: function(data) {
+          csrfName = data['csrfName'];
+          csrfHash = data['csrfHash'];
+          $('input[name="' + csrfName + '"]').val(csrfHash);
+          console.log(data);
+          if (data['status']) {
+
+              if (data['districts']) {
+                  opt = '<option value="">Select District</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['districts'].length; i++) {
+                      opt += '<option value="' + data['districts'][i]['id'] + '">' + data['districts'][i][
+                          'district'
+                      ] + '</option>';
+                  }
+                  $("#dpDistricts").html('');
+                  $("#dpDistricts").html(opt);
+              }
+              if (data['designations']) {
+                  opt = '<option value="">Select Designation</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['districts'].length; i++) {
+                      opt += '<option value="' + data['designations'][i]['id'] + '">' + data[
+                          'designations'][i]['desg'] + '</option>';
+                  }
+                  $("#dpDesignations").html('');
+                  $("#dpDesignations").html(opt);
+              }
+              if (data['roles']) {
+                  opt = '<option value="">Select Role</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['roles'].length; i++) {
+                      opt += '<option value="' + data['roles'][i]['id'] + '">' + data['roles'][i][
+                          'posting_role'
+                      ] + '</option>';
+                  }
+                  $("#dpRoles").html('');
+                  $("#dpRoles").html(opt);
+              }
+              if (data['branches']) {
+                  opt = '<option value="">Select Branch</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['branches'].length; i++) {
+                      opt += '<option value="' + data['branches'][i]['id'] + '">' + data['branches'][i][
+                          'branch_name'
+                      ] + '</option>';
+                  }
+                  $("#dpBranchs").html('');
+                  $("#dpBranchs").html(opt);
+              }
+              if (data['branchroles']) {
+                  opt = '<option value="">Select Branch Role</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['branchroles'].length; i++) {
+                      opt += '<option value="' + data['branchroles'][i]['id'] + '">' + data['branchroles']
+                          [i]['posting_role'] + '</option>';
+                  }
+                  $("#dpBranchRoles").html('');
+                  $("#dpBranchRoles").html(opt);
+              }
+              if (data['courttypes']) {
+                  opt = '<option value="">Select Court Type</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['courttypes'].length; i++) {
+                      opt += '<option value="' + data['courttypes'][i]['id'] + '">' + data['courttypes'][
+                          i]['desg_name'] + '</option>';
+                  }
+                  $("#dpCourts").html('');
+                  $("#dpCourts").html(opt);
+              }
+              if (data['judges']) {
+                  opt = '<option value="">Select Judge</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['judges'].length; i++) {
+                      opt += '<option value="' + data['judges'][i]['jocode'] + '">' + data['judges'][i][
+                              'title'
+                          ] + ' ' + data['judges'][i]['judge_name'] + ' (' + data['judges'][i]['jocode'] +
+                          ')</option>';
+                  }
+                  $("#dpJudges").html('');
+                  $("#dpJudges").html(opt);
+              }
+              if (data['courtroles']) {
+                  opt = '<option value="">Select Court Role</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['courtroles'].length; i++) {
+                      opt += '<option value="' + data['courtroles'][i]['posting_role'] + '">' + data[
+                          'courtroles'][i]['posting_role'] + '</option>';
+                  }
+                  $("#dpCourtRoles").html('');
+                  $("#dpCourtRoles").html(opt);
+              }
+              if (data['deputations']) {
+                  opt = '<option value="">Select Deputation</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['deputations'].length; i++) {
+                      opt += '<option value="' + data['deputations'][i]['id'] + '">' + data['deputations']
+                          [i]['office_name'] + '</option>';
+                  }
+                  $("#dpDeputationsPostings").html('');
+                  $("#dpDeputationsPostings").html(opt);
+              }
+              if (data['diverted']) {
+                  opt = '<option value="">Select Diverted</option>';
+                  opt += '<option value="All">All</option>';
+                  for (i = 0; i < data['diverted'].length; i++) {
+                      opt += '<option value="' + data['diverted'][i]['id'] + '">' + data['diverted'][i][
+                          'office_name'
+                      ] + '</option>';
+                  }
+                  $("#dpDivertedPostings").html('');
+                  $("#dpDivertedPostings").html(opt);
+              }
+
+          } else {
+              alert('Please Refresh Your Page');
+          }
+      },
+      error: function(data) {
+          console.log(data);
+      }
+  })
+
+}
+
+$("#dpSearchTypes").on("change", function() {
+  //hide all divs
+  hideall();
+  var _option = $(this).val();
+  console.log(_option);
+  if (_option == "all") {
+      $("#divDistrict").removeClass('hidden');
+      $("#divDesignation").removeClass('hidden');
+      $("#divRole").removeClass('hidden');
+  } else if (_option == "branch") {
+      $("#divDistrict").removeClass('hidden');
+      $("#divBranch").removeClass('hidden');
+      $("#divBranchRole").removeClass('hidden');
+      $("#divDesignation").removeClass('hidden');
+  } else if (_option == "court") {
+      $("#divDistrict").removeClass('hidden');
+      $("#divCourtType").removeClass('hidden');
+      $("#divJudge").removeClass('hidden');
+      $("#divCourtRole").removeClass('hidden');
+      $("#divDesignation").removeClass('hidden');
+  } else if (_option == "both") {
+      $("#divDistrict").removeClass('hidden');
+      $("#divDesignation").removeClass('hidden');
+      $("#divRole").removeClass('hidden');
+  } else if (_option == "individual") {
+      $("#divFilterOption").removeClass('hidden');
+      $("#divFilterText").removeClass('hidden');
+  } else if (_option == "deputation") {
+      $("#divDeputationsPosting").removeClass('hidden');
+  } else if (_option == "diverted") {
+      $("#divDivertedPosting").removeClass('hidden');
+  }
+});
+
+function hideall() {
+  $("#divDistrict").addClass('hidden');
+  $("#divBranch").addClass('hidden');
+  $("#divBranchRole").addClass('hidden');
+  $("#divCourtType").addClass('hidden');
+  $("#divJudge").addClass('hidden');
+  $("#divCourtRole").addClass('hidden');
+  $("#divDesignation").addClass('hidden');
+  $("#divRole").addClass('hidden');
+  $("#divFilterOption").addClass('hidden');
+  $("#divFilterText").addClass('hidden');
+  $("#divDivertedPosting").addClass('hidden');
+  $("#divDeputationsPosting").addClass('hidden');
+}
+
+$("#btnSearch").on("click", function() {
+  objSelectedEmployees = [];
+  var redirect_link = $("#redirect_link").val();
+  $("#divSearchTable").html("");
+  var _option = $("#dpSearchTypes").val();
+  console.log(_option);
+
+  //add loader
+  //document.querySelector('.loader').classList.add('is-active');
+  if (_option == "all") {
+      district = $("#dpDistricts").val();
+      designation = $("#dpDesignations").val();
+      role = $("#dpRoles").val();
+      employee_list(redirect_link, _option, district, null, null, null, designation, role);
+  } else if (_option == "branch") {
+      district = $("#dpDistricts").val();
+      branch = $("#dpBranchs").val();
+      designation = $("#dpDesignations").val();
+      role = $("#dpBranchRoles").val();
+      employee_list(redirect_link, _option, district, branch, null, null, designation, role);
+  } else if (_option == "court") {
+      district = $("#dpDistricts").val();
+      court = $("#dpCourts").val();
+      judge = $("#dpJudges").val();
+      designation = $("#dpDesignations").val();
+      role = $("#dpCourtRoles").val();
+      employee_list(redirect_link, _option, district, null, court, judge, designation, role);
+  } else if (_option == "both") {
+      district = $("#dpDistricts").val();
+      designation = $("#dpDesignations").val();
+      role = $("#dpRoles").val();
+      employee_list(redirect_link, _option, district, null, null, null, designation, role);
+  } else if (_option == "individual") {
+      searchoptions = $("#dpOptions :selected").val();
+      searchoptiontext = $("#dpOptions :selected").text();
+      searchtexts = $('#txtOptions').val().trim();
+      var err = validateform(searchoptions, searchtexts, searchoptiontext);
+      // if any validation fail then show error
+      if (err) {
+          alert(err);
+          return false;
+      }
+      employee_list(redirect_link, _option, null, null, null, null, null, null, searchoptions, searchtexts);
+  } else if (_option == "deputation") {
+      posting = $("#dpDeputationsPosting").val();
+      employee_list(redirect_link, _option, null, null, null, null, null, null, null, null, posting);
+  } else if (_option == "diverted") {
+      posting = $("#dpDivertedPosting").val();
+      employee_list(redirect_link, _option, null, null, null, null, null, null, null, null, posting);
+  } else if (_option == '') {
+      alert('Please Select Searching Type');
+  }
+});
+
+function validateform(searchoptions, searchtexts, searchoptiontext) {
+  var errors = "";
+  if (searchtexts == "") {
+      errors = "Please Enter " + searchoptiontext;
+      return errors;
+  }
+
+  if ((searchoptions == "ename" || searchoptions == "efname") && searchtexts.length < 3)
+      errors = "Please " + searchoptiontext;
+  if ((searchoptions == "emobile" || searchoptions == "epan") && searchtexts.length < 10)
+      errors = "Invalid " + searchoptiontext;
+
+
+  if ((searchoptions == "emobile" || searchoptions == 'ecode') && !$.isNumeric(searchtexts))
+      errors = "Please Enter Valid " + searchoptiontext;
+
+  return errors;
+}
+
+function employee_list(redirect_link, searchtype, district, branch, court, judge, designation, role, searchoption,
+  searchtext, posting) {
+  console.log(arguments);
+  var urls = 'http://10.199.31.113/layersweb/';
+  objSelectionList = [];
+  objSelectionList.push({
+      'searchtype': searchtype,
+      'district': district,
+      'branch': branch,
+      'court': court,
+      'judge': judge,
+      'designation': designation,
+      'role': role,
+      'searchoption': searchoption,
+      'searchtext': searchtext,
+      'posting': posting
+  });
+
+  $.ajax({
+
+      url: 'http://10.199.31.113/layersweb/employees/search_employee_list_new/',
+      dataType: 'json',
+      contentType: 'application/json',
+      type: 'GET',
+      data: {
+          searchtype: searchtype, //all, branch, court, both, individual, deputation & diverted
+          district: district,
+          branch: branch,
+          court: court,
+          judge: judge,
+          designation: designation,
+          role: role,
+          searchoption: searchoption,
+          searchtext: searchtext,
+          posting: posting
+      },
+      beforeSend: function() {},
+      success: function(data) {
+          console.log(data, 'employee_list');
+      },
+      error: function(data) {
+          console.log(data);
+      }
+  }).done(function(data) {
+      console.log(data);
+      //remove loader
+      //document.querySelector('.loader').classList.remove('is-active');
+      if (data['status'] != '') {
+          //            opt = '<div id="searchCount" class="font-weight-semibold" style="margin-bottom:5px;font-size: 15px;">Search Result - 0 employee(s) selected</div>';
+          opt = '<table class="table table-bordered" id="searchTbls" width="100%"  data-ordering="false">';
+          opt += '<thead>';
+          opt += '<tr>';
+          //            opt += '<th><input type="checkbox" value="all" name="leftItems" onclick="selectAll(this);"></th>';
+          opt += '<th>Emp Code</th>';
+          opt += '<th>Name</th>';
+          opt += '<th>Father Name</th>';
+          opt += '<th>Designation</th>';
+          opt += '<th>Posting</th>';
+          opt += '<th>District</th>';
+          //            opt += '<th>Action</th>';
+          opt += '</tr>';
+          opt += '</thead>';
+
+          if (data && data['response']) {
+              if (data['response'].length > 0) {
+                  opt += '<tbody>';
+                  $.each(data['response'], function(i, res) {
+                      opt += '<tr>';
+                      //                        opt += '<td><input type="checkbox" name="leftItem" value="' + res['emp_uuid'] + '" emp_code="' + res['emp_code'] + '" ';
+                      //                        opt += 'emp_name="' + res['emp_name'] + '" father_name="' + res['father_name'] + '" desg="' + res['desg'] + '"';
+                      //                        opt += 'posting="' + res['posting'] + '" district="' + res['district'] + '" emp_posting_id="' + res['emp_posting_id'] + '" checked>';
+                      //                        opt += '</td>';
+
+                      queryParamURL = redirect_link.indexOf('?');
+                      if (queryParamURL) {
+                          urlQuery = urls + redirect_link + '&request_uuid=' + res['emp_uuid'];
+                      } else {
+                          urlQuery = urls + redirect_link + '?request_uuid=' + res['emp_uuid']
+                      }
+
+
+                      opt += '<td><a href="' + urlQuery + '">' + res['emp_code'] + '</a></td>';
+                      opt += '<td>' + res['emp_name'] + '</td>';
+                      opt += '<td>' + res['father_name'] + '</td>';
+                      opt += '<td>' + res['desg'] + '</td>';
+                      opt += '<td>' + res['posting'] + '</td>';
+                      opt += '<td>' + res['district'] + '</td>';
+                      //                        opt += '<td><div class="list-icon"><div class="dropdown"><a href="#" class="list-icon-item" data-toggle="dropdown"><i class="icon-menu7"></i></a><div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="'+urls+redirect_link+'?id='+res['emp_uuid']+'">View</a><div></div></div></td>';
+                      opt += '</tr>';
+                  });
+                  opt += '</tbody>';
+              }
+          }
+          opt += '</table>';
+          //alert(opt);
+          //            $("#divResult").removeClass('collapse');
+          //$("#searchCardFooter").css('display', 'none');
+          $("#searchTableCard").removeClass('hidden');
+          $("#divSearchTables").html('');
+          $("#divSearchTables").html(opt);
+          $("#modal_large").addClass('modal-full');
+          $("#searchTbls").DataTable({
+              "order": [
+                  [0, "asc"]
+              ]
+          });
+      } else {
+          alert('No Employee Found.');
+          $("#divSearchTables").html(opt);
+          $("#modal_large").removeClass('modal-full');
+      }
+      //            if (data && data['response']) {
+      //                $("input[name=leftItems]")[0].checked = true;
+      //                $("#searchCount").html("Search Result - " + data['response'].length + " employee(s) selected");
+      //            }
+      //
+      //            console.log(document.querySelector('#searchCardFooter').parentElement.scrollHeight);
+      //            x = document.querySelector('#searchCardFooter').parentElement.scrollHeight
+      //            document.documentElement.scrollTop = x * 2;
+
+      // Setting datatable defaults
+      // $.extend($.fn.dataTable.defaults, {
+      //     autoWidth: true,
+      //     //dom: '<"datatable-header"fl><"datatable-scroll"t><"datatable-footer"ip>',
+      //     language: {
+      //         search: '<span>Filter:</span> _INPUT_',
+      //         searchPlaceholder: 'Type to filter...',
+      //         lengthMenu: '<span>Show:</span> _MENU_',
+      //         //paginate: { 'first': 'First', 'last': 'Last', 'next': $('html').attr('dir') == 'rtl' ? '&larr;' : '&rarr;', 'previous': $('html').attr('dir') == 'rtl' ? '&rarr;' : '&larr;' }
+      //     }
+      // });
+      // $('#searchTbl').DataTable();
+  });
+}
+
+//    $(document).ready(function(){
+//        $("#searchTbls").DataTable({
+//            "order":[[0,"asc"]]
+//        });
+//    });
+</script>
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 18.225px; left: 1046.15px; z-index: 4; display: none;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">January</span>&nbsp;<span class="ui-datepicker-year">2024</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">13</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">17</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">18</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">19</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">20</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">21</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">22</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">23</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">24</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">25</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">26</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">27</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">28</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">29</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">30</span></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="0" data-year="2024"><a class="ui-state-default ui-state-highlight ui-state-active" href="#">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div></body>
