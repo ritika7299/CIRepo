@@ -64,16 +64,15 @@
   </head>
 
   <body>
+    <!-- Navbar -->
+    <!-- Main Navbar -->
     <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
       <div class="navbar-brand">
         <a
-          href="http://10.199.31.113/layersweb/app/dashboard"
+          href="http://localhost/layersweb/app/dashboard"
           class="d-inline-block"
         >
-          <img
-            src="http://10.199.31.113/layersweb/assets/images/LayersLogoApp.png"
-            alt=""
-          />
+          <img src="assets/images/LayersLogoApp.png" alt="" />
         </a>
       </div>
 
@@ -114,31 +113,32 @@
               href="#"
               class="navbar-nav-link dropdown-toggle legitRipple"
               data-toggle="dropdown"
+              aria-expanded="false"
             >
               <i class="icon-user mr-2"></i>
-              AMIT KUMAR
+              LALIT SINGH
             </a>
 
             <div
               class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-250"
               style="
-                background: url(http://10.199.31.113/layersweb/assets/global_assets/images/backgrounds/user_bg2.jpg)
+                background: url(http://localhost/layersweb/assets/global_assets/images/backgrounds/user_bg2.jpg)
                   center center no-repeat;
               "
             >
               <div class="card-body text-center">
                 <a href="#">
                   <img
-                    src="http://10.199.31.113/layersweb/assets/global_assets/images/placeholders/placeholder.jpg"
+                    src="http://localhost/layersweb/assets/global_assets/images/placeholders/placeholder.jpg"
                     class="img-fluid rounded-circle shadow-1 mb-3"
                     width="80"
                     height="80"
                     alt=""
                   />
                 </a>
-                <h6 class="mb-0 text-white text-shadow-dark">AMIT KUMAR</h6>
+                <h6 class="mb-0 text-white text-shadow-dark">LALIT SINGH</h6>
                 <span class="font-size-sm text-white text-shadow-dark"
-                  >System Analyst Group I Executive : 55393147</span
+                  >System Analyst Group I Executive : 72153450</span
                 >
               </div>
 
@@ -171,7 +171,7 @@
                   </li>
                 </ul>
               </div>
-              <a href="http://10.199.31.113/layersweb/auth/logout">
+              <a href="http://localhost/layersweb/auth/logout">
                 <div class="dropdown-content-footer bg-light">
                   <span
                     class="font-size-sm line-height-sm text-uppercase font-weight-semibold text-grey mr-auto"
@@ -194,6 +194,10 @@
         </ul>
       </div>
     </div>
+    <!-- /Main Navbar -->
+    <!-- /Navbar -->
+
+    <!-- Page content -->
     <div class="page-content">
       <!-- Main sidebar -->
       <div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
@@ -372,6 +376,7 @@
                   <span>Misc Forms</span>
                 </a>
               </li>
+              <!--?php// } ?-->
             </ul>
           </div>
           <!-- /main navigation -->
@@ -389,7 +394,6 @@
             style="position: static; zoom: 1"
           >
             <!-- Page header -->
-            <!-- Page header -->
             <div class="page-header page-header-light">
               <div
                 class="breadcrumb-line breadcrumb-line-light header-elements-md-inline"
@@ -401,51 +405,13 @@
                       class="breadcrumb-item"
                       ><i class="icon-home2 mr-2"></i> Home</a
                     >
-                    <span class="breadcrumb-item">Hierarchy</span
-                    ><span class="breadcrumb-item">Configure Hierarchy</span>
+                    <span class="breadcrumb-item">Leave Dashboard</span>
                   </div>
                   <a
                     href="#"
                     class="header-elements-toggle text-default d-md-none"
                     ><i class="icon-more"></i
                   ></a>
-                </div>
-                <div class="header-elements d-none">
-                  <div class="breadcrumb justify-content-center">
-                    <a href="#" class="breadcrumb-elements-item">
-                      <i class="icon-help text-warning-300 mr-2"></i
-                      ><i class="icon-file-text text-indigo-300 mr-2"></i
-                      ><i class="icon-file-presentation2 text-info-600 mr-2"></i
-                      ><i class="icon-play3 text-green-600 mr-2"></i>
-                      Help
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="page-header-content header-elements-md-inline">
-                <div class="page-title d-flex">
-                  <h4>
-                    <span class="font-weight-semibold ml-2"
-                      >Leave credits (*User)</span
-                    >
-                  </h4>
-                  <a
-                    href="#"
-                    class="header-elements-toggle text-default d-md-none"
-                    ><i class="icon-more"></i
-                  ></a>
-                </div>
-                <div class="header-elements d-none">
-                  <div class="d-flex justify-content-center">
-                    <a
-                      href="003circularReports.html"
-                      id="applyleave"
-                      class="btn btn-link btn-float font-size-sm font-weight-semibold text-default legitRipple"
-                    >
-                      <i class="icon-stats-bars2 text-danger-700"></i>
-                      <span>Reports</span>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -458,6 +424,7 @@
             <div class="content">
               <!-- Inner container -->
               <div class="d-md-flex align-items-md-start">
+                <!-- Left sidebar -->
                 <div
                   class="sidebar sidebar-light sidebar-component sidebar-component-left sidebar-expand-md mb-3"
                 >
@@ -575,26 +542,182 @@
                       </div>
                     </div>
                     <!-- /Leave Balance -->
-                    <!-- My Credits Leave-->
+
+                    <!-- Setting -->
+                    <div class="card card-collapsed">
+                      <div
+                        class="card-header bg-transparent header-elements-inline"
+                      >
+                        <span
+                          class="text-uppercase font-size-sm font-weight-semibold"
+                          ><i class="icon-cog2 mr-2 text-orange-700"></i> Leave
+                          Admin</span
+                        >
+                        <div class="header-elements">
+                          <div class="list-icons">
+                            <a
+                              class="list-icons-item rotate-180"
+                              data-action="collapse"
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-body p-0" style="display: none">
+                        <ul class="nav nav-sidebar" data-nav-type="accordion">
+                          <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link legitRipple"
+                              ><i class="icon-users text-orange-700"></i
+                              >Receipts</a
+                            >
+                            <ul class="nav nav-group-sub" style="display: none">
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empleaves/leave_receipt"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-users4 text-orange-700"></i>
+                                  Leave</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empintimations/intimation_receipt"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-users4 text-orange-700"></i>
+                                  Intimation</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empleaves/leave_cancellation_receipt"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-users4 text-orange-700"></i>
+                                  Leave Cancellation</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empintimations/intimation_cancellation_receipt"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-users4 text-orange-700"></i>
+                                  Intimation Cancellation</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link legitRipple"
+                              ><i class="icon-bookmark text-orange-700"></i
+                              >Reports</a
+                            >
+                            <ul class="nav nav-group-sub" style="display: none">
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empleavereports/dashboard"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-book text-orange-700"></i>
+                                  Leave Register</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empmanageleave/directdebitleave"
+                              class="nav-link legitRipple"
+                              ><i class="icon-folder-minus3 text-orange-800"></i
+                              >Direct Debit Leave</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empmanageleave/checkandcreditleave"
+                              class="nav-link legitRipple"
+                              ><i class="icon-folder-minus3 text-orange-800"></i
+                              >Direct Credit Leave</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- /Setting -->
+
+                    <!-- Judicial Officer Leave -->
                     <div class="card card-collapsed">
                       <div
                         class="card-header bg-transparent header-elements-inline"
                       >
                         <a
-                          href="http://10.199.31.113/layersweb/leave/empleaves/applyleave"
+                          href="http://10.199.31.113/layersweb/leave/empleaves/forwardinglist"
                           style="color: #333"
                         >
                           <span
                             class="text-uppercase font-size-sm font-weight-semibold"
+                            ><i class="icon-pen6 mr-2 text-orange"></i>
+                            Forwarding</span
                           >
-                            <i class="icon-diff-added mr-2 text-orange"></i>
-                            My Credits Leave
-                          </span>
                         </a>
                       </div>
                     </div>
-                    <!-- /My Credits Leave -->
+                    <!-- /Judicial Officer Leave -->
+                    <!--Approval -->
+                    <div class="card card-collapsed">
+                      <div
+                        class="card-header bg-transparent header-elements-inline"
+                      >
+                        <span
+                          class="text-uppercase font-size-sm font-weight-semibold"
+                          ><i class="icon-pen2 mr-2 text-orange-700"></i>
+                          Approval</span
+                        >
+                        <div class="header-elements">
+                          <div class="list-icons">
+                            <a
+                              class="list-icons-item rotate-180"
+                              data-action="collapse"
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
 
+                      <div class="card-body p-0" style="display: none">
+                        <ul class="nav nav-sidebar" data-nav-type="accordion">
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleaves/approval_list"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen2 text-orange-700"></i>Leave
+                              Applications</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empintimations/intimation_approval_list"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen2 text-orange-700"></i>Leave
+                              Intimations</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleaves/cancellation_approval_list"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen2 text-orange-700"></i>Leaves
+                              Cancellation</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empintimations/intimation_cancellation_approval_list"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen2 text-orange-700"></i
+                              >Intimations Cancellation</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Approval -->
                     <!--Reports -->
                     <div class="card card-collapsed">
                       <div
@@ -625,6 +748,86 @@
                               and Intimation Applications</a
                             >
                           </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleavereports/employees_leave_today"
+                              class="nav-link legitRipple"
+                              ><i class="icon-fold text-orange-700"></i>Today
+                              Leave and Intimation
+                            </a>
+                          </li>
+                          <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link legitRipple"
+                              ><i class="icon-pen6 text-orange-700"></i
+                              >Forwarding</a
+                            >
+                            <ul class="nav nav-group-sub" style="display: none">
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empleavereports/forwarding_today?leavetype=leave"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-pen6 text-orange-700"></i>
+                                  Leave</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empleavereports/forwarding_today?leavetype=intimation"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-pen6 text-orange-700"></i>
+                                  Intimation</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link legitRipple"
+                              ><i class="icon-pen2 text-orange-700"></i>Sent For
+                              Approval</a
+                            >
+                            <ul class="nav nav-group-sub" style="display: none">
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empleavereports/sent_for_approval_today?leavetype=leave"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-pen6 text-orange-700"></i>
+                                  Leave</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empleavereports/sent_for_approval_today?leavetype=intimation"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-pen6 text-orange-700"></i>
+                                  Intimation</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link legitRipple"
+                              ><i class="icon-pen6 text-orange-700"></i>
+                              Approval</a
+                            >
+                            <ul class="nav nav-group-sub" style="display: none">
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empleavereports/approval_today?leavetype=leave"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-pen6 text-orange-700"></i>
+                                  Leave</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  href="http://10.199.31.113/layersweb/leave/empleavereports/approval_today?leavetype=intimation"
+                                  class="nav-link legitRipple"
+                                  ><i class="icon-pen6 text-orange-700"></i>
+                                  Intimation</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -633,14 +836,345 @@
                   <!-- /sidebar content -->
                 </div>
 
+                <!-- /Left sidebar -->
+
                 <!-- Right content -->
                 <div class="" style="width: 100%">
+                  <!-- Button classes -->
+                  <div class="card">
+                    <div class="card-header header-elements-inline">
+                      <a
+                        type="button"
+                        class="btn btn-success btn-sm legitRipple collapsed"
+                        data-toggle="collapse"
+                        href="#UploadNewFile"
+                        aria-expanded="false"
+                        ><i class="icon-upload7 mr-2"></i> Credit Earned
+                        Leaves</a
+                      >
+                    </div>
+                    <div id="UploadNewFile" class="card-body collapse">
+                      <!-- Progress counters -->
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div
+                            class="table-responsive table-bordered"
+                            data-select2-id="6"
+                          >
+                            <table
+                              class="table text-nowrap"
+                              data-select2-id="5"
+                            >
+                              <tbody style="width: 80%" data-select2-id="4">
+                                <tr data-select2-id="39">
+                                  <td style="width: 25%">
+                                    <a
+                                      href="#"
+                                      class="text-default font-weight-semibold"
+                                      >Search Employee</a
+                                    >
+                                  </td>
+
+                                  <td style="width: 75%" data-select2-id="38">
+                                    <div class="col-lg-9">
+                                      <button
+                                        class="btn btn-sm btn-primary legitRipple"
+                                        data-toggle="modal"
+                                        data-target="#modalSearchEmployee"
+                                      >
+                                        <i class="icon-search4"></i>
+                                      </button>
+                                    </div>
+                                  </td>
+                                </tr>
+
+                                <tr class="empname">
+                                  <td>
+                                    <a
+                                      href="#"
+                                      class="text-default font-weight-semibold"
+                                      >Earned Leave Credit for
+                                    </a>
+                                  </td>
+
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Please search the employee"
+                                      readonly=""
+                                      id="txtemployee"
+                                      name="txtemployee"
+                                      required=""
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="emp_uuid"
+                                      id="hid_emp_uuid"
+                                      value=""
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="hid_emp_posting_id"
+                                      id="hid_emp_posting_id"
+                                      value=""
+                                    />
+                                  </td>
+                                </tr>
+                                <tr data-select2-id="39">
+                                  <td style="width: 25%">
+                                    <a
+                                      href="#"
+                                      class="text-default font-weight-semibold"
+                                      >Nature of Leave</a
+                                    >
+                                  </td>
+
+                                  <td style="width: 75%" data-select2-id="38">
+                                    <select
+                                      class="form-control select"
+                                      id="selectcomp"
+                                      name="leavetype"
+                                    >
+                                      <option
+                                        value="cloption"
+                                        data-select2-id="40"
+                                      >
+                                        Select
+                                      </option>
+                                      <option
+                                        value="Casual Leave"
+                                        data-select2-id="42"
+                                      >
+                                        Earned Leave
+                                      </option>
+                                    </select>
+                                  </td>
+                                </tr>
+
+                                <tr class="trELeave">
+                                  <td>
+                                    <a
+                                      href="#"
+                                      class="text-default font-weight-semibold"
+                                      >Total no. of Earned Leaves available</a
+                                    >
+                                  </td>
+
+                                  <td>
+                                    <div
+                                      class="font-weight-semibold totalleaves mb-0 btn btn-outline-danger btn-lg legitRipple"
+                                      id="totalEl"
+                                      name="Total Leaves:"
+                                    >
+                                      15
+                                    </div>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="#"
+                                      class="text-default font-weight-semibold"
+                                      >No. of Earned leave Credit
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="table-responsive table-bordered"
+                                    >
+                                      <table
+                                        class="table text-nowrap"
+                                        id="itemtable"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <th>
+                                              <span
+                                                class="font-weight-semibold mb-0"
+                                                >From</span
+                                              >
+                                            </th>
+                                            <th>
+                                              <span
+                                                class="font-weight-semibold mb-0"
+                                                >To</span
+                                              >
+                                            </th>
+                                            <th>#</th>
+                                          </tr>
+
+                                          <tr id="tr1">
+                                            <td>
+                                              <div class="input-group">
+                                                <input
+                                                  type="date"
+                                                  class="form-control from hasDatepicker"
+                                                  id="fromdate"
+                                                />
+                                              </div>
+                                            </td>
+
+                                            <td>
+                                              <div class="input-group">
+                                                <input
+                                                  type="date"
+                                                  class="form-control to hasDatepicker"
+                                                  id="todate"
+                                                />
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <span
+                                                class="font-weight-semibold totalleaves mb-0"
+                                                id="TotalLeaves"
+                                                name="Total Leaves:"
+                                                value="days"
+                                                >0</span
+                                              >
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="#"
+                                      class="text-default font-weight-semibold"
+                                      >Consumend Earned Leave</a
+                                    >
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="font-weight-semibold totalleaves mb-0"
+                                      id="TotalLeaves"
+                                      name="Total Leaves:"
+                                    >
+                                      0
+                                    </div>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="#"
+                                      class="text-default font-weight-semibold"
+                                      >Balance Earned Leave</a
+                                    >
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="font-weight-semibold totalleaves mb-0"
+                                      id="TotalLeaves"
+                                      name="Total Leaves:"
+                                    >
+                                      0
+                                    </div>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="#"
+                                      class="text-default font-weight-semibold"
+                                      >Earned Leave Year</a
+                                    >
+                                  </td>
+                                  <td>
+                                    <select
+                                      class="form-control select select2-hidden-accessible"
+                                      id="selectcomp"
+                                      name="leavetype"
+                                    >
+                                      <option value="" data-select2-id="2">
+                                        Select
+                                      </option>
+                                      <option
+                                        value="Casual Leave"
+                                        data-select2-id="42A"
+                                      >
+                                        January-June, 2024
+                                      </option>
+                                      <option
+                                        value="Casual Leave"
+                                        data-select2-id="42"
+                                      >
+                                        July-December, 2024
+                                      </option>
+                                    </select>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="#"
+                                      class="text-default font-weight-semibold"
+                                      >Credit Reason</a
+                                    >
+                                  </td>
+                                  <td>
+                                    <div
+                                      class="leavereason"
+                                      style="display: flex"
+                                    >
+                                      <div
+                                        class="reasonleave-div"
+                                        style="width: 80%"
+                                      >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          placeholder="Please enter reason for leave ..."
+                                          id="txtLeaveReason"
+                                          name="leavereason"
+                                        />
+                                      </div>
+                                      <div
+                                        class="leavereason-file"
+                                        style="width: 30%; margin-left: 80px"
+                                      >
+                                        <input
+                                          type="file"
+                                          class="form-control-plaintext"
+                                        />
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td colspan="2">
+                                    <button
+                                      type="submit"
+                                      class="btn bg-primary legitRipple float-right submit-btn"
+                                    >
+                                      Credit Leaves<i
+                                        class="icon-circle-right2 ml-2 btn-sub"
+                                      ></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /progress counters -->
+                    </div>
+                  </div>
                   <div class="card">
                     <div
                       class="card-header bg-orange header-elements-inline"
                       style="padding-top: 10px; padding-bottom: 10px"
                     >
-                      <h5 class="card-title" f>My Credit Leaves</h5>
+                      <h5 class="card-title">History of Earned Leaves</h5>
                     </div>
                     <div class="card-body">
                       <!-- Progress counters -->
@@ -652,36 +1186,43 @@
                             >
                               <tbody>
                                 <tr>
-                                  <th style="width: 20%">
-                                    Type of Credit Leaves
-                                  </th>
-
+                                  <th style="width: 20%">Name of Employee</th>
+                                  <th style="width: 20%">Designation</th>
+                                  <th style="width: 20%">Posting</th>
                                   <th style="width: 20%">
                                     No. of Credit Leaves
                                   </th>
-                                  <th style="width: 20%">Period</th>
+                                  <th style="width: 20%">Credit by</th>
                                   <th style="width: 20%">Date of Credit</th>
                                 </tr>
                                 <tr>
-                                  <td style="font-size: 12px">Earned Leave</td>
-                                  <td style="font-size: 12px">30 Days</td>
+                                  <td style="font-size: 12px">Hem Raj</td>
                                   <td style="font-size: 12px">
-                                    20.03.2024 <br />
-                                    30.03.2024
+                                    Judicial Assistant
                                   </td>
+                                  <td style="font-size: 12px">
+                                    In the Court of Sh. Arun Sukhija (ASJ),
+                                    Karkardooma
+                                  </td>
+                                  <td style="font-size: 12px">30 Days</td>
+                                  <td style="font-size: 12px">--</td>
                                   <td style="font-size: 12px">
                                     17.02.2024 <br />
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="font-size: 12px">Medical Leave</td>
-                                  <td style="font-size: 12px">45 Days</td>
+                                  <td style="font-size: 12px">Khem Raj</td>
                                   <td style="font-size: 12px">
-                                    05.05.2024<br />
-                                    23.05.2024
+                                    Judicial Assistant
                                   </td>
                                   <td style="font-size: 12px">
-                                    10.03 .2024 <br />
+                                    In the Court of Sh. Arun Sukhija (ASJ),
+                                    Karkardooma
+                                  </td>
+                                  <td style="font-size: 12px">30 Days</td>
+                                  <td style="font-size: 12px">--</td>
+                                  <td style="font-size: 12px">
+                                    01.05.2024 <br />
                                   </td>
                                 </tr>
                               </tbody>
@@ -936,14 +1477,13 @@
                               tabindex="0"
                               id="searchTbl_previous"
                               >Previous</a
-                            ><span
-                              ><a
-                                class="paginate_button current"
-                                aria-controls="searchTbl"
-                                data-dt-idx="1"
-                                tabindex="0"
-                                >1</a
-                              ></span
+                            ><a
+                              class="paginate_button current"
+                              aria-controls="searchTbl"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              >1</a
+                            >
                             ><a
                               class="paginate_button next disabled"
                               aria-controls="searchTbl"
@@ -1024,6 +1564,7 @@
             </div>
             <!-- /footer -->
 
+            <!--Search Employee Modal Start-->
             <!-- Primary modal -->
             <div id="modal_theme_primary" class="modal fade" tabindex="-1">
               <div class="modal-dialog" id="modal_large">
@@ -1295,6 +1836,7 @@
                       </button>
                     </div>
 
+                    <!--                </div>-->
                     <div class="hidden" id="searchTableCard">
                       <div id="divSearchTables"></div>
                     </div>
@@ -1311,6 +1853,7 @@
         <!-- /page content -->
       </div>
     </div>
+    <!-- /Page content -->
   </body>
   <script>
     $("#itemtable").on("click", ".remCF", function () {

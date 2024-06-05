@@ -838,6 +838,7 @@
                                       <input
                                         type="text"
                                         class="form-control mt-2"
+                                        disabled
                                         placeholder="Remarks (Maximum 100 characters)"
                                       />
                                     </div>
@@ -921,7 +922,10 @@
                                         aria-hidden="true"
                                         disabled
                                       >
-                                        <option value="AZ" data-select2-id="30">
+                                        <option
+                                          value="AZ"
+                                          data-select2-id="30A"
+                                        >
                                           Send for Approval
                                         </option>
                                         <option value="CO">
@@ -1015,15 +1019,21 @@
                                         aria-hidden="true"
                                         disabled
                                       >
-                                        <option value="AZ" data-select2-id="30">
-                                          Approved
+                                        <option
+                                          value="AZ"
+                                          data-select2-id="30B"
+                                        >
+                                          Send for Approval
                                         </option>
-                                        <option value="CO">Reject</option>
+                                        <option value="CO">
+                                          Mark Objection
+                                        </option>
                                       </select>
 
                                       <input
                                         type="text"
                                         class="form-control mt-2"
+                                        disabled
                                         placeholder="Remarks (Maximum 100 characters)"
                                       />
                                     </div>
@@ -1434,12 +1444,14 @@
     $("input[type='checkbox']").change(function () {
       const row = $(this).closest("tr");
       const selectElement = row.find("select");
-      selectElement.prop("disabled", !this.checked);
-    });
+      const inputElement = row.find("input");
 
+      selectElement.prop("disabled", !this.checked);
+      inputElement.prop("disabled", !this.checked);
+    });
     $(document).ready(function () {
       $("#submit-button").click(function () {
-        alert("Form submitteds sucessfully.");
+        alert("Form Submitted sucessfully.");
       });
     });
   </script>

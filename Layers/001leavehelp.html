@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>
+      Home - LAYERS : Linked Applications and Extended Reporting System
+    </title>
+
+    <!-- Global stylesheets -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="global_assets/css/icons/icomoon/styles.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/bootstrap_limitless.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/components.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css" />
+    <!-- /Global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="global_assets/js/main/jquery.min.js"></script>
+    <script src="global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <script src="global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="global_assets/js/demo_pages/form_select2.js"></script>
+    <!-- Theme JS files -->
+
+    <script src="global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <script src="global_assets/js/plugins/extensions/jquery_ui/widgets.min.js"></script>
+    <script src="global_assets/js/plugins/extensions/jquery_ui/effects.min.js"></script>
+    <script src="global_assets/js/plugins/extensions/mousewheel.min.js"></script>
+    <script src="global_assets/js/plugins/extensions/jquery_ui/globalize/globalize.js"></script>
+    <script src="global_assets/js/plugins/extensions/jquery_ui/globalize/cultures/globalize.culture.de-DE.js"></script>
+    <script src="global_assets/js/plugins/extensions/jquery_ui/globalize/cultures/globalize.culture.ja-JP.js"></script>
+
+    <script src="assets/js/app.js"></script>
+  </head>
+
+  <body class="">
+    <!-- Navbar -->
+    <!-- Main navbar -->
+    <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
+      <div class="navbar-brand">
+        <a
+          href="http://localhost/layersweb/app/dashboard"
+          class="d-inline-block"
+        >
+          <img src="assets/images/LayersLogoApp.png" alt="" />
+        </a>
+      </div>
+
+      <div class="d-md-none">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-mobile"
+        >
+          <i class="icon-user"></i>
+        </button>
+        <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+          <i class="icon-paragraph-justify3"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-mobile">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              href="#"
+              class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block legitRipple"
+            >
+              <i class="icon-paragraph-justify3"></i>
+            </a>
+          </li>
+        </ul>
+        <center>
+          <span class="navbar-text ml-md-3">
+            <span class="badge badge-mark border-orange-300 mr-2"></span>
+            <strong>IT CELL HQS, TIS HAZARI</strong>
+          </span>
+        </center>
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="navbar-nav-link dropdown-toggle legitRipple"
+              data-toggle="dropdown"
+            >
+              <i class="icon-user mr-2"></i>
+              LALIT SINGH
+            </a>
+
+            <div
+              class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-250"
+              style="
+                background: url(http://localhost/layersweb/assets/global_assets/images/backgrounds/user_bg2.jpg)
+                  center center no-repeat;
+              "
+            >
+              <div class="card-body text-center">
+                <a href="#">
+                  <img
+                    src="http://localhost/layersweb/assets/global_assets/images/placeholders/placeholder.jpg"
+                    class="img-fluid rounded-circle shadow-1 mb-3"
+                    width="80"
+                    height="80"
+                    alt=""
+                  />
+                </a>
+                <h6 class="mb-0 text-white text-shadow-dark">LALIT SINGH</h6>
+                <span class="font-size-sm text-white text-shadow-dark"
+                  >System Analyst Group I Executive : 72153450</span
+                >
+              </div>
+
+              <div class="sidebar-user-material-footer">
+                <a
+                  href="#user-nav"
+                  class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle legitRipple"
+                  data-toggle="collapse"
+                  ><span>My account</span></a
+                >
+              </div>
+              <div class="collapse" id="user-nav">
+                <ul class="nav nav-sidebar">
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link legitRipple"
+                      id="emp_personal_qual_detail_update_btn"
+                    >
+                      <i class="icon-user-plus"></i>
+                      <span>My profile</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link legitRipple">
+                      <i class="icon-cog5"></i>
+                      <span>Account settings</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="http://localhost/layersweb/auth/logout">
+                <div class="dropdown-content-footer bg-light">
+                  <span
+                    class="font-size-sm line-height-sm text-uppercase font-weight-semibold text-grey mr-auto"
+                    >Log Out</span
+                  >
+
+                  <div>
+                    <span
+                      href="#"
+                      class="text-grey"
+                      data-popup="tooltip"
+                      title="Log Out"
+                      ><i class="icon-switch2"></i
+                    ></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /Main navbar -->
+    <!-- /Navbar -->
+
+    <!-- Page content -->
+    <div class="page-content">
+      <!-- Main sidebar -->
+      <div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
+        <!-- Sidebar mobile toggler -->
+        <div class="sidebar-mobile-toggler text-center">
+          <a href="#" class="sidebar-mobile-main-toggle">
+            <i class="icon-arrow-left8"></i>
+          </a>
+          <span class="font-weight-semibold">Navigation</span>
+          <a href="#" class="sidebar-mobile-expand">
+            <i class="icon-screen-full"></i>
+            <i class="icon-screen-normal"></i>
+          </a>
+        </div>
+        <!-- /sidebar mobile toggler -->
+
+        <!-- Sidebar content -->
+        <div class="sidebar-content">
+          <!-- Main navigation -->
+          <div class="card card-sidebar-mobile">
+            <ul class="nav nav-sidebar" data-nav-type="accordion">
+              <!-- Main -->
+              <li class="nav-item-header">
+                <div class="text-uppercase font-size-xs line-height-xs">
+                  Main
+                </div>
+                <i class="icon-menu" title="Main"></i>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/app/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink-800 icon-home2"></i>
+                  <span> Home </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/accounts/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-indigo fa fa-rupee-sign"></i>
+                  <span> Accounts </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/circular/circulars"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink icon-clipboard3"></i>
+                  <span> Circulars </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/employees/employees"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink icon-users4"></i>
+                  <span> Employees </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/hierarchy/hierarchy/configure_hierarchy"
+                  class="nav-link legitRipple"
+                  title="Hierarchy"
+                >
+                  <i class="text-blue icon-sort"></i>
+                  <span> Hierarchy </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/unit/courtAdmin/courtUnitDashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-orange-800 icon-graduation"></i>
+                  <span> Court Admin</span>
+                </a>
+              </li>
+
+              <!-- Inventory Employee / User Item Issued -->
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/inventory/InventoryReports/reportEmployeeIssuedToItemDetails"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink icon-calendar"></i>
+                  <span>Inventory</span>
+                </a>
+              </li>
+              <!-- Inventory Employee / User Item Issued -->
+              <!-- Server Status for System Analysts -->
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/app/core/servers_status"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink icon-wrench3"></i>
+                  <span>Servers Status</span>
+                </a>
+              </li>
+              <!-- Server Status for System Analysts -->
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/app/dashboard/phone_directory"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink-800 icon-phone"></i>
+                  <span>Extension Phone Numbers</span>
+                </a>
+              </li>
+              <!-- /main -->
+              <li class="nav-item">
+                <a
+                  href="http://localhost/layersweb/library/acts"
+                  class="nav-link legitRipple"
+                >
+                  <i class="icon-paragraph-justify3"></i>
+                  <span>Library</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  accesskey="k"
+                  href="http://localhost/layersweb/ca/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="icon-copy4"></i>
+                  <span>Certified Copy</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  accesskey="k"
+                  href="http://localhost/layersweb/filemgmt/list_files"
+                  class="nav-link legitRipple"
+                >
+                  <i class="icon-copy2"></i>
+                  <span>File Management</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  accesskey="k"
+                  href="http://localhost/layersweb/leave/empleaves/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="icon-copy3 text-orange-800"></i>
+                  <span>Leaves</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  accesskey="k"
+                  href="http://localhost/layersweb/recruitment/departmental/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="icon-file-text text-danger-800"></i>
+                  <span>Recruitment</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  accesskey="k"
+                  href="http://localhost/layersweb/misc/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="icon-file-text text-danger-600"></i>
+                  <span>Misc Forms</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /main navigation -->
+        </div>
+        <!-- /sidebar content -->
+      </div>
+      <!-- /Main sidebar -->
+      <!-- Main content -->
+      <div class="content-wrapper">
+        <!-- Content area -->
+        <div class="content">
+          <!-- Info blocks -->
+
+          <!-- /info blocks -->
+
+          <!-- Questions title -->
+          <div class="text-center mb-3 py-2">
+            <h2 class="font-weight-semibold mb-1">Leave help</h2>
+          </div>
+          <!-- /Questions title -->
+
+          <!-- Rounded Solid tabs -->
+
+          <div class="row" style="margin-bottom: auto">
+            <div class="col-md-8">
+              <div class="card">
+                <!-- <div class="card-header header-elements-inline">
+                  <h6 class="card-title">Leave help for user</h6>
+                  <div class="header-elements">
+                    <div class="list-icons">
+                      <a class="list-icons-item" data-action="collapse"></a>
+                      <a class="list-icons-item" data-action="reload"></a>
+                      <a class="list-icons-item" data-action="remove"></a>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="card-body">
+                  <ul class="nav nav-tabs nav-tabs-solid rounded border-0">
+                    <li class="nav-item">
+                      <a
+                        href="#solid-rounded-tab1"
+                        class="nav-link rounded-left active"
+                        data-toggle="tab"
+                        >Casual Leave</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#solid-rounded-tab2"
+                        class="nav-link"
+                        data-toggle="tab"
+                        >In-active</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        href="#"
+                        class="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        >Dropdown</a
+                      >
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a
+                          href="#solid-rounded-tab3"
+                          class="dropdown-item"
+                          data-toggle="tab"
+                          >Dropdown tab</a
+                        >
+                        <a
+                          href="#solid-rounded-tab4"
+                          class="dropdown-item"
+                          data-toggle="tab"
+                          >Another tab</a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade active show"
+                      id="solid-rounded-tab1"
+                    >
+                      <!-- Inner container -->
+                      <div
+                        class="d-flex align-items-start flex-column flex-md-row"
+                      >
+                        <!-- Left content -->
+                        <div class="w-100 overflow-auto order-2 order-md-1">
+                          <!-- Questions list -->
+                          <div
+                            class="card-group-control card-group-control-right"
+                          >
+                            <div class="card mb-2">
+                              <div class="card-header">
+                                <h6 class="card-title">
+                                  <a
+                                    class="text-default collapsed"
+                                    data-toggle="collapse"
+                                    href="#question1"
+                                    aria-expanded="false"
+                                  >
+                                    <i class="icon-help mr-2 text-slate"></i>
+                                    How to apply Casual Leave?
+                                  </a>
+                                </h6>
+                              </div>
+
+                              <div id="question1" class="collapse">
+                                <div class="card-body">
+                                  <div class="card-body" style="display: flex">
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #c44545"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-play mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalvideoplay"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #757474"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-file-eye2 mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalpdfview"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card mb-2">
+                              <div class="card-header">
+                                <h6 class="card-title">
+                                  <a
+                                    class="text-default collapsed"
+                                    data-toggle="collapse"
+                                    href="#question2"
+                                  >
+                                    <i class="icon-help mr-2 text-slate"></i>
+                                    How to cancel Casual Leave before
+                                    forwarding?
+                                  </a>
+                                </h6>
+                              </div>
+
+                              <div id="question2" class="collapse">
+                                <div class="card-body">
+                                  <div class="card-body" style="display: flex">
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #c44545"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-play mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalvideoplay"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #757474"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-file-eye2 mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalpdfview"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card mb-2">
+                              <div class="card-header">
+                                <h6 class="card-title">
+                                  <a
+                                    class="text-default collapsed"
+                                    data-toggle="collapse"
+                                    href="#question3"
+                                  >
+                                    <i class="icon-help mr-2 text-slate"></i>
+                                    How to edit leave before forwarding?
+                                  </a>
+                                </h6>
+                              </div>
+
+                              <div id="question3" class="collapse">
+                                <div class="card-body">
+                                  <div class="card-body" style="display: flex">
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #c44545"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-play mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalvideoplay"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #757474"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-file-eye2 mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalpdfview"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card mb-2">
+                              <div class="card-header">
+                                <h6 class="card-title">
+                                  <a
+                                    class="text-default collapsed"
+                                    data-toggle="collapse"
+                                    href="#question4"
+                                  >
+                                    <i class="icon-help mr-2 text-slate"></i>
+                                    How to intimate leave?
+                                  </a>
+                                </h6>
+                              </div>
+
+                              <div id="question4" class="collapse">
+                                <div class="card-body">
+                                  <div class="card-body" style="display: flex">
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #c44545"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-play mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalvideoplay"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #757474"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-file-eye2 mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalpdfview"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card mb-2">
+                              <div class="card-header">
+                                <h6 class="card-title">
+                                  <a
+                                    class="text-default collapsed"
+                                    data-toggle="collapse"
+                                    href="#question5"
+                                  >
+                                    <i class="icon-help mr-2 text-slate"></i>
+                                    How to convert intimation into leave?
+                                  </a>
+                                </h6>
+                              </div>
+
+                              <div id="question5" class="collapse">
+                                <div class="card-body">
+                                  <div class="card-body" style="display: flex">
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #c44545"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-play mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalvideoplay"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #757474"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-file-eye2 mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalpdfview"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="card-group-control card-group-control-right"
+                          >
+                            <div class="card mb-2">
+                              <div class="card-header">
+                                <h6 class="card-title">
+                                  <a
+                                    class="text-default collapsed"
+                                    data-toggle="collapse"
+                                    href="#question6"
+                                  >
+                                    <i class="icon-help mr-2 text-slate"></i>
+                                    How to apply leave cancellation after
+                                    approval?
+                                  </a>
+                                </h6>
+                              </div>
+
+                              <div id="question6" class="collapse">
+                                <div class="card-body">
+                                  <div class="card-body" style="display: flex">
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #c44545"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-play mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalvideoplay"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #757474"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-file-eye2 mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalpdfview"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card mb-2">
+                              <div class="card-header">
+                                <h6 class="card-title">
+                                  <a
+                                    class="text-default collapsed"
+                                    data-toggle="collapse"
+                                    href="#question7"
+                                  >
+                                    <i class="icon-help mr-2 text-slate"></i>
+                                    How to create hierarchy?
+                                  </a>
+                                </h6>
+                              </div>
+
+                              <div id="question7" class="collapse">
+                                <div class="card-body">
+                                  <div class="card-body" style="display: flex">
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #c44545"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-play mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalvideoplay"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #757474"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-file-eye2 mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalpdfview"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card mb-2">
+                              <div class="card-header">
+                                <h6 class="card-title">
+                                  <a
+                                    class="text-default collapsed"
+                                    data-toggle="collapse"
+                                    href="#question8"
+                                  >
+                                    <i class="icon-help mr-2 text-slate"></i>How
+                                    to configure hierarchy?
+                                  </a>
+                                </h6>
+                              </div>
+
+                              <div id="question8" class="collapse">
+                                <div class="card-body">
+                                  <div class="card-body" style="display: flex">
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #c44545"
+                                    >
+                                      <div
+                                        class="d-flex align-items-center"
+                                        data-toggle="modal"
+                                        data-target="#modalvideoplay"
+                                      >
+                                        <i
+                                          class="icon-play mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalvideoplay"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="col-md-3 col-sm-4"
+                                      style="color: #757474"
+                                    >
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="icon-file-eye2 mr-3 icon-5x"
+                                          data-toggle="modal"
+                                          data-target="#modalpdfview"
+                                        ></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- /questions list -->
+                        </div>
+                        <!-- /left content -->
+                      </div>
+                      <!-- /inner container -->
+                    </div>
+
+                    <div class="tab-pane fade" id="solid-rounded-tab2">
+                      Food truck fixie locavore, accusamus mcsweeney's marfa
+                      nulla single-origin coffee squid laeggin.
+                    </div>
+
+                    <div class="tab-pane fade" id="solid-rounded-tab3">
+                      DIY synth PBR banksy irony. Leggings gentrify squid 8-bit
+                      cred pitchfork. Williamsburg whatever.
+                    </div>
+
+                    <div class="tab-pane fade" id="solid-rounded-tab4">
+                      Aliquip jean shorts ullamco ad vinyl cillum PBR. Homo
+                      nostrud organic, assumenda labore aesthet.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /Rounded Solid tabs -->
+
+          <!-- Casual leave video modal -->
+          <div
+            id="modalvideoplay"
+            class="modal fade"
+            tabindex="-1"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" style="max-width: 1250px">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-video-play">
+                    <video width="100%" controls>
+                      <source
+                        src="videos/How to Apply Leave.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-danger legitRipple"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Casual leave video modal -->
+
+          <!-- Casual leave pdf modal -->
+          <div
+            id="modalpdfview"
+            class="modal fade"
+            tabindex="-1"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-pdf">
+                    <iframe
+                      src="formpdf/examplepdf.pdf"
+                      width="100%;"
+                      height="800px"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-danger legitRipple"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Casual leave pdf modal -->
+
+          <!-- /content area -->
+        </div>
+        <!-- /Content area -->
+        <!-- Footer -->
+        <div class="navbar navbar-expand-lg navbar-light">
+          <div class="text-center d-lg-none w-100">
+            <button
+              type="button"
+              class="navbar-toggler dropdown-toggle"
+              data-toggle="collapse"
+              data-target="#navbar-footer"
+            >
+              <i class="icon-unfold mr-2"></i>
+              Footer
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar-footer">
+            <span class="navbar-text">
+              © 2024 <a href="#">Delhi District Courts</a> by
+              <a href="#" target="_blank">IT-Cell (HQs),Tis Hazari</a>
+            </span>
+          </div>
+        </div>
+        <!-- /footer -->
+        <!-- /main content -->
+      </div>
+      <!-- /Main content -->
+    </div>
+    <!-- /Page content -->
+  </body>
+</html>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -22,11 +23,6 @@
       type="text/css"
     />
     <link
-      href="global_assets/css/icons/material/styles.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
       href="global_assets/css/icons/fontawesome/styles.min.css"
       rel="stylesheet"
       type="text/css"
@@ -41,13 +37,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-    <link
-      href="assets/css/components.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
     <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css" />
     <!-- /global stylesheets -->
@@ -62,7 +52,6 @@
     <!-- Theme JS files -->
     <script src="global_assets/js/plugins/visualization/d3/d3.min.js"></script>
     <script src="global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-    <script src="global_assets/js/plugins/forms/styling/switchery.min.js"></script>
     <script src="global_assets/js/plugins/ui/moment/moment.min.js"></script>
     <script src="global_assets/js/plugins/pickers/daterangepicker.js"></script>
     <script src="global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
@@ -73,20 +62,30 @@
     <script src="global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
     <script src="global_assets/js/demo_pages/datatables_basic.js"></script>
-
+    <script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="global_assets/js/plugins/forms/styling/switch.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
 
     <script src="global_assets/js/demo_pages/form_select2.js"></script>
     <script src="global_assets/js/demo_pages/dashboard.js"></script>
-    <script src="global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/lines.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/areas.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/bars.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/progress.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/pies.js"></script>
+    <script src="global_assets/js/demo_charts/pages/dashboard/light/bullets.js"></script>
+    <!-- /theme JS files -->
 
     <!-- /theme JS files -->
   </head>
 
-  <!-- All Leaves Register details form -->
-  <body class="sidebar-xs">
-    <!-- Nav bar -->
-    <!-- Main navbar -->
+  <body>
     <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
       <div class="navbar-brand">
         <a
@@ -217,8 +216,6 @@
         </ul>
       </div>
     </div>
-    <!-- /main navbar -->
-    <!-- /Navbar -->
     <!-- Page content -->
     <div class="page-content">
       <!-- Main sidebar -->
@@ -296,16 +293,6 @@
                 </a>
               </li>
 
-              <li class="nav-item">
-                <a
-                  href="http://10.199.31.113/layersweb/unit/courtAdmin/courtUnitDashboard"
-                  class="nav-link legitRipple"
-                >
-                  <i class="text-orange-800 icon-graduation"></i>
-                  <span> Court Admin</span>
-                </a>
-              </li>
-
               <!-- Inventory Employee / User Item Issued -->
               <li class="nav-item">
                 <a
@@ -357,16 +344,6 @@
                   <span>Certified Copy</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a
-                  accesskey="k"
-                  href="http://10.199.31.113/layersweb/filemgmt/list_files"
-                  class="nav-link legitRipple"
-                >
-                  <i class="icon-copy2"></i>
-                  <span>File Management</span>
-                </a>
-              </li>
 
               <li class="nav-item">
                 <a
@@ -388,22 +365,13 @@
                   <span>Recruitment</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a
-                  accesskey="k"
-                  href="http://10.199.31.113/layersweb/misc/dashboard"
-                  class="nav-link legitRipple"
-                >
-                  <i class="icon-file-text text-danger-600"></i>
-                  <span>Misc Forms</span>
-                </a>
-              </li>
             </ul>
           </div>
           <!-- /main navigation -->
         </div>
         <!-- /sidebar content -->
       </div>
+
       <!-- /main sidebar -->
       <!-- Main content -->
       <div class="content-wrapper">
@@ -554,6 +522,180 @@
                 </div>
                 <!-- /Leave Balance -->
 
+                <!-- Setting -->
+                <div class="card card-collapsed">
+                  <div
+                    class="card-header bg-transparent header-elements-inline"
+                  >
+                    <span
+                      class="text-uppercase font-size-sm font-weight-semibold"
+                      ><i class="icon-cog2 mr-2 text-orange-700"></i> Leave
+                      Admin</span
+                    >
+                    <div class="header-elements">
+                      <div class="list-icons">
+                        <a
+                          class="list-icons-item rotate-180"
+                          data-action="collapse"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body p-0" style="display: none">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+                      <li class="nav-item nav-item-submenu">
+                        <a href="#" class="nav-link legitRipple"
+                          ><i class="icon-users text-orange-700"></i>Receipts</a
+                        >
+                        <ul class="nav nav-group-sub" style="display: none">
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleaves/leave_receipt"
+                              class="nav-link legitRipple"
+                              ><i class="icon-users4 text-orange-700"></i>
+                              Leave</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empintimations/intimation_receipt"
+                              class="nav-link legitRipple"
+                              ><i class="icon-users4 text-orange-700"></i>
+                              Intimation</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleaves/leave_cancellation_receipt"
+                              class="nav-link legitRipple"
+                              ><i class="icon-users4 text-orange-700"></i> Leave
+                              Cancellation</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empintimations/intimation_cancellation_receipt"
+                              class="nav-link legitRipple"
+                              ><i class="icon-users4 text-orange-700"></i>
+                              Intimation Cancellation</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item nav-item-submenu">
+                        <a href="#" class="nav-link legitRipple"
+                          ><i class="icon-bookmark text-orange-700"></i
+                          >Reports</a
+                        >
+                        <ul class="nav nav-group-sub" style="display: none">
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleavereports/dashboard"
+                              class="nav-link legitRipple"
+                              ><i class="icon-book text-orange-700"></i> Leave
+                              Register</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="http://10.199.31.113/layersweb/leave/empmanageleave/directdebitleave"
+                          class="nav-link legitRipple"
+                          ><i class="icon-folder-minus3 text-orange-800"></i
+                          >Direct Debit Leave</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="http://10.199.31.113/layersweb/leave/empmanageleave/checkandcreditleave"
+                          class="nav-link legitRipple"
+                          ><i class="icon-folder-minus3 text-orange-800"></i
+                          >Direct Credit Leave</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /Setting -->
+
+                <!-- Judicial Officer Leave -->
+                <div class="card card-collapsed">
+                  <div
+                    class="card-header bg-transparent header-elements-inline"
+                  >
+                    <a
+                      href="http://10.199.31.113/layersweb/leave/empleaves/forwardinglist"
+                      style="color: #333"
+                    >
+                      <span
+                        class="text-uppercase font-size-sm font-weight-semibold"
+                        ><i class="icon-pen6 mr-2 text-orange"></i>
+                        Forwarding</span
+                      >
+                    </a>
+                  </div>
+                </div>
+                <!-- /Judicial Officer Leave -->
+                <!--Approval -->
+                <div class="card card-collapsed">
+                  <div
+                    class="card-header bg-transparent header-elements-inline"
+                  >
+                    <span
+                      class="text-uppercase font-size-sm font-weight-semibold"
+                      ><i class="icon-pen2 mr-2 text-orange-700"></i>
+                      Approval</span
+                    >
+                    <div class="header-elements">
+                      <div class="list-icons">
+                        <a
+                          class="list-icons-item rotate-180"
+                          data-action="collapse"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body p-0" style="display: none">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+                      <li class="nav-item">
+                        <a
+                          href="http://10.199.31.113/layersweb/leave/empleaves/approval_list"
+                          class="nav-link legitRipple"
+                          ><i class="icon-pen2 text-orange-700"></i>Leave
+                          Applications</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="http://10.199.31.113/layersweb/leave/empintimations/intimation_approval_list"
+                          class="nav-link legitRipple"
+                          ><i class="icon-pen2 text-orange-700"></i>Leave
+                          Intimations</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="http://10.199.31.113/layersweb/leave/empleaves/cancellation_approval_list"
+                          class="nav-link legitRipple"
+                          ><i class="icon-pen2 text-orange-700"></i>Leaves
+                          Cancellation</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="http://10.199.31.113/layersweb/leave/empintimations/intimation_cancellation_approval_list"
+                          class="nav-link legitRipple"
+                          ><i class="icon-pen2 text-orange-700"></i>Intimations
+                          Cancellation</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Approval -->
                 <!--Reports -->
                 <div class="card card-collapsed">
                   <div
@@ -575,7 +717,95 @@
                   </div>
 
                   <div class="card-body p-0" style="display: none">
-                    <ul class="nav nav-sidebar" data-nav-type="accordion"></ul>
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+                      <li class="nav-item">
+                        <a
+                          href="http://10.199.31.113/layersweb/leave/empleavereports/leave_intimation_reports"
+                          class="nav-link legitRipple"
+                          ><i class="icon-fold text-orange-700"></i>Leave and
+                          Intimation Applications</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="http://10.199.31.113/layersweb/leave/empleavereports/employees_leave_today"
+                          class="nav-link legitRipple"
+                          ><i class="icon-fold text-orange-700"></i>Today Leave
+                          and Intimation
+                        </a>
+                      </li>
+                      <li class="nav-item nav-item-submenu">
+                        <a href="#" class="nav-link legitRipple"
+                          ><i class="icon-pen6 text-orange-700"></i
+                          >Forwarding</a
+                        >
+                        <ul class="nav nav-group-sub" style="display: none">
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleavereports/forwarding_today?leavetype=leave"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen6 text-orange-700"></i>
+                              Leave</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleavereports/forwarding_today?leavetype=intimation"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen6 text-orange-700"></i>
+                              Intimation</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item nav-item-submenu">
+                        <a href="#" class="nav-link legitRipple"
+                          ><i class="icon-pen2 text-orange-700"></i>Sent For
+                          Approval</a
+                        >
+                        <ul class="nav nav-group-sub" style="display: none">
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleavereports/sent_for_approval_today?leavetype=leave"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen6 text-orange-700"></i>
+                              Leave</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleavereports/sent_for_approval_today?leavetype=intimation"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen6 text-orange-700"></i>
+                              Intimation</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item nav-item-submenu">
+                        <a href="#" class="nav-link legitRipple"
+                          ><i class="icon-pen6 text-orange-700"></i> Approval</a
+                        >
+                        <ul class="nav nav-group-sub" style="display: none">
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleavereports/approval_today?leavetype=leave"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen6 text-orange-700"></i>
+                              Leave</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="http://10.199.31.113/layersweb/leave/empleavereports/approval_today?leavetype=intimation"
+                              class="nav-link legitRipple"
+                              ><i class="icon-pen6 text-orange-700"></i>
+                              Intimation</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <!-- Reports -->
@@ -590,202 +820,581 @@
             <div class="" style="width: 100%">
               <!-- Card classes -->
               <div class="card">
-                <form
-                  action="http://10.199.31.113/layersweb/leave/empleaves/userbalanceleaves"
-                  name="leavefrm"
-                  method="post"
-                  accept-charset="utf-8"
-                  autocomplete="off"
-                >
-                  <input
-                    type="hidden"
-                    name="csrf_test_lalit"
-                    value="1a4b0140e38366323a9fb2db71065174"
-                  />
-                  <div class="card-header bg-orange-600 header-elements-inline">
-                    <span
-                      class="card-title text-uppercase font-size-lg font-weight-bold"
-                      >Leave Register</span
-                    >
-                  </div>
+                <div class="card-header bg-orange-600 header-elements-inline">
+                  <h5 class="card-title font-weight-bold">
+                    Leave Applications (*EL)
+                  </h5>
+                </div>
 
-                  <div class="card-body">
-                    <!-- Progress counters -->
-                    <table
-                      class="table datatable-basic table-bordered"
-                      id="tblLeaves"
-                    >
-                      <thead>
-                        <tr class="text-center">
-                          <th style="width: 25%">Leave Type</th>
-                          <th style="width: 20%">Leave Year</th>
-                          <th style="width: 15%">Total Leaves</th>
-                          <th style="width: 15%">Leave Availed</th>
-                          <th style="width: 15%">Leave Balance</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="text-center">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <div class="mr-3">
-                                <a href="#">
-                                  <img
-                                    src="http://10.199.31.113/layersweb/assets/images/casualleave.png"
-                                    class="rounded-circle"
-                                    width="32"
-                                    height="32"
-                                    alt=""
-                                  />
-                                </a>
-                              </div>
-                              <div>
-                                <a
-                                  href="http://10.199.31.113/layersweb/leave/empleaves/leave_availed"
-                                  class="text-default font-weight-semibold"
-                                  >Casual Leave</a
+                <div class="card-body">
+                  <ul class="nav nav-pills nav-pills-bordered">
+                    <li class="nav-item">
+                      <a
+                        href="#toolbar-pill1"
+                        class="nav-link legitRipple active"
+                        data-toggle="tab"
+                        >Active Leaves</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#toolbar-pill2"
+                        class="nav-link legitRipple"
+                        data-toggle="tab"
+                        >Leaves Archive</a
+                      >
+                    </li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div class="tab-pane fade active show" id="toolbar-pill1">
+                      <div
+                        id="DataTables_Table_0_wrapper"
+                        class="dataTables_wrapper no-footer"
+                      >
+                        <div
+                          class="dataTables_length"
+                          id="DataTables_Table_0_length"
+                        >
+                          <label
+                            >Show
+                            <select
+                              name="DataTables_Table_0_length"
+                              aria-controls="DataTables_Table_0"
+                              class=""
+                              fdprocessedid="67qgv5"
+                            >
+                              <option value="10">10</option>
+                              <option value="25">25</option>
+                              <option value="50">50</option>
+                              <option value="100">100</option>
+                            </select>
+                            entries</label
+                          >
+                        </div>
+                        <div
+                          id="DataTables_Table_0_filter"
+                          class="dataTables_filter"
+                        >
+                          <label
+                            >Search:<input
+                              type="search"
+                              class=""
+                              placeholder=""
+                              aria-controls="DataTables_Table_0"
+                          /></label>
+                        </div>
+                        <table
+                          class="table table-bordered table-hover tblLeaves dataTable no-footer"
+                          id="DataTables_Table_0"
+                          role="grid"
+                          aria-describedby="DataTables_Table_0_info"
+                        >
+                          <thead>
+                            <tr role="row">
+                              <th
+                                style="width: 169.984px"
+                                class="sorting_disabled"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                Date of Application
+                              </th>
+                              <th
+                                style="width: 168.422px"
+                                class="sorting_disabled"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                Number of Leave/s
+                              </th>
+                              <th
+                                style="width: 167.844px"
+                                class="sorting_disabled"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                Type of Leave
+                              </th>
+                              <th
+                                style="width: 303.281px"
+                                class="sorting_disabled"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                Leave Date/s
+                              </th>
+                              <th
+                                style="width: 377.688px"
+                                class="sorting_disabled"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                Current Status
+                              </th>
+                              <th
+                                style="width: 36.7812px"
+                                class="sorting_disabled"
+                                rowspan="1"
+                                colspan="1"
+                              >
+                                Action
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr role="row" class="odd">
+                              <td>
+                                <b>10.05.24</b>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn bg-pink-600 legitRipple"
+                                  style="font-size: 18px"
+                                  fdprocessedid="gepo8n"
                                 >
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-purple-600 legitRipple"
-                              style="font-size: 16px"
-                              >2024</span
-                            >
-                          </td>
-                          <td>
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-pink-600 legitRipple"
-                              style="font-size: 16px"
-                              >12</span
-                            >
-                          </td>
-                          <td class="text-center">
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-danger-600 legitRipple"
-                              style="font-size: 16px"
-                              >0</span
-                            >
-                          </td>
-                          <td>
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-success-600 legitRipple"
-                              style="font-size: 16px"
-                              >12</span
-                            >
-                          </td>
-                        </tr>
-                        <tr class="text-center">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <div class="mr-3">
-                                <a href="#">
-                                  <img
-                                    src="http://10.199.31.113/layersweb/assets/images/casualleave.png"
-                                    class="rounded-circle"
-                                    width="32"
-                                    height="32"
-                                    alt=""
-                                  />
-                                </a>
-                              </div>
-                              <div>
-                                <a
-                                  href="http://10.199.31.113/layersweb/leave/empleaves/leave_availed"
-                                  class="text-default font-weight-semibold"
-                                  >Compensatory Leave</a
+                                  1
+                                </button>
+                              </td>
+                              <td>Earned Leave</td>
+                              <td>31-05-2024 to 31-05-2024<br /></td>
+
+                              <td>
+                                <span class="btn btn-sm bg-success legitRipple"
+                                  ><i class="fa fa-paper-plane bg-success"></i>
+                                  &nbsp;Applied</span
                                 >
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-purple-600 legitRipple"
-                              style="font-size: 16px"
-                              >2024</span
-                            >
-                          </td>
-                          <td>
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-pink-600 legitRipple"
-                              style="font-size: 16px"
-                              >12</span
-                            >
-                          </td>
-                          <td class="text-center">
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-danger-600 legitRipple"
-                              style="font-size: 16px"
-                              >0</span
-                            >
-                          </td>
-                          <td>
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-success-600 legitRipple"
-                              style="font-size: 16px"
-                              >12</span
-                            >
-                          </td>
-                        </tr>
-                        <tr class="text-center">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <div class="mr-3">
-                                <a href="#">
-                                  <img
-                                    src="http://10.199.31.113/layersweb/assets/images/casualleave.png"
-                                    class="rounded-circle"
-                                    width="32"
-                                    height="32"
-                                    alt=""
-                                  />
-                                </a>
-                              </div>
-                              <div>
-                                <a
-                                  href="http://10.199.31.113/layersweb/leave/empleaves/leave_availed"
-                                  class="text-default font-weight-semibold"
-                                  >Earned Leave</a
+                              </td>
+                              <td class="text-center">
+                                <div class="list-icons">
+                                  <div class="dropdown">
+                                    <a
+                                      href="#"
+                                      class="list-icons-item dropdown-toggle caret-0"
+                                      data-toggle="dropdown"
+                                      aria-expanded="false"
+                                      ><i class="icon-menu7"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                      x-placement="bottom-end"
+                                      style="
+                                        position: absolute;
+                                        will-change: transform;
+                                        top: 0px;
+                                        left: 0px;
+                                        transform: translate3d(16px, 19px, 0px);
+                                      "
+                                    >
+                                      <a href="" class="dropdown-item"
+                                        ><i class="icon-clipboard3"></i> View
+                                        Detail</a
+                                      >
+                                      <a href="" class="dropdown-item"
+                                        ><i class="icon-pencil"></i> Edit</a
+                                      >
+                                      <a
+                                        href="#"
+                                        class="dropdown-item"
+                                        onclick="cancelleave('');"
+                                        ><i class="icon-cross3"></i> Cancel</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td>
+                                <b>19.04.24</b>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn bg-pink-600 legitRipple"
+                                  style="font-size: 18px"
+                                  fdprocessedid="q8ujdn"
                                 >
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-purple-600 legitRipple"
-                              style="font-size: 16px"
-                              >2024</span
+                                  1
+                                </button>
+                              </td>
+                              <td>Earned Leave</td>
+                              <td>18-04-2024 to 18-04-2024<br /></td>
+
+                              <td>
+                                <span class="btn btn-sm bg-danger legitRipple"
+                                  ><i class="fa fa-paper-plane bg-danger"></i>
+                                  &nbsp;Cancellation Reapply Allowed</span
+                                >
+                              </td>
+                              <td class="text-center">
+                                <div class="list-icons">
+                                  <div class="dropdown">
+                                    <a
+                                      href="#"
+                                      class="list-icons-item dropdown-toggle caret-0"
+                                      data-toggle="dropdown"
+                                      ><i class="icon-menu7"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="" class="dropdown-item"
+                                        ><i class="icon-clipboard3"></i> View
+                                        Detail</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr role="row" class="even">
+                              <td>
+                                <b>23.01.24</b>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn bg-pink-600 legitRipple"
+                                  style="font-size: 18px"
+                                  fdprocessedid="cnvrl"
+                                >
+                                  1
+                                </button>
+                              </td>
+                              <td>Earned Leave</td>
+                              <td>30-01-2024 to 30-01-2024<br /></td>
+
+                              <td>
+                                <span class="btn btn-sm bg-danger legitRipple"
+                                  ><i class="fa fa-window-close bg-danger"></i>
+                                  &nbsp;Cancellation Marked</span
+                                >
+                              </td>
+                              <td class="text-center">
+                                <div class="list-icons">
+                                  <div class="dropdown">
+                                    <a
+                                      href="#"
+                                      class="list-icons-item dropdown-toggle caret-0"
+                                      data-toggle="dropdown"
+                                      ><i class="icon-menu7"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="" class="dropdown-item"
+                                        ><i class="icon-clipboard3"></i> View
+                                        Detail</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td>
+                                <b>23.01.24</b>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn bg-pink-600 legitRipple"
+                                  style="font-size: 18px"
+                                  fdprocessedid="p113ic"
+                                >
+                                  1
+                                </button>
+                              </td>
+                              <td>Earned Leave</td>
+                              <td>22-01-2024 to 22-01-2024<br /></td>
+
+                              <td>
+                                <span class="btn btn-sm bg-orange legitRipple"
+                                  ><i class="fa fa-user-plus bg-orange"></i>
+                                  &nbsp;Marked For Approval</span
+                                >
+                              </td>
+                              <td class="text-center">
+                                <div class="list-icons">
+                                  <div class="dropdown">
+                                    <a
+                                      href="#"
+                                      class="list-icons-item dropdown-toggle caret-0"
+                                      data-toggle="dropdown"
+                                      ><i class="icon-menu7"></i
+                                    ></a>
+                                    <div
+                                      class="dropdown-menu dropdown-menu-right"
+                                    >
+                                      <a href="" class="dropdown-item"
+                                        ><i class="icon-clipboard3"></i> View
+                                        Detail</a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div
+                          class="dataTables_info"
+                          id="DataTables_Table_0_info"
+                          role="status"
+                          aria-live="polite"
+                        >
+                          Showing 1 to 7 of 7 entries
+                        </div>
+                        <div
+                          class="dataTables_paginate paging_simple_numbers"
+                          id="DataTables_Table_0_paginate"
+                        >
+                          <a
+                            class="paginate_button previous disabled"
+                            aria-controls="DataTables_Table_0"
+                            data-dt-idx="0"
+                            tabindex="0"
+                            id="DataTables_Table_0_previous"
+                            >Previous</a
+                          >
+                          <a
+                            class="paginate_button next disabled"
+                            aria-controls="DataTables_Table_0"
+                            data-dt-idx="2"
+                            tabindex="0"
+                            id="DataTables_Table_0_next"
+                            >Next</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="toolbar-pill2">
+                      <div class="tab-pane fade show active">
+                        <div
+                          id="DataTables_Table_1_wrapper"
+                          class="dataTables_wrapper no-footer"
+                        >
+                          <div
+                            class="dataTables_length"
+                            id="DataTables_Table_1_length"
+                          >
+                            <label
+                              >Show
+                              <select
+                                name="DataTables_Table_1_length"
+                                aria-controls="DataTables_Table_1"
+                                class=""
+                                fdprocessedid="2j5smko"
+                              >
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                              </select>
+                              entries</label
                             >
-                          </td>
-                          <td>
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-pink-600 legitRipple"
-                              style="font-size: 16px"
-                              >12</span
+                          </div>
+                          <div
+                            id="DataTables_Table_1_filter"
+                            class="dataTables_filter"
+                          >
+                            <label
+                              >Search:<input
+                                type="search"
+                                class=""
+                                placeholder=""
+                                aria-controls="DataTables_Table_1"
+                            /></label>
+                          </div>
+                          <table
+                            class="table table-bordered table-hover tblLeaves dataTable no-footer"
+                            id="DataTables_Table_1"
+                            role="grid"
+                            aria-describedby="DataTables_Table_1_info"
+                          >
+                            <thead>
+                              <tr role="row">
+                                <th
+                                  style="width: 0px"
+                                  class="sorting_disabled"
+                                  rowspan="1"
+                                  colspan="1"
+                                >
+                                  Date of Application
+                                </th>
+                                <th
+                                  style="width: 0px"
+                                  class="sorting_disabled"
+                                  rowspan="1"
+                                  colspan="1"
+                                >
+                                  Number of Leave/s
+                                </th>
+                                <th
+                                  style="width: 0px"
+                                  class="sorting_disabled"
+                                  rowspan="1"
+                                  colspan="1"
+                                >
+                                  Type of Leave
+                                </th>
+                                <th
+                                  style="width: 0px"
+                                  class="sorting_disabled"
+                                  rowspan="1"
+                                  colspan="1"
+                                >
+                                  Leave Date/s
+                                </th>
+                                <th
+                                  style="width: 0px"
+                                  class="sorting_disabled"
+                                  rowspan="1"
+                                  colspan="1"
+                                >
+                                  Current Status
+                                </th>
+                                <th
+                                  style="width: 0px"
+                                  class="sorting_disabled"
+                                  rowspan="1"
+                                  colspan="1"
+                                >
+                                  Action
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr role="row" class="even">
+                                <td>
+                                  <b>02.01.24</b>
+                                </td>
+                                <td>
+                                  <button
+                                    type="button"
+                                    class="btn bg-pink-600 legitRipple"
+                                    style="font-size: 18px"
+                                    fdprocessedid="0db8f"
+                                  >
+                                    1
+                                  </button>
+                                </td>
+                                <td>Earned Leave</td>
+                                <td>19-01-2024 to 01-01-1970<br /></td>
+
+                                <td>
+                                  <span class="btn btn-sm bg-pink legitRipple"
+                                    ><i class="fa fa-check bg-pink"></i>
+                                    &nbsp;Cancellation Approved</span
+                                  >
+                                </td>
+                                <td class="text-center">
+                                  <div class="list-icons">
+                                    <div class="dropdown">
+                                      <a
+                                        href="#"
+                                        class="list-icons-item dropdown-toggle caret-0"
+                                        data-toggle="dropdown"
+                                        ><i class="icon-menu7"></i
+                                      ></a>
+                                      <div
+                                        class="dropdown-menu dropdown-menu-right"
+                                      >
+                                        <a href="" class="dropdown-item"
+                                          ><i class="icon-clipboard3"></i> View
+                                          Detail</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr role="row" class="odd">
+                                <td>
+                                  <b>21.02.24</b>
+                                </td>
+                                <td>
+                                  <button
+                                    type="button"
+                                    class="btn bg-pink-600 legitRipple"
+                                    style="font-size: 18px"
+                                    fdprocessedid="khgad"
+                                  >
+                                    1
+                                  </button>
+                                </td>
+                                <td>Earned Leave</td>
+                                <td>24-02-2024 to 24-02-2024<br /></td>
+
+                                <td>
+                                  <span class="btn btn-sm bg-danger legitRipple"
+                                    ><i
+                                      class="fa fa-window-close bg-danger"
+                                    ></i>
+                                    &nbsp;Cancelled</span
+                                  >
+                                </td>
+                                <td class="text-center">
+                                  <div class="list-icons">
+                                    <div class="dropdown">
+                                      <a
+                                        href="#"
+                                        class="list-icons-item dropdown-toggle caret-0"
+                                        data-toggle="dropdown"
+                                        ><i class="icon-menu7"></i
+                                      ></a>
+                                      <div
+                                        class="dropdown-menu dropdown-menu-right"
+                                      >
+                                        <a href="" class="dropdown-item"
+                                          ><i class="icon-clipboard3"></i> View
+                                          Detail</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div
+                            class="dataTables_info"
+                            id="DataTables_Table_1_info"
+                            role="status"
+                            aria-live="polite"
+                          >
+                            Showing 1 to 10 of 10 entries
+                          </div>
+                          <div
+                            class="dataTables_paginate paging_simple_numbers"
+                            id="DataTables_Table_1_paginate"
+                          >
+                            <a
+                              class="paginate_button previous disabled"
+                              aria-controls="DataTables_Table_1"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              id="DataTables_Table_1_previous"
+                              >Previous</a
                             >
-                          </td>
-                          <td class="text-center">
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-danger-600 legitRipple"
-                              style="font-size: 16px"
-                              >0</span
+                            <a
+                              class="paginate_button next disabled"
+                              aria-controls="DataTables_Table_1"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              id="DataTables_Table_1_next"
+                              >Next</a
                             >
-                          </td>
-                          <td>
-                            <span
-                              class="font-weight-semibold mb-0 btn bg-success-600 legitRipple"
-                              style="font-size: 16px"
-                              >12</span
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <!-- /progress counters -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </form>
+                </div>
               </div>
               <!-- /card classes -->
             </div>
@@ -795,20 +1404,71 @@
         </div>
         <!-- /content area -->
 
-        <script>
-          $(document).ready(function () {
-            $("body").addClass("sidebar-xs");
-          }); //end document
-        </script>
+        <!-- Forwarding modal -->
+        <div
+          id="modalRequestForwarding"
+          class="modal fade"
+          data-backdrop="static"
+          data-keyboard="false"
+          role="dialog"
+        >
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header bg-primary">
+                <h4 class="modal-title">Forwarding Request</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <div class="box-body">
+                  <div class="row">
+                    <div class="col-sm-4">Comments :</div>
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        size="30"
+                        class="form-control"
+                        id="forward_comments"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- /.box-body -->
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger legitRipple"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary legitRipple"
+                  id="submitModalRequestForwarding"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /forwarding modal -->
 
         <style>
           .hidden {
             display: none !important;
           }
 
-          /* .table thead:first-child tr:first-child th {
-        border-top-width: 1px !important;
-    } */
+          .table thead:first-child tr:first-child th {
+            border-top-width: 1px !important;
+          }
         </style>
         <!--Code of Sandeep footer added here /-->
         <script
@@ -1087,6 +1747,7 @@
                     >Please Wait...</span
                   >
                 </div>
+                <!--                </div>-->
                 <div class="hidden" id="searchTableCard_model">
                   <div id="divSearchTables_model"></div>
                 </div>
@@ -1151,7 +1812,7 @@
                       <input
                         type="hidden"
                         name="csrf_test_lalit"
-                        value="1a4b0140e38366323a9fb2db71065174"
+                        value="3fd63dbb28245f70d52b52770e076812"
                       />
                       <div class="card-body">
                         <fieldset class="mb-3">
@@ -1172,6 +1833,7 @@
                                 placeholder="Enter Employee Code/Pin"
                                 maxlength="8"
                                 minlength="5"
+                                onkeypress="return isNumber_model(event)"
                               />
                             </div>
                           </div>
@@ -1306,6 +1968,7 @@
                                 placeholder="Enter Employee's AADHAR"
                                 maxlength="12"
                                 minlength="12"
+                                onkeypress="return isNumber_model(event)"
                               />
                             </div>
                           </div>
@@ -1392,6 +2055,7 @@
                                 placeholder="Enter Employee's Alternet Mobile"
                                 maxlength="10"
                                 minlength="10"
+                                onkeypress="return isNumber_model(event)"
                               />
                             </div>
                           </div>
@@ -1409,6 +2073,7 @@
                                 placeholder="Enter Employee's Other Alternet Mobile"
                                 maxlength="10"
                                 minlength="10"
+                                onkeypress="return isNumber_model(event)"
                               />
                             </div>
                           </div>
@@ -1441,6 +2106,7 @@
                                 placeholder="Enter Pin"
                                 maxlength="6"
                                 minlength="6"
+                                onkeypress="return isNumber_model(event)"
                               />
                             </div>
                             <label
@@ -1487,6 +2153,7 @@
                                 placeholder="Enter Pin"
                                 maxlength="6"
                                 minlength="6"
+                                onkeypress="return isNumber_model(event)"
                               />
                             </div>
                             <label
@@ -1532,7 +2199,7 @@
                                 type="hidden"
                                 name="emp_uuid"
                                 id="emp_uuid"
-                                value="5ac9ef7f2ac56a99d0d3e8c5b7e747c4"
+                                value="2106a4b04b9ae70a1db71d6820ce4d48"
                               />
                               <select
                                 class="form-control"
@@ -1608,6 +2275,7 @@
                                 id="marks_obtain_model"
                                 class="form-control"
                                 placeholder="Obtain % in Exams"
+                                onkeypress="return isNumber_model(event)"
                                 maxlength="5"
                               />
                             </div>
@@ -1681,7 +2349,7 @@
                           <input
                             type="hidden"
                             name="csrf_test_lalit"
-                            value="1a4b0140e38366323a9fb2db71065174"
+                            value="3fd63dbb28245f70d52b52770e076812"
                           />
                           <div class="form-group row">
                             <label
@@ -1701,7 +2369,7 @@
                             <input
                               type="hidden"
                               name="emp_uuid"
-                              value="5ac9ef7f2ac56a99d0d3e8c5b7e747c4"
+                              value="2106a4b04b9ae70a1db71d6820ce4d48"
                             />
                             <img
                               id="blah"
@@ -1721,6 +2389,7 @@
                               href="#"
                               id="profile_final_submit"
                               class="btn btn-warning btn-sm btn-flat legitRipple"
+                              onclick='return confirm("After Submit You Cannot Update Any Changes in Your Personal Details");'
                               >Final Submit</a
                             >
                           </div>
@@ -2015,6 +2684,7 @@
                   </button>
                 </div>
 
+                <!--</div>-->
                 <div class="hidden" id="searchTableCard">
                   <div id="divSearchTables"></div>
                 </div>
@@ -2028,14 +2698,6 @@
       </div>
       <!-- /main content -->
     </div>
-    <!-- /page content -->
-
-    <div
-      role="log"
-      aria-live="assertive"
-      aria-relevant="additions"
-      class="ui-helper-hidden-accessible"
-    ></div>
+    <!-- /Page content  -->
   </body>
-  <!-- /All Leaves Register details form -->
 </html>
