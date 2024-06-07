@@ -1,0 +1,2805 @@
+<html class="side-header">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Stagewise Unit</title>
+
+    <!-- Global stylesheets -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="http://10.199.37.5/layers/assets/images/layerslogo.png"
+    />
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+    <link
+      href="http://10.199.37.5/layers/assets/fonts/robo/style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://10.199.37.5/layers/assets/global_assets/css/icons/icomoon/styles.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="global_assets/css/icons/icomoon/styles.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="global_assets/css/icons/fontawesome/styles.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="http://10.199.37.5/layers/assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://10.199.37.5/layers/assets/css/bootstrap_limitless.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://10.199.37.5/layers/assets/css/layout.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://10.199.37.5/layers/assets/css/components.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--<link href=http://10.199.37.5/layers/assets/css/components.min.css rel="stylesheet" type="text/css">-->
+    <link
+      href="http://10.199.37.5/layers/assets/css/colors.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://10.199.37.5/layers/assets/global_assets/css/icons/fontawesome/styles.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/main/jquery.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/ui/ripple.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/demo_pages/form_multiselect.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/demo_pages/form_select2.js"></script>
+    <!-- <script src=http://10.199.37.5/layers/assets/global_assets/js/demo_pages/datatables_basic.js></script> -->
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/demo_pages/dashboard.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <!-- <script src=http://10.199.37.5/layers/assets/global_assets/js/demo_pages/picker_date.js></script> -->
+    <script src="http://10.199.37.5/layers/assets/js/app.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/demo_pages/form_layouts.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+
+    <!-- /Date picker files JS files -->
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/jQueryUI/jquery-ui.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/pickers/anytime.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+    <!-- Theme JS files -->
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/extensions/session_timeout.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/js/cryptojs-aes.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/js/cryptojs-aes-format.js"></script>
+    <script
+      src="http://10.199.37.5/layers/assets/js/sha256.js"
+      type="text/javascript"
+    ></script>
+    <script src="http://10.199.37.5/layers/assets/js/jQuery.print.min.js"></script>
+
+    <!-- Theme JS files -->
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/ui/fullcalendar/core/main.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/ui/fullcalendar/daygrid/main.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/ui/fullcalendar/timegrid/main.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/ui/fullcalendar/list/main.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/ui/fullcalendar/interaction/main.min.js"></script>
+    <!-- /theme JS files -->
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/tables/datatables/extensions/pdfmake/pdfmake.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js"></script>
+    <script src="http://10.199.37.5/layers/assets/global_assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
+
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="sidebar-xs" style="">
+    <!-- Nav bar -->
+    <!-- Main navbar -->
+    <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
+      <div class="navbar-brand">
+        <a
+          href="http://10.199.37.5/layers/app/dashboard"
+          class="d-inline-block"
+        >
+          <img
+            src="http://10.199.37.5/layers/assets/images/LayersLogoApp.png"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <div class="d-md-none">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-mobile"
+        >
+          <i class="icon-user"></i>
+        </button>
+        <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+          <i class="icon-paragraph-justify3"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-mobile">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              href="#"
+              class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block legitRipple"
+            >
+              <i class="icon-paragraph-justify3"></i>
+            </a>
+          </li>
+        </ul>
+        <span class="navbar-text ml-md-3">
+          <span class="badge badge-mark border-orange-300 mr-2"></span>
+          <strong
+            >IN THE COURT OF MS. HIMANSHI TYAGI (MM (NI ACT) DC), ROHINI</strong
+          >
+        </span>
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="navbar-nav-link dropdown-toggle legitRipple"
+              data-toggle="dropdown"
+            >
+              <i class="icon-user mr-2"></i>
+              HIMANSHI TYAGI
+            </a>
+
+            <div
+              class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-250"
+              style="
+                background: url(http://10.199.37.5/layers/assets/global_assets/images/backgrounds/user_bg2.jpg)
+                  center center no-repeat;
+              "
+            >
+              <div class="card-body text-center">
+                <a href="#">
+                  <img
+                    src="http://10.199.37.5/layers/assets/global_assets/images/placeholders/placeholder.jpg"
+                    class="img-fluid rounded-circle shadow-1 mb-3"
+                    width="80"
+                    height="80"
+                    alt=""
+                  />
+                </a>
+                <h6 class="mb-0 text-white text-shadow-dark">HIMANSHI TYAGI</h6>
+                <span class="font-size-sm text-white text-shadow-dark"
+                  >Delhi Judicial Service : 49144232</span
+                >
+              </div>
+
+              <div class="sidebar-user-material-footer">
+                <a
+                  href="#user-nav"
+                  class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle legitRipple"
+                  data-toggle="collapse"
+                  ><span>My account</span></a
+                >
+              </div>
+              <div class="collapse" id="user-nav">
+                <ul class="nav nav-sidebar">
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link legitRipple"
+                      id="emp_personal_qual_detail_update_btn1"
+                    >
+                      <i class="icon-user-plus"></i>
+                      <span>My profile</span>
+                    </a>
+                  </li>
+
+                  <!--                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="icon-comment-discussion"></i>
+                                    <span>Messages</span>
+                                    <span class="badge bg-teal-400 badge-pill align-self-center ml-auto">58</span>
+                                </a>
+                            </li>-->
+                  <li class="nav-item">
+                    <a href="#" class="nav-link legitRipple">
+                      <i class="icon-cog5"></i>
+                      <span>Account settings</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="http://10.199.37.5/layers/auth/logout">
+                <div class="dropdown-content-footer bg-light">
+                  <span
+                    class="font-size-sm line-height-sm text-uppercase font-weight-semibold text-grey mr-auto"
+                    >Log Out</span
+                  >
+
+                  <div>
+                    <span
+                      href="#"
+                      class="text-grey"
+                      data-popup="tooltip"
+                      title="Log Out"
+                      ><i class="icon-switch2"></i
+                    ></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /main navbar -->
+    <!-- Page content -->
+    <div class="page-content">
+      <!-- Main sidebar -->
+      <div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
+        <!-- Sidebar mobile toggler -->
+        <div class="sidebar-mobile-toggler text-center">
+          <a href="#" class="sidebar-mobile-main-toggle">
+            <i class="icon-arrow-left8"></i>
+          </a>
+          <span class="font-weight-semibold">Navigation</span>
+          <a href="#" class="sidebar-mobile-expand">
+            <i class="icon-screen-full"></i>
+            <i class="icon-screen-normal"></i>
+          </a>
+        </div>
+        <!-- /sidebar mobile toggler -->
+
+        <!-- Sidebar content -->
+        <div class="sidebar-content">
+          <!-- Main navigation -->
+          <div class="card card-sidebar-mobile">
+            <ul class="nav nav-sidebar" data-nav-type="accordion">
+              <!-- Main -->
+              <li class="nav-item-header">
+                <div class="text-uppercase font-size-xs line-height-xs">
+                  Main
+                </div>
+                <i class="icon-menu" title="Main"></i>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="http://10.199.37.5/layers/app/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink-800 icon-home2"></i>
+                  <span> Home </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="http://10.199.37.5/layers/accounts/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-indigo fa fa-rupee-sign"></i>
+                  <span> Accounts </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="http://10.199.37.5/layers/circular/circulars"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink icon-clipboard3"></i>
+                  <span> Circulars </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="http://10.199.37.5/layers/employees/employees"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink icon-users4"></i>
+                  <span> Employees </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="http://10.199.37.5/layers/hierarchy/hierarchy/configure_hierarchy"
+                  class="nav-link legitRipple"
+                  title="Hierarchy"
+                >
+                  <i class="text-blue icon-sort"></i>
+                  <span> Hierarchy </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="http://10.199.37.5/layers/court/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-orange-800 icon-graduation"></i>
+                  <span>Digital Court</span>
+                </a>
+              </li>
+              <!-- Bail order link -->
+              <!--  Bail order link -->
+              <li class="nav-item">
+                <a
+                  href="http://10.199.37.5/layers/unit/unitdash"
+                  class="nav-link legitRipple"
+                >
+                  <i class="icon-stats-growth text-pink-300"></i>
+                  <span>Unit Criteria</span>
+                </a>
+              </li>
+
+              <!-- Inventory Employee / User Item Issued -->
+              <li class="nav-item">
+                <a
+                  href="http://10.199.37.5/layers/inventory/InventoryReports/reportEmployeeIssuedToItemDetails"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink icon-calendar"></i>
+                  <span>Inventory</span>
+                </a>
+              </li>
+
+              <!-- Inventory Employee / User Item Issued -->
+              <!-- Server Status for System Analysts -->
+
+              <!-- Server Status for System Analysts -->
+              <li class="nav-item">
+                <a
+                  href="http://10.199.37.5/layers/app/dashboard/phone_directory"
+                  class="nav-link legitRipple"
+                >
+                  <i class="text-pink-800 icon-phone"></i>
+                  <span>Extension Phone Numbers</span>
+                </a>
+              </li>
+              <!-- /main -->
+
+              <li class="nav-item">
+                <a
+                  accesskey="k"
+                  href="http://10.199.37.5/layers/leave/empleaves/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="icon-copy3 text-orange-800"></i>
+                  <span>Leaves</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  accesskey="k"
+                  href="http://10.199.37.5/layers/recruitment/departmental/dashboard"
+                  class="nav-link legitRipple"
+                >
+                  <i class="icon-file-text text-danger-800"></i>
+                  <span>Recruitment</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /main navigation -->
+        </div>
+        <!-- /sidebar content -->
+      </div>
+      <!-- /main sidebar -->
+
+      <!-- Main content -->
+      <div class="content-wrapper">
+        <div
+          class="content-wrapper loaderdiv_unit"
+          style="position: static; zoom: 1"
+        >
+          <!-- Page header -->
+          <div class="page-header page-header-light">
+            <div
+              class="breadcrumb-line breadcrumb-line-light header-elements-md-inline"
+            >
+              <div class="d-flex">
+                <div class="breadcrumb">
+                  <a href="#" class="breadcrumb-item"
+                    ><i class="icon-home2 mr-2"></i> Dashboard
+                  </a>
+                  <a href="#" class="breadcrumb-item active">Unit Claim</a>
+                </div>
+                <a
+                  href="#"
+                  class="header-elements-toggle text-default d-md-none"
+                  ><i class="icon-more"></i
+                ></a>
+              </div>
+              <div class="header-elements d-none">
+                <div class="breadcrumb justify-content-center">
+                  <a href="#" class="breadcrumb-elements-item">
+                    <i class="icon-help text-warning-300 mr-2"></i
+                    ><i class="icon-file-text text-indigo-300 mr-2"></i
+                    ><i class="icon-file-presentation2 text-info-600 mr-2"></i
+                    ><i class="icon-play3 text-green-600 mr-2"></i>
+                    Help
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="page-header-content header-elements-md-inline">
+              <div class="page-title d-flex">
+                <h4>
+                  <a href="http://10.199.37.5/layers/app/dashboard">
+                    <i class="text-info-700 icon-arrow-left8"></i>
+                  </a>
+                  <span class="font-weight-semibold ml-2 text-info-700">
+                    Unit Claim
+                  </span>
+                </h4>
+                <a
+                  href="#"
+                  class="header-elements-toggle text-default d-md-none"
+                  ><i class="icon-more"></i
+                ></a>
+              </div>
+              <div class="header-elements d-none">
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="http://10.199.37.5/layers/uploads/unit/karan-vs-state.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-link btn-float font-size-sm font-weight-semibold text-default legitRipple"
+                  >
+                    <i class="icon-clipboard3 text-danger-700"></i>
+                    <span>Karan Vs State Compliance </span>
+                  </a>
+
+                  <a
+                    href="http://10.199.37.5/layers/documents/view_document?module_id=c8600f2e9956abbbbd116b0f2744bf474aeb8f49fb65977bede8f04665288e701ed0ea1b517ea33c22378f9a0ea76dbf8280be954cea4a25378241a5cb5c1c0fnTacDwx25vfj9A44xeGqFS47u9y6vnX0h%2BDpX7HfabI%3D&amp;doc_id=550748d3c5628de3b114135666d9c9dd30fc35330b8c8d43776d6cd0f070db1c375d8e1e47784f758ec47fe3c685455bf9e496a31f22df2b2b78b55b24cd8503FJ7%2BaVqkK1kYa7dSTVLcKQx1WIoOVpdO546xFHtwmhsfWc7BKerFYZIlpO1kieSJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-link btn-float font-size-sm font-weight-semibold text-default legitRipple"
+                  >
+                    <i class="icon-clipboard3 text-danger-700"></i>
+                    <span>Unit Criteria Circular</span>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="http://10.199.37.5/layers/uploads/unit/unit.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-link btn-float font-size-sm font-weight-semibold text-default legitRipple"
+                  >
+                    <i class="icon-clipboard3 text-danger-700"></i>
+                    <span>Proceeding Unit</span>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center ml-2">
+                  <select
+                    class="form-control pull-right"
+                    id="trans_judge_list"
+                    fdprocessedid="srd12"
+                  >
+                    <option value="">Select Judge</option>
+                    <option value="DL01064">
+                      Ms. HIMANSHI TYAGI [MM (NI Act) DC ]
+                    </option>
+                  </select>
+                  <!--                        <a href="#" class="btn btn-link btn-float font-size-sm font-weight-semibold text-default">
+                            <i class="icon-stats-bars2 text-danger-700"></i>
+                            <span>Reports</span>
+                        </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /page header -->
+
+          <style>
+            #overlay {
+              position: fixed;
+              top: 0;
+              z-index: 100;
+              width: 100%;
+              height: 100%;
+              display: none;
+              background: rgba(0, 0, 0, 0.6);
+            }
+            .cv-spinner {
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .spinner {
+              width: 40px;
+              height: 40px;
+              border: 4px #ddd solid;
+              border-top: 4px #2e93e6 solid;
+              border-radius: 50%;
+              animation: sp-anime 0.8s infinite linear;
+            }
+            @keyframes sp-anime {
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+            .is-hide {
+              display: none;
+            }
+          </style>
+
+          <div id="overlay">
+            <div class="cv-spinner">
+              <span class="spinner"></span>
+            </div>
+          </div>
+
+          <div class="content">
+            <!-- Inner container -->
+            <div class="d-md-flex align-items-md-start">
+              <!-- Left sidebar component -->
+              <div
+                class="sidebar sidebar-light sidebar-component sidebar-component-left sidebar-expand-md mb-3 content-wrapper"
+              >
+                <!-- Sidebar content -->
+                <div class="sidebar-content">
+                  <!-- Quarter Selection -->
+                  <div class="card card-collapsed">
+                    <div class="card-header bg-info-600 header-elements-inline">
+                      <span
+                        class="text-uppercase font-size-lg font-weight-bold"
+                      >
+                        2024 Q2 (Apr-Jun)
+                      </span>
+                      <div class="header-elements">
+                        <div class="list-icons">
+                          <a
+                            class="list-icons-item rotate-180"
+                            data-action="collapse"
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body" style="display: none">
+                      <div class="row">
+                        <div class="col mb-3">
+                          <div class="form-group">
+                            <select
+                              class="form-control form-control-select2 quarteryear select2-hidden-accessible"
+                              data-select2-id="27"
+                              tabindex="-1"
+                              aria-hidden="true"
+                            >
+                              <option
+                                value="2024"
+                                selected=""
+                                data-select2-id="29"
+                              >
+                                2024
+                              </option>
+                              <option value="2023">2023</option>
+                              <option value="2022">2022</option>
+                              <option value="2021">2021</option>
+                              <option value="2020">2020</option>
+                              <option value="2019">2019</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash?chk="
+                            class="btn bg-teal-400 btn-block btn-float qtr legitRipple"
+                            id="btndivQ1"
+                            data-quarter=""
+                            data-year=""
+                          >
+                            <h1 class="font-weight-black">Q1</h1>
+                            <h1 class="font-weight-black font-size-sm Q1">
+                              JAN-MAR
+                            </h1>
+                            <span class="qyear">2024</span>
+                          </a>
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash?chk="
+                            class="btn bg-purple-300 btn-block btn-float qtr legitRipple"
+                            id="btndivQ3"
+                            data-quarter=""
+                            data-year=""
+                          >
+                            <h1 class="font-weight-black">Q3</h1>
+                            <h1 class="font-weight-black font-size-sm Q3">
+                              JULY-SEP
+                            </h1>
+                            <span class="qyear">2024</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash?chk="
+                            class="btn bg-warning-400 btn-block btn-float qtr legitRipple"
+                            id="btndivQ2"
+                            data-quarter=""
+                            data-year=""
+                          >
+                            <h1 class="font-weight-black">Q2</h1>
+                            <h1 class="font-weight-black font-size-sm Q2">
+                              APR-JUNE
+                            </h1>
+                            <span class="qyear">2024</span>
+                          </a>
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash?chk="
+                            class="btn bg-blue btn-block btn-float qtr legitRipple"
+                            id="btndivQ4"
+                            data-quarter=""
+                            data-year=""
+                          >
+                            <h1 class="font-weight-black">Q4</h1>
+                            <h1 class="font-weight-black font-size-sm Q4">
+                              OCT-DEC
+                            </h1>
+                            <span class="qyear">2024</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Quarter Selection -->
+                  <!-- Unit Claim -->
+                  <div class="card card-collapsed">
+                    <div
+                      class="card-header bg-transparent header-elements-inline"
+                    >
+                      <span
+                        class="text-uppercase font-size-sm font-weight-semibold"
+                      >
+                        <i class="icon-diff-added mr-2 text-info-300"></i>Claim
+                        Unit
+                      </span>
+                      <div class="header-elements">
+                        <div class="list-icons">
+                          <a
+                            class="list-icons-item rotate-180"
+                            data-action="collapse"
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body p-0" style="display: none">
+                      <ul class="nav nav-sidebar" data-nav-type="accordion">
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/cause_list_view"
+                            class="nav-link legitRipple"
+                            ><i class="icon-law"></i>Claim Case Unit</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/daily_working_unit_view"
+                            class="nav-link legitRipple"
+                            ><i class="icon-calendar52"></i> Claim Daily Work
+                            Unit</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/challan_unit_view"
+                            class="nav-link legitRipple"
+                            ><i class="icon-popout"></i> Claim Challan &amp;
+                            Bail Unit</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/other_work_unit_view"
+                            class="nav-link legitRipple"
+                            ><i class="icon-briefcase3"></i> Claim Other Work
+                            Unit</a
+                          >
+                        </li>
+
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/get_case_convictions"
+                            class="nav-link legitRipple"
+                            ><i class="icon-law"></i> Karan Vs State
+                            Compliance</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /Unit Claim -->
+                  <!-- Unit Exemption -->
+                  <div class="card-body p-0">
+                    <div
+                      class="card-header bg-transparent header-elements-inline"
+                    >
+                      <span
+                        class="text-uppercase font-size-sm font-weight-semibold"
+                        ><a
+                          href="http://10.199.37.5/layers/unit/Unitdash/unit_exemption_view"
+                          style="color: rgba(51, 51, 51, 0.85)"
+                          ><i class="fa fa-stamp mr-2 text-info-400"></i> Unit
+                          Exemption</a
+                        ></span
+                      >
+                    </div>
+                  </div>
+                  <!-- /Unit Exemption -->
+                  <!-- Judicial Officer Leave -->
+                  <div class="card">
+                    <div
+                      class="card-header bg-transparent header-elements-inline"
+                    >
+                      <span
+                        class="text-uppercase font-size-sm font-weight-semibold"
+                        ><a
+                          href="http://10.199.37.5/layers/unit/Unitdash/leave_view"
+                          style="color: rgba(51, 51, 51, 0.85)"
+                          ><i class="icon-direction mr-2 text-info-600"></i>
+                          Leave of the Officer</a
+                        ></span
+                      >
+                    </div>
+                  </div>
+                  <!-- /Judicial Officer Leave -->
+                  <!-- Setting -->
+                  <div class="card card-collapsed">
+                    <div
+                      class="card-header bg-transparent header-elements-inline"
+                    >
+                      <span
+                        class="text-uppercase font-size-sm font-weight-semibold"
+                        ><i class="icon-cog2 mr-2 text-info-700"></i>
+                        Setting</span
+                      >
+                      <div class="header-elements">
+                        <div class="list-icons">
+                          <a
+                            class="list-icons-item rotate-180"
+                            data-action="collapse"
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body p-0" style="display: none">
+                      <ul class="nav nav-sidebar" data-nav-type="accordion">
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/gettotalworkingday"
+                            class="nav-link legitRipple"
+                            ><i class="icon-calendar2"></i>Total Working Days
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/gettwentyoldestcase"
+                            class="nav-link legitRipple"
+                            ><i class="icon-law"></i> 20 Oldest Cases</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/getcontestedjudgement"
+                            class="nav-link legitRipple"
+                            ><i class="fa fa-gavel"></i> Contested Judgement</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash?chk=R"
+                            class="nav-link legitRipple"
+                            ><i class="fa fa-gavel"></i> Report</a
+                          >
+                        </li>
+
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/hc_misc_unit_view"
+                            class="nav-link legitRipple"
+                            ><i class="fa icon-calendar2"></i> HC Misc Cases
+                            Report</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="http://10.199.37.5/layers/unit/Unitdash/get_access_report"
+                            class="nav-link legitRipple"
+                            ><i class="icon-file-text text-indigo-300 mr-2"></i>
+                            Access Log Report</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /Setting -->
+                </div>
+                <!-- /sidebar content -->
+              </div>
+              <!--        <div class="blockui-messages bg-slate-700 text-white rounded px-3 py-2" style="display: none;">
+            <i class="icon-spinner10 spinner mt-1"></i>
+            <span class="font-weight-semibold d-block mt-2">Please Wait...</span>
+        </div>
+             /left sidebar component -->
+
+              <!-- Right content -->
+              <div class="" style="width: 100%">
+                <!-- Button classes -->
+                <div class="card">
+                  <div id="summary_div">
+                    <div class="card-header bg-info-600 header-elements-inline">
+                      <h5 class="card-title">Summary</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="card-header header-elements-inline">
+                              <h4 class="card-title">Headname</h4>
+                              <div class="pull-right">
+                                <b>Target Unit:&nbsp;</b>
+                                <div class="btn-group">
+                                  <button
+                                    type="button"
+                                    class="btn btn-sm btn-light legitRipple"
+                                    fdprocessedid="4ld3t"
+                                  >
+                                    Good
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-sm btn-info legitRipple"
+                                    id="targetgood"
+                                    fdprocessedid="ix6qbn"
+                                  >
+                                    0</button
+                                  >&nbsp;
+                                </div>
+                                <div class="btn-group">
+                                  <button
+                                    type="button"
+                                    class="btn btn-sm btn-light legitRipple"
+                                    fdprocessedid="z1f9jh"
+                                  >
+                                    Very Good
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-sm btn-primary legitRipple"
+                                    id="targetverygood"
+                                    fdprocessedid="vzvihj"
+                                  >
+                                    0</button
+                                  >&nbsp;
+                                </div>
+                                <div class="btn-group">
+                                  <button
+                                    type="button"
+                                    class="btn btn-sm btn-light legitRipple"
+                                    fdprocessedid="qh7mas"
+                                  >
+                                    Outstanding
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-sm btn-success legitRipple"
+                                    id="targetoutstanding"
+                                    fdprocessedid="5r41n9"
+                                  >
+                                    0
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="table-responsive">
+                              <table
+                                class="table table-striped table-bordered table-hover"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>Units Earned</th>
+                                    <th>Monthly Breakup</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Case Units</td>
+                                    <td>
+                                      <span id="casesunitmonthly"
+                                        >(9.50+60.75+0)</span
+                                      >
+                                    </td>
+                                    <td><span id="casesunit">70.25</span></td>
+                                    <th>
+                                      <a
+                                        href="http://10.199.37.5/layers/unit/Unitdash/cause_list_view"
+                                        >Action</a
+                                      >
+                                    </th>
+                                  </tr>
+                                  <tr>
+                                    <td>Daily Work Units</td>
+                                    <td>
+                                      <span id="dailyworkingunitmonthly"
+                                        >(12+12.5+0)</span
+                                      >
+                                    </td>
+                                    <td>
+                                      <span id="dailyworkunit">24.5</span>
+                                    </td>
+                                    <th>
+                                      <a
+                                        href="http://10.199.37.5/layers/unit/Unitdash/daily_working_unit_view"
+                                        >Action</a
+                                      >
+                                    </th>
+                                  </tr>
+                                  <tr>
+                                    <td>Challan &amp; Bail Units</td>
+                                    <td>
+                                      <span id="challanunitmonthly"
+                                        >(0+0+0+0+0+0+0 )</span
+                                      >
+                                    </td>
+                                    <td>
+                                      <span id="all_challan_bail_sar_mcd_unit"
+                                        >0</span
+                                      >
+                                    </td>
+                                    <th>
+                                      <a
+                                        href="http://10.199.37.5/layers/unit/Unitdash/challan_unit_view"
+                                        >Action</a
+                                      >
+                                    </th>
+                                  </tr>
+                                  <tr>
+                                    <td>Link Court Duty Units</td>
+                                    <td>
+                                      <span id="linkunitmontyly">(0+0+0)</span>
+                                    </td>
+                                    <td><span id="linkcourunit">0</span></td>
+                                    <th>
+                                      <a
+                                        href="http://10.199.37.5/layers/unit/Unitdash/other_work_unit_view"
+                                        >Action</a
+                                      >
+                                    </th>
+                                  </tr>
+                                  <tr>
+                                    <td>Administrative Work Units</td>
+                                    <td>
+                                      <span id="admworkunitmontyly"
+                                        >(0+0+0)</span
+                                      >
+                                    </td>
+                                    <td>
+                                      <span id="administrativeworkunit">0</span>
+                                    </td>
+                                    <th>
+                                      <a
+                                        href="http://10.199.37.5/layers/unit/Unitdash/add_adm_oth_work_unit_view"
+                                        >Action</a
+                                      >
+                                    </th>
+                                  </tr>
+                                  <tr>
+                                    <td>Bonus Units</td>
+                                    <td></td>
+                                    <td><span id="bonusunit">0.00</span></td>
+                                    <th>Action</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Grand Total (Including Bonus Units)</td>
+                                    <td></td>
+                                    <td>
+                                      <span id="grandtotaluntiwithbonuspoint"
+                                        >94.75</span
+                                      >
+                                    </td>
+                                    <th>Action</th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div
+                              class="card-footer bg-white d-flex justify-content-between"
+                            >
+                              <div>
+                                <div class="list-icons">
+                                  <span class="mt-1 font-weight-bold"
+                                    >Grading as per Unit Criteria</span
+                                  >
+                                </div>
+                              </div>
+                              <ul
+                                class="list-inline list-inline-dotted mb-0 mt-1 mt-sm-0"
+                              >
+                                <li class="list-inline-item">
+                                  <a
+                                    class="btn btn-danger btn-sm legitRipple"
+                                    href="#"
+                                    ><span id="grandingasperunit"
+                                      >Very Good</span
+                                    ></a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-header header-elements-inline">
+                              <h5 class="card-title">Working Days Details</h5>
+                            </div>
+                            <ul class="list-group list-group-flush border-top">
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  No. of Working Days in Quarter
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info-300 ml-auto"
+                                  id="totalworkingday"
+                                  >0</span
+                                >
+                              </a>
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  No. of Days Officer on Leave
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info-400 ml-auto"
+                                  id="leavetaken"
+                                  >0</span
+                                >
+                              </a>
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  No. of Days Officer on Other Duty
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info ml-auto"
+                                  id="othreduty"
+                                  >0</span
+                                >
+                              </a>
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  No. of Working Days as Link
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info-600 ml-auto"
+                                  id="totalworkingdayaslink"
+                                  >0</span
+                                >
+                              </a>
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  No. of Actual Working Days
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-pink ml-auto"
+                                  id="actualworkingdayinquarter"
+                                  >0</span
+                                >
+                              </a>
+                            </ul>
+                            <!--                                    <div class="card-footer d-flex justify-content-between">
+                                        <span class="text-muted">Last Updated on:</span>
+                                        <span>
+                                            22.08.2020
+                                        </span>
+                                    </div>-->
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-header header-elements-inline">
+                              <h5 class="card-title">Contested Judgements</h5>
+                            </div>
+                            <ul class="list-group list-group-flush border-top">
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  Minimum Contested Judgements
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info-300 ml-auto"
+                                  id="mincontestedjudgement"
+                                  >0</span
+                                >
+                              </a>
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  Actual Contested Judgements
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info-400 ml-auto"
+                                  id="actualcontestedjudgement"
+                                  >0</span
+                                >
+                              </a>
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  Percentage Excess Judgement
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info ml-auto"
+                                  id="percentageaccesscontestedjudgement"
+                                  >0</span
+                                >
+                              </a>
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  Granding
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-pink ml-auto"
+                                  id="grandingadequateinadequte"
+                                  >Inadequate</span
+                                >
+                              </a>
+                              <p class="list-group-item">
+                                <span class="font-weight-semibold"> </span>
+                                <span
+                                  class="badge badge-lg bg-white ml-auto text-white"
+                                  >54</span
+                                >
+                              </p>
+                            </ul>
+                            <!--                                    <div class="card-footer d-flex justify-content-between">
+                                        <span class="text-muted">Last Updated on:</span>
+                                        <span>
+                                            22.08.2020
+                                        </span>
+                                    </div>-->
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-header header-elements-inline">
+                              <h5 class="card-title">20 Oldest Cases</h5>
+                            </div>
+                            <ul class="list-group list-group-flush border-top">
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  Total Oldest Case
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info-300 ml-auto"
+                                  id="totaltwentyoldestcase"
+                                  >0</span
+                                >
+                              </a>
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  Disposed Oldest Case
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info-400 ml-auto"
+                                  id="totaltwentyoldestdisposedcases"
+                                  >0</span
+                                >
+                              </a>
+                              <a
+                                href="#"
+                                class="list-group-item list-group-item-action legitRipple"
+                              >
+                                <span class="font-weight-semibold">
+                                  Disposed Percentage
+                                </span>
+                                <span
+                                  class="badge badge-lg bg-info ml-auto"
+                                  id="twentyoldestcasedisposalpercentage"
+                                  >0</span
+                                >
+                              </a>
+                              <p class="list-group-item">
+                                <span class="font-weight-semibold"> </span>
+                                <span
+                                  class="badge badge-lg bg-white ml-auto text-white"
+                                ></span>
+                              </p>
+                              <p class="list-group-item">
+                                <span class="font-weight-semibold"> </span>
+                                <span
+                                  class="badge badge-lg bg-white ml-auto text-white"
+                                ></span>
+                              </p>
+                            </ul>
+                            <!--                                    <div class="card-footer d-flex justify-content-between">
+                                        <span class="text-muted">Last Updated on:</span>
+                                        <span>
+                                            22.08.2020
+                                        </span>
+                                    </div>-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Checking before report final submited-->
+                  <div class="card" hidden="hidden" id="checking_data_div">
+                    <div class="card-header bg-info-600 header-elements-inline">
+                      <h5 class="card-title">Report</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="table-responsive">
+                              <table
+                                class="table table-striped table-bordered table-hover"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>Sr.No.</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>
+                                      Your total working days in this quarter
+                                    </td>
+                                    <td>
+                                      <span
+                                        style="text-align: center"
+                                        id="workingdaycheck"
+                                        ><a
+                                          href="http://10.199.37.5/layers/unit/Unitdash/gettotalworkingday"
+                                          ><b class="text-danger"
+                                            >Required Data Not Filled</b
+                                          ></a
+                                        ></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Your Causelist in this Report</td>
+                                    <td>
+                                      <span id="causelistcheck"
+                                        ><b class="text-success">Yes</b></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>3</td>
+                                    <td>20 oldest cases</td>
+                                    <td>
+                                      <span id="twentyoldestcasecheck"
+                                        ><a
+                                          href="http://10.199.37.5/layers/unit/Unitdash/gettwentyoldestcase"
+                                          ><b class="text-danger"
+                                            >Required Data Not Filled</b
+                                          ></a
+                                        ></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4</td>
+                                    <td>Contested Judgements</td>
+                                    <td>
+                                      <span id="contestedjudgementcheck"
+                                        ><a
+                                          href="http://10.199.37.5/layers/unit/Unitdash/getcontestedjudgement"
+                                          ><b class="text-danger"
+                                            >Required Data Not Filled</b
+                                          ></a
+                                        ></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>5</td>
+                                    <td>Your Leave</td>
+                                    <td>
+                                      <span id="leavecheck"
+                                        ><a
+                                          href="http://10.199.37.5/layers/unit/Unitdash/leave_view"
+                                          ><b class="text-violet-800"
+                                            >Data Not Filled</b
+                                          ></a
+                                        ></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>6</td>
+                                    <td>Unit Exemption</td>
+                                    <td>
+                                      <span id="exemptioncheck"
+                                        ><a
+                                          href="http://10.199.37.5/layers/unit/Unitdash/unit_exemption_view"
+                                          ><b class="text-violet-800"
+                                            >Data Not Filled</b
+                                          ></a
+                                        ></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>7</td>
+                                    <td>Other work units</td>
+                                    <td>
+                                      <span id="otherworkunitcheck"
+                                        ><a
+                                          href="http://10.199.37.5/layers/unit/Unitdash/other_work_unit_view"
+                                          ><b class="text-violet-800"
+                                            >Data Not Filled</b
+                                          ></a
+                                        ></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>8</td>
+                                    <td>Daily Working Units</td>
+                                    <td>
+                                      <span id="dailyworkunitcheck"
+                                        ><b class="text-success">Yes</b></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>9</td>
+                                    <td>Traffic, Bail and Surfaci Act Units</td>
+                                    <td>
+                                      <span id="trafficcheck"
+                                        ><a
+                                          href="http://10.199.37.5/layers/unit/Unitdash/challan_unit_view"
+                                          ><b class="text-violet-800"
+                                            >Data Not Filled</b
+                                          ><!--</a--></a
+                                        ></span
+                                      >
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="3">
+                                      <textarea
+                                        rows="5"
+                                        cols="175"
+                                        hidden=""
+                                        id="finalremark"
+                                        name="finalremark"
+                                        placeholder="Enter Remark"
+                                        maxlength="250"
+                                        required=""
+                                      ></textarea>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div
+                              class="card-footer bg-white d-flex justify-content-between"
+                            >
+                              <div>
+                                <div class="list-icons">
+                                  <span class="mt-1 font-weight-bold"
+                                    >Submit button enable after complete this
+                                    quarter.</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-footer text-center"
+                      hidden=""
+                      id="finalsubmitdiv"
+                    >
+                      <a
+                        href="#"
+                        class="btn bg-indigo finalsubmitbuttonclass legitRipple"
+                        id="finalsubmitbtn"
+                        onclick="return confirm('Are you sure?')"
+                      >
+                        Submit <i class="icon-arrow-right5 ml-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!--End Checking before report final submited-->
+                  <!--Report View-->
+                  <div class="card" hidden="hidden" id="report_view_div">
+                    <div class="card-header bg-info-600 header-elements-inline">
+                      <h5 class="card-title">Print Report</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card">
+                            <div class="table-responsive">
+                              <table
+                                class="table table-striped table-bordered table-hover"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>Sr.No.</th>
+                                    <th>Quarter</th>
+                                    <th>Year</th>
+                                    <th>View</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>2024</td>
+                                    <td>
+                                      <a
+                                        href="http://10.199.37.5/layers/unit/Unitdash/short_report_view"
+                                        >View Report</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End Report View-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="blockui-message bg-slate-700 text-white rounded px-3 py-2"
+            style="display: none"
+          >
+            <i class="icon-spinner10 spinner mt-1"></i>
+            <span class="font-weight-semibold d-block mt-2"
+              >Please Wait...</span
+            >
+          </div>
+        </div>
+
+        <!--Code of Sandeep footer added here /-->
+        <script
+          src="http://10.199.37.5/layers/assets/global_assets/js/plugins/forms/validation/validate.min.js "
+          type="text/javascript"
+        ></script>
+        <script
+          src="http://10.199.37.5/layers/assets/global_assets/js/plugins/forms/validation/additional_methods.min.js"
+          type="text/javascript"
+        ></script>
+
+        <!--Search Employee Modal Start-->
+        <!-- Primary modal -->
+        <div id="modal_theme_primary_model" class="modal fade" tabindex="-1">
+          <div class="modal-dialog" id="modal_large_model">
+            <div class="modal-content">
+              <div class="modal-header bg-indigo">
+                <h6 class="modal-title">
+                  <i class="fa fa-search"></i> Employee Search
+                </h6>
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
+              </div>
+
+              <div class="modal-body loaderdiv_unit" style="zoom: 1">
+                <!--<div class="card">-->
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Search Type</label
+                    >
+                    <div class="col-lg-9">
+                      <input type="hidden" id="redirect_link" />
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        id="dpSearchTypes_model"
+                        data-select2-id="dpSearchTypes_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDistrict_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select District</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpDistrict"
+                        id="dpDistricts_model"
+                        data-placeholder="Select a District..."
+                        data-select2-id="dpDistricts_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divBranch_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Branch</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpBranch"
+                        id="dpBranchs_model"
+                        data-placeholder="Select a Branch..."
+                        data-select2-id="dpBranchs_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divBranchRole_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Role In Branch</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpBranchRole"
+                        id="dpBranchRoles_model"
+                        data-placeholder="Select a Role In Branch..."
+                        data-select2-id="dpBranchRoles_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divCourtType_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Court Type</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpCourt"
+                        id="dpCourts_model"
+                        data-placeholder="Select a Court Type..."
+                        data-select2-id="dpCourts_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divJudge_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Judge</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpJudge"
+                        id="dpJudges_model"
+                        data-placeholder="Select a Judge..."
+                        data-select2-id="dpJudges_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divCourtRole_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Role In Court</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpCourtRole"
+                        id="dpCourtRoles_model"
+                        data-placeholder="Select a Role In Court..."
+                        data-select2-id="dpCourtRoles_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDesignation_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Designation</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpDesignation"
+                        id="dpDesignations_model"
+                        data-placeholder="Select a Designation..."
+                        data-select2-id="dpDesignations_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divRole_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Role</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpRole"
+                        id="dpRoles_model"
+                        data-placeholder="Select a Role..."
+                        data-select2-id="dpRoles_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divFilterOption_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Filter Option</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        name="dpOption"
+                        id="dpOptions_model"
+                        style="width: 100%"
+                        data-select2-id="dpOptions_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      >
+                        <option value="ecode" data-select2-id="11">
+                          Employee Code
+                        </option>
+                        <option value="ename">Name</option>
+                        <option value="efname">Father Name</option>
+                        <!--<option value="edob_model">Date of Birth</option>-->
+                        <option value="emobile">Mobile</option>
+                        <!--<option value="epan">PAN</option>-->
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divFilterText_model">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Enter Filter Text</label
+                    >
+                    <div class="col-lg-9">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="txtOption"
+                        id="txtOptions_model"
+                        required=""
+                        placeholder="Enter Employee Code"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="form-group row hidden"
+                    id="divDivertedPosting_model"
+                  >
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Posting</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpDivertedPosting"
+                        id="dpDivertedPostings_model"
+                        data-placeholder="Select a Posting..."
+                        data-select2-id="dpDivertedPostings_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div
+                    class="form-group row hidden"
+                    id="divDeputationsPosting_model"
+                  >
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Posting</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpDeputationsPosting"
+                        id="dpDeputationsPostings_model"
+                        data-placeholder="Select a Posting..."
+                        data-select2-id="dpDeputationsPostings_model"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer" style="text-align: right">
+                  <button
+                    type="button"
+                    class="btn bg-indigo legitRipple"
+                    id="btnSearch_model"
+                  >
+                    Search <i class="icon-search4 ml-1"></i>
+                  </button>
+                </div>
+                <div
+                  class="blockui-message bg-slate-700 text-white rounded px-3 py-2"
+                  style="display: none"
+                >
+                  <i class="icon-spinner10 spinner mt-1"></i>
+                  <span class="font-weight-semibold d-block mt-2"
+                    >Please Wait...</span
+                  >
+                </div>
+                <!--                </div>-->
+                <div class="hidden" id="searchTableCard_model">
+                  <div id="divSearchTables_model"></div>
+                </div>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+        <!-- /primary modal -->
+        <!--Search Employee Modal End-->
+
+        <!--Employee Personal & Qualification Detail Update Model Start-->
+        <div
+          id="emp_personal_qual_detail_update_model"
+          class="modal fade"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header bg-primary">
+                <h6 class="modal-title">Employee Details Edit</h6>
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <ul class="nav nav-tabs nav-tabs-bottom">
+                  <li class="nav-item">
+                    <a
+                      href="#bottom-tab1_emp_detail"
+                      class="nav-link active"
+                      data-toggle="tab"
+                      ><i class="icon-user-check text-pink-300"></i
+                      >&nbsp;&nbsp;Personal Details</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#bottom-tab2_emp_detail"
+                      class="nav-link"
+                      data-toggle="tab"
+                      id="qualification_tab"
+                      ><i class="icon-graduation text-pink-300"></i
+                      >&nbsp;&nbsp;Qualification Details</a
+                    >
+                  </li>
+                  <!--<li class="nav-item"><a href="#bottom-tab3_emp_detail" class="nav-link" data-toggle="tab" id="profile_pic_tab"><i class="icon-picassa text-pink-300"></i>&nbsp;&nbsp;Profile Picture</a></li>-->
+                </ul>
+                <div class="tab-content">
+                  <div
+                    class="tab-pane fade show active"
+                    id="bottom-tab1_emp_detail"
+                  >
+                    <form
+                      action="http://10.199.37.5/layers/employees/Employeesmgmt/update_employee_details_model"
+                      name="personaldetailupdateform_model"
+                      method="post"
+                      accept-charset="utf-8"
+                      novalidate="novalidate"
+                      autocomplete="off"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrf_test_lalit"
+                        value="faf4bccd3d4401d33204d236c2e8e888"
+                      />
+                      <div class="card-body">
+                        <fieldset class="mb-3">
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee Code/Pin<em class="text-danger-800"
+                                ><b> *</b></em
+                              ></label
+                            >
+                            <div class="col-lg-9">
+                              <input type="hidden" name="uuid" id="uuid" />
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="employee_code_pin_model"
+                                id="employee_code_pin_model"
+                                placeholder="Enter Employee Code/Pin"
+                                maxlength="8"
+                                minlength="5"
+                                onkeypress="return isNumber_model(event)"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee Name<em class="text-danger-800"
+                                ><b> *</b></em
+                              ></label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="employee_name_model"
+                                id="employee_name_model"
+                                placeholder="Enter Employee Name"
+                                maxlength="80"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Father Name<em class="text-danger-800"
+                                ><b> *</b></em
+                              ></label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="father_name_model"
+                                id="father_name_model"
+                                placeholder="Enter Employee's Father Name"
+                                maxlength="50"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Mother Name</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="mother_name_model"
+                                id="mother_name_model"
+                                placeholder="Enter Employee's Mother Name"
+                                maxlength="50"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Spouse Name</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="spouse_name_model"
+                                id="spouse_name_model"
+                                placeholder="Enter Employee's Spouse Name"
+                                maxlength="50"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Date of Birth<em class="text-danger-800"
+                                ><b> *</b></em
+                              ></label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control daterange-single dob_model"
+                                name="dob_model"
+                                id="dob_model"
+                                placeholder="Select Date Of Birth"
+                                readonly=""
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Gender</label
+                            >
+                            <div class="col-lg-9">
+                              <select
+                                class="form-control"
+                                name="employee_gender_model"
+                                id="employee_gender_model"
+                              ></select>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Marital Status</label
+                            >
+                            <div class="col-lg-9">
+                              <select
+                                class="form-control"
+                                name="marital_status_model"
+                                id="marital_status_model"
+                              >
+                                <option value="">
+                                  Select Employee Marital Status
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-group row hidden">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee's Aadhar</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="employee_aadhar_model"
+                                id="employee_aadhar_model"
+                                placeholder="Enter Employee's AADHAR"
+                                maxlength="12"
+                                minlength="12"
+                                onkeypress="return isNumber_model(event)"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Initial Date of Joining<em
+                                class="text-danger-800"
+                                ><b> *</b></em
+                              ></label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control daterange-single doj"
+                                name="employee_initial_doj_model"
+                                id="employee_initial_doj_model"
+                                placeholder="Select Employee's Initial Date Of Joining"
+                                readonly=""
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee's E-mail</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="email"
+                                class="form-control"
+                                name="employee_email_model"
+                                id="employee_email_model"
+                                placeholder="Enter Employee's Email"
+                                maxlength="80"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee's Alternet E-mail</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="email"
+                                class="form-control"
+                                name="employee_alt_email_model"
+                                id="employee_alt_email_model"
+                                placeholder="Enter Employee's Alternet Email"
+                                maxlength="80"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee's Mobile</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="employee_mobile_model"
+                                id="employee_mobile_model"
+                                placeholder="Enter Employee's Mobile"
+                                readonly=""
+                                maxlength="10"
+                                minlength="10"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee's Alternet Mobile</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="employee_alt_mobile_model"
+                                id="employee_alt_mobile_model"
+                                placeholder="Enter Employee's Alternet Mobile"
+                                maxlength="10"
+                                minlength="10"
+                                onkeypress="return isNumber_model(event)"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee's Other Alternet Mobile</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="employee_other_alt_mobile_model"
+                                id="employee_other_alt_mobile_model"
+                                placeholder="Enter Employee's Other Alternet Mobile"
+                                maxlength="10"
+                                minlength="10"
+                                onkeypress="return isNumber_model(event)"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee's Postal Address</label
+                            >
+                            <div class="col-lg-9">
+                              <textarea
+                                class="form-control"
+                                name="employee_postal_address_model"
+                                id="employee_postal_address_model"
+                                placeholder="Entar Employee's Postal Address"
+                                rows="2"
+                                maxlength="150"
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                            ></label>
+                            <div class="col-lg-3">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="postal_pin_model"
+                                id="postal_pin_model"
+                                placeholder="Enter Pin"
+                                maxlength="6"
+                                minlength="6"
+                                onkeypress="return isNumber_model(event)"
+                              />
+                            </div>
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >State</label
+                            >
+                            <div class="col-lg-3">
+                              <select
+                                class="form-control"
+                                name="postal_state_model"
+                                id="postal_state_model"
+                              >
+                                <option value="">Select Postal State</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!--                                <div class="form-group row">
+                                    <div class="col-lg-3">
+                                        Is Same For Permanent Address
+
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <input type="checkbox" id="same_addredd" value="Y">
+                                    </div>
+                                </div>-->
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Employee's Permanent Address</label
+                            >
+                            <div class="col-lg-9">
+                              <textarea
+                                class="form-control"
+                                name="employee_permanent_address_model"
+                                id="employee_permanent_address_model"
+                                placeholder="Entar Employee's Permanent Address"
+                                rows="2"
+                                maxlength="150"
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                            ></label>
+                            <div class="col-lg-3">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="permanent_pin_model"
+                                id="permanent_pin_model"
+                                placeholder="Enter Pin"
+                                maxlength="6"
+                                minlength="6"
+                                onkeypress="return isNumber_model(event)"
+                              />
+                            </div>
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >State</label
+                            >
+                            <div class="col-lg-3">
+                              <select
+                                class="form-control"
+                                name="permanent_state_model"
+                                id="permanent_state_model"
+                              >
+                                <option value="">Select Permanent State</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group row"></div>
+                        </fieldset>
+                      </div>
+                      <div class="card-footer text-right">
+                        <button
+                          type="submit"
+                          name="btnsubmit_model"
+                          class="btn bg-blue-700 btn-xs legitRipple"
+                        >
+                          Update Details
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="bottom-tab2_emp_detail">
+                    <div class="card">
+                      <div class="card-body loaderdiv_emp_edu_loder">
+                        <div id="qual_mess_model"></div>
+                        <fieldset>
+                          <div class="form-group row">
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Qualification</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="hidden"
+                                name="emp_uuid"
+                                id="emp_uuid"
+                                value="34d57b752b4712934dab8298b3abb239"
+                              />
+                              <select
+                                class="form-control"
+                                name="qualification_model"
+                                id="qualification_model"
+                              >
+                                <option value="">Select Qualification</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div
+                            class="form-group row hidden"
+                            id="qual_stream_model_div"
+                          >
+                            <label
+                              class="col-form-label col-lg-3 font-weight-semibold"
+                              >Qual. Stream</label
+                            >
+                            <div class="col-lg-9">
+                              <select
+                                class="form-control"
+                                name="qualification_stream_model"
+                                id="qualification_stream_model"
+                              >
+                                <option value="">
+                                  Select Qualification Stream
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-lg-3 col-form-label font-weight-semibold"
+                              >Examination Board / University</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                id="board_name_model"
+                                name="board_name_model"
+                                maxlength="50"
+                                class="form-control"
+                                placeholder="Board/ University Name"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-lg-3 col-form-label font-weight-semibold"
+                              >School / Collage</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                name="school_or_collage_name_model"
+                                maxlength="100"
+                                id="school_or_collage_name_model"
+                                palceholder="School/ Collage Name"
+                                class="form-control"
+                                placeholder="School/ Collage Name"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-lg-3 col-form-label font-weight-semibold"
+                              >Percentage</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="text"
+                                name="marks_obtain_model"
+                                id="marks_obtain_model"
+                                class="form-control"
+                                placeholder="Obtain % in Exams"
+                                onkeypress="return isNumber_model(event)"
+                                maxlength="5"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label
+                              class="col-lg-3 col-form-label font-weight-semibold"
+                              >Passing Year</label
+                            >
+                            <div class="col-lg-9">
+                              <select
+                                class="form-control"
+                                name="passing_year_model"
+                                id="passing_year_model"
+                              >
+                                <option value="">Select Passing Year</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div
+                            class="blockui-message bg-slate-700 text-white rounded px-3 py-2"
+                            style="display: none"
+                          >
+                            <i class="icon-spinner10 spinner mt-1"></i>
+                            <span class="font-weight-semibold d-block mt-2"
+                              >Please Wait...</span
+                            >
+                          </div>
+
+                          <div class="text-right">
+                            <button
+                              type="button"
+                              name="education_detail_btn_model"
+                              id="education_detail_btn_model"
+                              class="btn btn-primary btn-flat education_detail_btn_model legitRipple"
+                            >
+                              Save Qualification
+                            </button>
+                          </div>
+                        </fieldset>
+                        <div class="hidden" id="edu_detail_table_model">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th>#</th>
+                                <th>Qualification</th>
+                                <th>Qualification Stream</th>
+                                <th>Board / University</th>
+                                <th>School / Collage</th>
+                                <th>Marks Obtain</th>
+                                <th>Passing Year</th>
+                              </tr>
+                            </thead>
+                            <tbody id="edu_table_body_model"></tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="bottom-tab3_emp_detail">
+                    <div class="card">
+                      <div class="card-body">
+                        <form
+                          action="http://10.199.37.5/layers/employees/Employeesmgmt/save_employee_profile_image"
+                          name="emp_image_save"
+                          enctype="multipart/form-data"
+                          method="post"
+                          accept-charset="utf-8"
+                          autocomplete="off"
+                        >
+                          <input
+                            type="hidden"
+                            name="csrf_test_lalit"
+                            value="faf4bccd3d4401d33204d236c2e8e888"
+                          />
+                          <div class="form-group row">
+                            <label
+                              class="col-lg-3 col-form-label font-weight-semibold"
+                              >Select Profile Picture</label
+                            >
+                            <div class="col-lg-9">
+                              <input
+                                type="file"
+                                class="form-control"
+                                name="doc_file[]"
+                                id="profile_pic_model"
+                                onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row text-center">
+                            <input
+                              type="hidden"
+                              name="emp_uuid"
+                              value="34d57b752b4712934dab8298b3abb239"
+                            />
+                            <img
+                              id="blah"
+                              style="margin-left: 40%"
+                              width="130px"
+                              height="150px"
+                            />
+                          </div>
+                          <div class="text-right">
+                            <input
+                              type="submit"
+                              class="btn btn-primary btn-sm btn-flat legitRipple legitRipple-empty"
+                              name="emp_image_save"
+                              value="Save Image"
+                            />
+                            <a
+                              href="#"
+                              id="profile_final_submit"
+                              class="btn btn-warning btn-sm btn-flat legitRipple"
+                              onclick='return confirm("After Submit You Cannot Update Any Changes in Your Personal Details");'
+                              >Final Submit</a
+                            >
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <!--                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                <button type="button" class="btn bg-primary">Save changes</button>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Employee Personal & Qualification Detail Update Model End-->
+
+        <!--For Employee Qualifications Details-->
+
+        <!-- Footer -->
+        <div class="navbar navbar-expand-lg navbar-light">
+          <div class="text-center d-lg-none w-100">
+            <button
+              type="button"
+              class="navbar-toggler dropdown-toggle"
+              data-toggle="collapse"
+              data-target="#navbar-footer"
+            >
+              <i class="icon-unfold mr-2"></i>
+              Footer
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar-footer">
+            <span class="navbar-text">
+              © 2024 <a href="#">Delhi District Courts</a> by
+              <a href="#" target="_blank">IT-Cell (HQs),Tis Hazari</a>
+            </span>
+
+            <!--        <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link"
+                                    target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+            <li class="nav-item"><a href="http://demo.interface.club/limitless/docs/"
+                                    class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a>
+            </li>
+            <li class="nav-item"><a
+                    href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov"
+                    class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i
+                            class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+        </ul>-->
+          </div>
+        </div>
+        <!-- /footer -->
+
+        <!--Search Employee Modal Start-->
+        <!-- Primary modal -->
+        <div id="modal_theme_primary" class="modal fade" tabindex="-1">
+          <div class="modal-dialog" id="modal_large">
+            <div class="modal-content">
+              <div class="modal-header bg-indigo">
+                <h6 class="modal-title">
+                  <i class="fa fa-search"></i> Employee Search
+                </h6>
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <!--<div class="card">-->
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Search Type</label
+                    >
+                    <div class="col-lg-9">
+                      <input type="hidden" id="redirect_link" />
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        id="dpSearchTypes"
+                        data-select2-id="dpSearchTypes"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDistrict">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select District</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpDistrict"
+                        id="dpDistricts"
+                        data-placeholder="Select a District..."
+                        data-select2-id="dpDistricts"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divBranch">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Branch</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpBranch"
+                        id="dpBranchs"
+                        data-placeholder="Select a Branch..."
+                        data-select2-id="dpBranchs"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divBranchRole">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Role In Branch</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpBranchRole"
+                        id="dpBranchRoles"
+                        data-placeholder="Select a Role In Branch..."
+                        data-select2-id="dpBranchRoles"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divCourtType">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Court Type</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpCourt"
+                        id="dpCourts"
+                        data-placeholder="Select a Court Type..."
+                        data-select2-id="dpCourts"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divJudge">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Judge</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpJudge"
+                        id="dpJudges"
+                        data-placeholder="Select a Judge..."
+                        data-select2-id="dpJudges"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divCourtRole">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Role In Court</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpCourtRole"
+                        id="dpCourtRoles"
+                        data-placeholder="Select a Role In Court..."
+                        data-select2-id="dpCourtRoles"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDesignation">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Designation</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpDesignation"
+                        id="dpDesignations"
+                        data-placeholder="Select a Designation..."
+                        data-select2-id="dpDesignations"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divRole">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Role</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpRole"
+                        id="dpRoles"
+                        data-placeholder="Select a Role..."
+                        data-select2-id="dpRoles"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divFilterOption">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Filter Option</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        name="dpOption"
+                        id="dpOptions"
+                        style="width: 100%"
+                        data-select2-id="dpOptions"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      >
+                        <option value="ecode" data-select2-id="24">
+                          Employee Code
+                        </option>
+                        <option value="ename">Name</option>
+                        <option value="efname">Father Name</option>
+                        <!--<option value="edob">Date of Birth</option>-->
+                        <option value="emobile">Mobile</option>
+                        <!--<option value="epan">PAN</option>-->
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divFilterText">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Enter Filter Text</label
+                    >
+                    <div class="col-lg-9">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="txtOption"
+                        id="txtOptions"
+                        required=""
+                        placeholder="Enter Employee Code"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDivertedPosting">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Posting</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpDivertedPosting"
+                        id="dpDivertedPostings"
+                        data-placeholder="Select a Posting..."
+                        data-select2-id="dpDivertedPostings"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="form-group row hidden" id="divDeputationsPosting">
+                    <label class="col-form-label col-lg-3 font-weight-semibold"
+                      >Select Posting</label
+                    >
+                    <div class="col-lg-9">
+                      <select
+                        class="form-control select select2-hidden-accessible"
+                        data-fouc=""
+                        name="dpDeputationsPosting"
+                        id="dpDeputationsPostings"
+                        data-placeholder="Select a Posting..."
+                        data-select2-id="dpDeputationsPostings"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      ></select>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer" style="text-align: right">
+                  <button
+                    type="button"
+                    class="btn bg-indigo legitRipple"
+                    id="btnSearch"
+                  >
+                    Search <i class="icon-search4 ml-1"></i>
+                  </button>
+                </div>
+
+                <!--                </div>-->
+                <div class="hidden" id="searchTableCard">
+                  <div id="divSearchTables"></div>
+                </div>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+        <!-- /primary modal -->
+        <!--Search Employee Modal End-->
+      </div>
+      <!-- /main content -->
+    </div>
+    <!-- /page content -->
+
+    <div
+      role="log"
+      aria-live="assertive"
+      aria-relevant="additions"
+      class="ui-helper-hidden-accessible"
+    ></div>
+    <span id="PING_IFRAME_FORM_DETECTION" style="display: none"></span>
+  </body>
+</html>

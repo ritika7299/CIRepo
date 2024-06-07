@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-body">
+      <div class="row">
+        <div class="col mb-1">
+          <div class="form-group">
+            <select
+              class="form-control"
+              data-select2-id="27"
+              tabindex="-1"
+              id="pageSelect"
+            >
+              <option value="select" selected="">Select</option>
+              <option value="year2024_details.html">2024</option>
+              <option value="year2023_details.html">2023</option>
+              <option value="year2022_details.html">2022</option>
+              <option value="year2021_details.html">2021</option>
+              <option value="year2020_details.html">2020</option>
+              <option value="year2019_details.html">2019</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="selectoption.js"></script>
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const pageSelect = document.getElementById("pageSelect");
+
+      // Event listener for dropdown change
+      pageSelect.addEventListener("change", function () {
+        const selectedPage = pageSelect.value;
+        if (selectedPage !== "select") {
+          // Redirect to the selected page
+          window.location.href = selectedPage;
+        }
+      });
+    });
+
+    //Select year details for report 
+$(document).ready(function () {
+    const pageSelect = $("#pageSelect");
+  
+    // Event listener for dropdown change
+    pageSelect.on("change", function () {
+      const selectedPage = pageSelect.val();
+      if (selectedPage !== "select") {
+        // Redirect to the selected page
+        window.location.href = selectedPage;
+      }
+    });
+  });
+  </script> -->
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Redirection</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <h1>Select a Page</h1> -->
+    <select id="pageSelect">
+      <option value="select">Select a page</option>
+      <option value="page1.html">Page 1</option>
+      <option value="page2.html">Page 2</option>
+      <option value="page3.html">Page 3</option>
+      <!-- Add more options as needed -->
+    </select>
+    <!-- <script src="script.js"></script> -->
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const pageSelect = document.getElementById("pageSelect");
+
+      // Event listener for dropdown change
+      pageSelect.addEventListener("change", function () {
+        const selectedPage = pageSelect.value;
+        if (selectedPage !== "select") {
+          // Redirect to the selected page
+          window.location.href = selectedPage;
+        }
+      });
+    });
+  </script>
+  <!-- 
+      <select
+                              class="form-control select select2-hidden-accessible"
+                              data-select2-id="27"
+                              tabindex="-1"
+                              id="pageSelect"
+                            >
+                              <option
+                                value="select"
+                                selected=""
+                                data-select2-id="29"
+                              >
+                                Select
+                              </option>
+                              <option value="year2024_details.html">
+                                2024
+                              </option>
+                              <option value="year2023_details.html">
+                                2023
+                              </option>
+                              <option value="year2022_details.html">
+                                2022
+                              </option>
+                              <option value="year2021_details.html">
+                                2021
+                              </option>
+                              <option value="year2020_details.html">
+                                2020
+                              </option>
+                              <option value="year2019_details.html">
+                                2019
+                              </option>
+                            </select>
+
+      document.addEventListener("DOMContentLoaded", function () {
+      const pageSelect = document.getElementById("pageSelect");
+
+      // Event listener for dropdown change
+      pageSelect.addEventListener("change", function () {
+        const selectedPage = pageSelect.value;
+        if (selectedPage !== "select") {
+          // Redirect to the selected page
+          window.location.href = selectedPage;
+        }
+      });
+    });
+
+    onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"    //use in select option
+   -->
+</html>
