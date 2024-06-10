@@ -21,6 +21,9 @@
       type="text/css"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
       href="global_assets/css/icons/fontawesome/styles.min.css"
       rel="stylesheet"
       type="text/css"
@@ -430,9 +433,7 @@
                 <div class="sidebar-content">
                   <!-- Quarter/Year Selection -->
                   <div class="card card-collapsed">
-                    <div
-                      class="card-header bg-success-400 header-elements-inline"
-                    >
+                    <div class="card-header bg-success header-elements-inline">
                       <span
                         class="text-uppercase font-size-lg font-weight-bold"
                       >
@@ -468,7 +469,7 @@
                             href="#"
                             class="nav-link legitRipple"
                             data-toggle="modal"
-                            data-target="#modal_quarter_details"
+                            data-target="#modal_quarter1_details"
                             ><i
                               class="icon-pie-chart5 text-indigo-700 fa-2x"
                             ></i
@@ -478,7 +479,11 @@
                           >
                         </li>
                         <li class="nav-item">
-                          <a href="#" class="nav-link legitRipple"
+                          <a
+                            href="#"
+                            class="nav-link legitRipple"
+                            data-toggle="modal"
+                            data-target="#modal_quarter2_details"
                             ><i class="icon-pie-chart5 text-pink-700 fa-2x"></i
                             ><span class="text-pink-700 fs-3 mt-1"
                               >Q2 (APR-JUNE, 2024)</span
@@ -486,7 +491,11 @@
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a href="#" class="nav-link legitRipple"
+                          <a
+                            href="#"
+                            class="nav-link legitRipple"
+                            data-toggle="modal"
+                            data-target="#modal_quarter3_details"
                             ><i
                               class="icon-pie-chart5 text-warning-700 fa-2x"
                             ></i
@@ -496,7 +505,11 @@
                           >
                         </li>
                         <li class="nav-item">
-                          <a href="#" class="nav-link legitRipple"
+                          <a
+                            href="#"
+                            class="nav-link legitRipple"
+                            data-toggle="modal"
+                            data-target="#modal_quarter4_details"
                             ><i
                               class="icon-pie-chart5 text-success-700 fa-2x"
                             ></i
@@ -616,353 +629,167 @@
               </div>
               <!-- Right content -->
               <div class="" style="width: 100%">
-                <!-- Button classes -->
+                <!-- Button card-1 class -->
                 <div class="card">
                   <div id="quarter1">
-                    <div
-                      class="card-header bg-success-400 header-elements-inline"
-                    >
+                    <div class="card-header bg-success">
                       <h5 class="card-title">
                         Judicial Officer and Court details
                       </h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body mb-3">
                       <div class="col-sm-12">
-                        <div class="card">
-                          <div class="table-responsive">
-                            <table
-                              class="table table-striped table-bordered table-hover"
-                            >
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <a
-                                      href="#"
-                                      class="text-default font-weight-semibold"
-                                      >Date</a
-                                    >
-                                  </td>
-                                  <td>
-                                    <div
-                                      class="table-responsive table-bordered"
-                                    >
-                                      <table
-                                        class="table text-nowrap"
-                                        id="daterange"
-                                      >
-                                        <tbody>
-                                          <tr>
-                                            <th>From</th>
-                                            <th>To</th>
-                                          </tr>
+                        <table
+                          class="table table-striped table-bordered table-hover"
+                        >
+                          <tbody>
+                            <tr>
+                              <td>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold"
+                                  >Date</a
+                                >
+                              </td>
+                              <td>
+                                <div class="date-range-div d-flex">
+                                  <div class="form-date mr-1">10/06/2024</div>
 
-                                          <tr id="trow">
-                                            <td style="width: 50%">
-                                              <div class="input-group">
-                                                <input
-                                                  type="date"
-                                                  class="form-control from hasDatepicker"
-                                                  id="fromdate"
-                                                />
-                                              </div>
-                                            </td>
+                                  <div class="to-date">to 15/06/2024</div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold"
+                                >
+                                  Service Type</a
+                                >
+                              </td>
+                              <td><div class="service-type">DJS</div></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold"
+                                >
+                                  Designation
+                                </a>
+                              </td>
+                              <td style="width: 70%">CJ (Civil Judge)</td>
+                            </tr>
+                            <tr>
+                              <td>Court Type</td>
+                              <td>Civil</td>
+                            </tr>
 
-                                            <td style="width: 50%">
-                                              <div class="input-group">
-                                                <input
-                                                  type="date"
-                                                  class="form-control to hasDatepicker"
-                                                  id="todate"
-                                                />
-                                              </div>
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a
-                                      href="#"
-                                      class="text-default font-weight-semibold"
-                                    >
-                                      Designation</a
-                                    >
-                                  </td>
-                                  <td>
-                                    <div class="form-group pb-0 w-100">
-                                      <select
-                                        class="form-control select select2-hidden-accessible"
-                                        data-select2-id="4"
-                                        tabindex="-1"
-                                        aria-hidden="true"
-                                      >
-                                        <option
-                                          value="selectA"
-                                          id="select"
-                                          tabindex="-1"
-                                        >
-                                          Select
-                                        </option>
-                                        <option value="dhjs">DHJS</option>
-                                        <option value="djs">DJS</option>
-                                      </select>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a
-                                      href="#"
-                                      class="text-default font-weight-semibold"
-                                      >Judge Designation
-                                    </a>
-                                  </td>
-                                  <td style="width: 70%">
-                                    <div class="form-group p-0 w-100">
-                                      <select
-                                        class="form-control select select2-hidden-accessible"
-                                        data-select2-id="5"
-                                        tabindex="-1"
-                                        aria-hidden="true"
-                                      >
-                                        <option
-                                          value="AB"
-                                          data-select2-id="111"
-                                        >
-                                          Select
-                                        </option>
-                                        <option
-                                          value="BC"
-                                          data-select2-id="112"
-                                        >
-                                          ADJ (Additional District Judge)
-                                        </option>
-                                        <option
-                                          value="CD"
-                                          data-select2-id="113"
-                                        >
-                                          ARC (Additional Rent Controller)
-                                        </option>
-                                        <option
-                                          value="DF"
-                                          data-select2-id="114"
-                                        >
-                                          ASJ (Additional Sessions Judge)
-                                        </option>
-                                        <option
-                                          value="FG"
-                                          data-select2-id="115"
-                                        >
-                                          ACMM (Addl. Chief Metropolitan
-                                          Magistrate)
-                                        </option>
-                                        <option
-                                          value="GH"
-                                          data-select2-id="116"
-                                        >
-                                          ACJ cum ARC (Administrative Civil
-                                          Judge Cum Addl. Rent Control)
-                                        </option>
-                                        <option
-                                          value="HI"
-                                          data-select2-id="117"
-                                        >
-                                          ASJ/SPECIAL.JUDGE(NDPS)
-                                        </option>
-                                        <option
-                                          value="IJ"
-                                          data-select2-id="118"
-                                        >
-                                          CCJ cum ARC (CCJ cum Addl. Rent
-                                          Controller)
-                                        </option>
-                                        <option
-                                          value="JK"
-                                          data-select2-id="119"
-                                        >
-                                          CMM (Chief Metropolitan Magistrate )
-                                        </option>
-                                        <option
-                                          value="KL"
-                                          data-select2-id="120"
-                                        >
-                                          CJ (Civil Judge)
-                                        </option>
-                                        <option
-                                          value="LM"
-                                          data-select2-id="121"
-                                        >
-                                          DSJ (District and Sessions Judge)
-                                        </option>
-                                        <option
-                                          value="MN"
-                                          data-select2-id="122"
-                                        >
-                                          DJ (Comm) (District Judge (Commercial
-                                          Court))
-                                        </option>
-                                        <option
-                                          value="OP"
-                                          data-select2-id="123"
-                                        >
-                                          JSCC cum ASCJ cum GJ ( JSCC-cum-Addl.
-                                          SCJ-cum-Guardian Judge)
-                                        </option>
-                                        <option
-                                          value="QR"
-                                          data-select2-id="124"
-                                        >
-                                          Judge FC ( Judge, Family Court )
-                                        </option>
-                                        <option value="ST">
-                                          MM (Metropolitan Magistrate)
-                                        </option>
-                                        <option
-                                          value="TU"
-                                          data-select2-id="125"
-                                        >
-                                          MM [Mahila Court] (MM [METROPOLITAN
-                                          MAGISTRATE] Mahila Court)
-                                        </option>
-                                        <option value="UV">
-                                          PO-MACT (Presiding Off.-MACT)
-                                        </option>
-                                        <option
-                                          value="VW"
-                                          data-select2-id="126"
-                                        >
-                                          PJ FC (Principal Judge, Family Court)
-                                        </option>
-                                        <option
-                                          value="WX"
-                                          data-select2-id="127"
-                                        >
-                                          SCJ cum RC (Senior Civil Judge Cum
-                                          Rent Controller)
-                                        </option>
-                                        <option
-                                          value="XY"
-                                          data-select2-id="128"
-                                        >
-                                          Spl Judge (Special Judge)
-                                        </option>
-                                      </select>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>Select Court</td>
-                                  <td>
-                                    <div class="form-group mb-3 mb-md-2">
-                                      <div
-                                        class="form-check form-check-inline form-check-right"
-                                      >
-                                        <div class="uniform-choice">
-                                          <input
-                                            type="radio"
-                                            class="form-check-input-styled"
-                                            name="radio-inline-right"
-                                            checked=""
-                                            data-fouc=""
-                                          />
-                                        </div>
-                                        <label
-                                          class="form-check-label ml-3 font-size-lg"
-                                        >
-                                          Civil
-                                        </label>
-                                      </div>
+                            <tr>
+                              <td style="width: 30%">
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold"
+                                  >Exemption</a
+                                >
+                              </td>
+                              <td style="width: 70%">
+                                District & Session Judge
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="button-div p-2">
+                        <button
+                          type="submit"
+                          class="btn bg-primary legitRipple float-right submit-btn mb-3"
+                        >
+                          Summary
+                        </button>
+                      </div>
 
-                                      <div
-                                        class="form-check form-check-inline form-check-right"
-                                      >
-                                        <div class="uniform-choice">
-                                          <input
-                                            type="radio"
-                                            class="form-check-input-styled"
-                                            name="radio-inline-right"
-                                            data-fouc=""
-                                          />
-                                        </div>
-                                        <label
-                                          class="font-weight-semilight form-check-label ml-3 font-size-lg"
-                                        >
-                                          Criminal
-                                        </label>
-                                      </div>
-                                    </div>
-                                  </td>
-                                </tr>
+                      <div class="col-sm-12">
+                        <table
+                          class="table table-striped table-bordered table-hover"
+                        >
+                          <tbody>
+                            <tr>
+                              <td>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold"
+                                  >Date</a
+                                >
+                              </td>
+                              <td>
+                                <div class="date-range-div d-flex">
+                                  <div class="form-date mr-1">17/06/2024</div>
 
-                                <tr>
-                                  <td style="width: 30%">
-                                    <a
-                                      href="#"
-                                      class="text-default font-weight-semibold"
-                                      >Exemption</a
-                                    >
-                                  </td>
-                                  <td style="width: 70%">
-                                    <div class="text-left">
-                                      <select
-                                        class="form-control select select2-hidden-accessible"
-                                        data-select2-id="6"
-                                        tabindex="-1"
-                                        aria-hidden="true"
-                                      >
-                                        <option value="sel">Select</option>
-                                        <option value="sel1">
-                                          DISTRICT & SESSION JUDGE
-                                        </option>
-                                        <option value="sel2">
-                                          ADMINISTRATIVE CIVIL JUDGE
-                                        </option>
-                                        <option value="sel3">
-                                          O.I.C (ADMINISTRATION)
-                                        </option>
-                                        <option value="sel4">
-                                          O.I.C (VIGILANCE)
-                                        </option>
-                                        <option value="sel5">
-                                          O.I.C (GENERAL BRANCHES)
-                                        </option>
-                                        <option value="sel6">
-                                          O.I.C (LITIGATION)
-                                        </option>
-                                        <option value="sel7">
-                                          O.I.C (JUDICIAL)
-                                        </option>
-                                        <option value="sel8">
-                                          CONTROLLING OFFICER (ACCOUNTS)
-                                        </option>
-                                        <option value="sel9">
-                                          CMM (CHIEF METROPOLITAN MAGISTRATES)
-                                        </option>
-                                      </select>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div
-                            class="card-footer bg-white d-flex justify-content-between"
-                          >
-                            <button
-                              type="submit"
-                              class="btn bg-primary float-right"
-                            >
-                              Summary
-                            </button>
-                          </div>
-                        </div>
+                                  <div class="to-date">to 20/06/2024</div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold"
+                                >
+                                  Service Type</a
+                                >
+                              </td>
+                              <td><div class="service-type">DHJS</div></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold"
+                                >
+                                  Designation
+                                </a>
+                              </td>
+                              <td style="width: 70%">
+                                ADJ (Additional District Judge)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Court Type</td>
+                              <td>Civil</td>
+                            </tr>
+
+                            <tr>
+                              <td style="width: 30%">
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold"
+                                  >Exemption</a
+                                >
+                              </td>
+                              <td style="width: 70%">
+                                Administrative Civil Judge
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="button-div p-2">
+                        <button
+                          type="submit"
+                          class="btn bg-primary legitRipple float-right submit-btn mb-3"
+                        >
+                          Summary
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!--/Button card-1 class -->
+                <!--Button card-2 class  -->
+
+                <!--/Button card-2 class -->
               </div>
               <!-- /Right content -->
             </div>
@@ -987,11 +814,13 @@
           src="global_assets/js/plugins/forms/validation/additional_methods.min.js"
           type="text/javascript"
         ></script>
-        <div id="modal_quarter_details" class="modal fade" tabindex="-1">
-          <div class="modal-dialog modal-lg">
+        <!-- Modal -->
+        <!-- Quarter one modal -->
+        <div id="modal_quarter1_details" class="modal fade" tabindex="-1">
+          <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header bg-success">
-                <h6 class="modal-title">Judicial Officer and Court details</h6>
+                <h6 class="modal-title">Quarter-1 (JAN-MAR, 2024)</h6>
                 <button type="button" class="close" data-dismiss="modal">
                   &times;
                 </button>
@@ -999,245 +828,245 @@
 
               <div class="modal-body">
                 <div class="row">
-                  <div class="col-sm-12">
-                    <div class="card">
-                      <div class="table-responsive">
-                        <table
-                          class="table table-striped table-bordered table-hover"
-                        >
-                          <tbody>
-                            <tr>
-                              <td class="width:25%">Date</td>
-                              <td style="width: 75%">
-                                <div class="table-responsive table-bordered">
-                                  <table
-                                    class="table text-nowrap p-0"
-                                    id="daterange"
-                                  >
-                                    <tbody>
-                                      <tr>
-                                        <th>From</th>
-                                        <th>To</th>
-                                      </tr>
+                  <div class="col-md-12">
+                    <div class="table-responsive table-bordered">
+                      <table
+                        class="table table-striped table-hover text-nowrap"
+                      >
+                        <tbody>
+                          <tr>
+                            <td style="width: 20%">Date</td>
+                            <td>
+                              <div class="table mt-2 mb-0">
+                                <table class="table text-nowrap" id="daterange">
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <span class="font-weight-semibold"
+                                          >From</span
+                                        >
+                                      </th>
+                                      <th>
+                                        <span class="font-weight-semibold"
+                                          >To</span
+                                        >
+                                      </th>
+                                    </tr>
 
-                                      <tr id="trow">
-                                        <td style="width: 50%">
-                                          <div class="input-group">
-                                            <input
-                                              type="date"
-                                              class="form-control from hasDatepicker"
-                                              id="fromdate"
-                                            />
-                                          </div>
-                                        </td>
+                                    <tr>
+                                      <td style="width: 50%">
+                                        <div class="input-group">
+                                          <input
+                                            type="date"
+                                            class="form-control from hasDatepicker w-50"
+                                            id="fromdate"
+                                          />
+                                        </div>
+                                      </td>
 
-                                        <td style="width: 50%">
-                                          <div class="input-group">
-                                            <input
-                                              type="date"
-                                              class="form-control to hasDatepicker"
-                                              id="todate"
-                                            />
-                                          </div>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="width:25%">Servcie Type</td>
-                              <td style="width: 75%">
-                                <div class="form-group pb-0 w-100">
-                                  <select
-                                    class="form-control select select2-hidden-accessible"
-                                    data-select2-id="1"
+                                      <td style="width: 50%">
+                                        <div class="input-group">
+                                          <input
+                                            type="date"
+                                            class="form-control to hasDatepicker w-50"
+                                            id="todate"
+                                          />
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Servcie Type</td>
+                            <td>
+                              <div class="form-group pb-0 w-100">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="A1"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option
+                                    value="selectA"
                                     tabindex="-1"
-                                    aria-hidden="true"
+                                    selected=""
                                   >
-                                    <option
-                                      value="selectA"
-                                      tabindex="-1"
-                                      selected=""
-                                    >
-                                      Select
-                                    </option>
-                                    <option value="dhjs">DHJS</option>
-                                    <option value="djs">DJS</option>
-                                  </select>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="width:25%">Designation</td>
-                              <td style="width: 75%">
-                                <div class="form-group">
-                                  <select
-                                    class="form-control select select2-hidden-accessible"
-                                    data-select2-id="2"
-                                    tabindex="-1"
-                                    aria-hidden="true"
-                                  >
-                                    <option value="SL" data-select2-id="219">
-                                      Select
-                                    </option>
-                                    <option value="CO" data-select2-id="220">
-                                      ADJ (Additional District Judge)
-                                    </option>
-                                    <option value="ID" data-select2-id="221">
-                                      ARC (Additional Rent Controller)
-                                    </option>
-                                    <option value="DE" data-select2-id="222">
-                                      ASJ (Additional Sessions Judge)
-                                    </option>
-                                    <option value="WY" data-select2-id="223">
-                                      ACMM (Addl. Chief Metropolitan Magistrate)
-                                    </option>
-                                    <option value="AB" data-select2-id="224">
-                                      ACJ cum ARC (Administrative Civil Judge
-                                      Cum Addl. Rent Control)
-                                    </option>
-                                    <option value="CD" data-select2-id="225">
-                                      ASJ/SPECIAL.JUDGE(NDPS)
-                                    </option>
-                                    <option value="EF" data-select2-id="226">
-                                      CCJ cum ARC (CCJ cum Addl. Rent
-                                      Controller)
-                                    </option>
-                                    <option value="GH" data-select2-id="227">
-                                      CMM (Chief Metropolitan Magistrate )
-                                    </option>
-                                    <option value="IJ" data-select2-id="228">
-                                      CJ (Civil Judge)
-                                    </option>
-                                    <option value="KL" data-select2-id="229">
-                                      DSJ (District and Sessions Judge)
-                                    </option>
-                                    <option value="MN" data-select2-id="230">
-                                      DJ (Comm) (District Judge (Commercial
-                                      Court))
-                                    </option>
-                                    <option value="OP" data-select2-id="231">
-                                      JSCC cum ASCJ cum GJ ( JSCC-cum-Addl.
-                                      SCJ-cum-Guardian Judge)
-                                    </option>
-                                    <option value="PQ" data-select2-id="232">
-                                      Judge FC ( Judge, Family Court )
-                                    </option>
-                                    <option value="QR" data-select2-id="233">
-                                      MM (Metropolitan Magistrate)
-                                    </option>
-                                    <option value="RS" data-select2-id="234">
-                                      MM [Mahila Court] (MM [METROPOLITAN
-                                      MAGISTRATE] Mahila Court)
-                                    </option>
-                                    <option value="ST" data-select2-id="235">
-                                      PO-MACT (Presiding Off.-MACT)
-                                    </option>
-                                    <option value="UV" data-select2-id="236">
-                                      PJ FC (Principal Judge, Family Court)
-                                    </option>
-                                    <option value="WX" data-select2-id="237">
-                                      SCJ cum RC (Senior Civil Judge Cum Rent
-                                      Controller)
-                                    </option>
-                                    <option value="YZ" data-select2-id="238">
-                                      Spl Judge (Special Judge)
-                                    </option>
-                                  </select>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="width:25%">Court Type</td>
-                              <td style="width: 75%">
-                                <div class="form-group mb-3 mb-md-2">
-                                  <div
-                                    class="form-check form-check-inline form-check-right"
-                                  >
-                                    <div class="uniform-choice">
-                                      <input
-                                        type="radio"
-                                        class="form-check-input-styled"
-                                        name="radio-inline-right"
-                                        checked=""
-                                        data-fouc=""
-                                      />
-                                    </div>
-                                    <label
-                                      class="form-check-label ml-3 font-size-lg"
-                                    >
-                                      Civil
-                                    </label>
+                                    Select
+                                  </option>
+                                  <option value="dhjs">DHJS</option>
+                                  <option value="djs">DJS</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Designation</td>
+                            <td>
+                              <div class="form-group">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="B1"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option value="SL" data-select2-id="219">
+                                    Select
+                                  </option>
+                                  <option value="CO" data-select2-id="220A">
+                                    ADJ (Additional District Judge)
+                                  </option>
+                                  <option value="ID" data-select2-id="221">
+                                    ARC (Additional Rent Controller)
+                                  </option>
+                                  <option value="DE" data-select2-id="222">
+                                    ASJ (Additional Sessions Judge)
+                                  </option>
+                                  <option value="WY" data-select2-id="223">
+                                    ACMM (Addl. Chief Metropolitan Magistrate)
+                                  </option>
+                                  <option value="AB" data-select2-id="224">
+                                    ACJ cum ARC (Administrative Civil Judge Cum
+                                    Addl. Rent Control)
+                                  </option>
+                                  <option value="CD" data-select2-id="225">
+                                    ASJ/SPECIAL.JUDGE(NDPS)
+                                  </option>
+                                  <option value="EF" data-select2-id="226">
+                                    CCJ cum ARC (CCJ cum Addl. Rent Controller)
+                                  </option>
+                                  <option value="GH" data-select2-id="227">
+                                    CMM (Chief Metropolitan Magistrate )
+                                  </option>
+                                  <option value="IJ" data-select2-id="228">
+                                    CJ (Civil Judge)
+                                  </option>
+                                  <option value="KL" data-select2-id="229">
+                                    DSJ (District and Sessions Judge)
+                                  </option>
+                                  <option value="MN" data-select2-id="230">
+                                    DJ (Comm) (District Judge (Commercial
+                                    Court))
+                                  </option>
+                                  <option value="OP" data-select2-id="231">
+                                    JSCC cum ASCJ cum GJ ( JSCC-cum-Addl.
+                                    SCJ-cum-Guardian Judge)
+                                  </option>
+                                  <option value="PQ" data-select2-id="232">
+                                    Judge FC ( Judge, Family Court )
+                                  </option>
+                                  <option value="QR" data-select2-id="233">
+                                    MM (Metropolitan Magistrate)
+                                  </option>
+                                  <option value="RS" data-select2-id="234">
+                                    MM [Mahila Court] (MM [METROPOLITAN
+                                    MAGISTRATE] Mahila Court)
+                                  </option>
+                                  <option value="ST" data-select2-id="235">
+                                    PO-MACT (Presiding Off.-MACT)
+                                  </option>
+                                  <option value="UV" data-select2-id="236">
+                                    PJ FC (Principal Judge, Family Court)
+                                  </option>
+                                  <option value="WX" data-select2-id="237">
+                                    SCJ cum RC (Senior Civil Judge Cum Rent
+                                    Controller)
+                                  </option>
+                                  <option value="YZ" data-select2-id="238">
+                                    Spl Judge (Special Judge)
+                                  </option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Court Type</td>
+                            <td>
+                              <div class="form-group m-0">
+                                <div
+                                  class="form-check form-check-inline form-check-right"
+                                >
+                                  <div class="uniform-choice">
+                                    <input
+                                      type="radio"
+                                      class="form-check-input-styled"
+                                      name="radio-inline-right"
+                                      checked=""
+                                      data-fouc=""
+                                    />
                                   </div>
-
-                                  <div
-                                    class="form-check form-check-inline form-check-right"
+                                  <label
+                                    class="form-check-label ml-3 font-size-lg"
                                   >
-                                    <div class="uniform-choice">
-                                      <input
-                                        type="radio"
-                                        class="form-check-input-styled"
-                                        name="radio-inline-right"
-                                        data-fouc=""
-                                      />
-                                    </div>
-                                    <label
-                                      class="font-weight-semilight form-check-label ml-3 font-size-lg"
-                                    >
-                                      Criminal
-                                    </label>
+                                    Civil
+                                  </label>
+                                </div>
+
+                                <div
+                                  class="form-check form-check-inline form-check-right"
+                                >
+                                  <div class="uniform-choice">
+                                    <input
+                                      type="radio"
+                                      class="form-check-input-styled"
+                                      name="radio-inline-right"
+                                      data-fouc=""
+                                    />
                                   </div>
-                                </div>
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td class="width:25%">Exemption</td>
-                              <td style="width: 75%">
-                                <div class="text-left">
-                                  <select
-                                    class="form-control select select2-hidden-accessible"
-                                    data-select2-id="3"
-                                    tabindex="-1"
-                                    aria-hidden="true"
+                                  <label
+                                    class="font-weight-semilight form-check-label ml-3 font-size-lg"
                                   >
-                                    <option value="sel">Select</option>
-                                    <option value="sel1">
-                                      DISTRICT & SESSION JUDGE
-                                    </option>
-                                    <option value="sel2">
-                                      ADMINISTRATIVE CIVIL JUDGE
-                                    </option>
-                                    <option value="sel3">
-                                      O.I.C (ADMINISTRATION)
-                                    </option>
-                                    <option value="sel4">
-                                      O.I.C (VIGILANCE)
-                                    </option>
-                                    <option value="sel5">
-                                      O.I.C (GENERAL BRANCHES)
-                                    </option>
-                                    <option value="sel6">
-                                      O.I.C (LITIGATION)
-                                    </option>
-                                    <option value="sel7">
-                                      O.I.C (JUDICIAL)
-                                    </option>
-                                    <option value="sel8">
-                                      CONTROLLING OFFICER (ACCOUNTS)
-                                    </option>
-                                    <option value="sel9">
-                                      CMM (CHIEF METROPOLITAN MAGISTRATES)
-                                    </option>
-                                  </select>
+                                    Criminal
+                                  </label>
                                 </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width: 20%">Exemption</td>
+                            <td>
+                              <div class="text-left">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="C1"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option value="sel">Select</option>
+                                  <option value="sel1">
+                                    DISTRICT & SESSION JUDGE
+                                  </option>
+                                  <option value="sel2">
+                                    ADMINISTRATIVE CIVIL JUDGE
+                                  </option>
+                                  <option value="sel3">
+                                    O.I.C (ADMINISTRATION)
+                                  </option>
+                                  <option value="sel4">
+                                    O.I.C (VIGILANCE)
+                                  </option>
+                                  <option value="sel5">
+                                    O.I.C (GENERAL BRANCHES)
+                                  </option>
+                                  <option value="sel6">
+                                    O.I.C (LITIGATION)
+                                  </option>
+                                  <option value="sel7">O.I.C (JUDICIAL)</option>
+                                  <option value="sel8">
+                                    CONTROLLING OFFICER (ACCOUNTS)
+                                  </option>
+                                  <option value="sel9">
+                                    CMM (CHIEF METROPOLITAN MAGISTRATES)
+                                  </option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -1252,7 +1081,810 @@
             </div>
           </div>
         </div>
+        <!-- /Quarter one modal -->
+        <!-- Quarter two modal -->
+        <div id="modal_quarter2_details" class="modal fade" tabindex="-1">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header bg-success">
+                <h6 class="modal-title">Quarter-2(APR-JUNE, 2024)</h6>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
 
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="table-responsive table-bordered">
+                      <table
+                        class="table table-striped table-hover text-nowrap"
+                      >
+                        <tbody>
+                          <tr>
+                            <td style="width: 20%">Date</td>
+                            <td>
+                              <div class="table mt-2 mb-0">
+                                <table class="table text-nowrap" id="daterange">
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <span class="font-weight-semibold"
+                                          >From</span
+                                        >
+                                      </th>
+                                      <th>
+                                        <span class="font-weight-semibold"
+                                          >To</span
+                                        >
+                                      </th>
+                                    </tr>
+
+                                    <tr>
+                                      <td style="width: 50%">
+                                        <div class="input-group">
+                                          <input
+                                            type="date"
+                                            class="form-control from hasDatepicker w-50"
+                                            id="fromdate"
+                                          />
+                                        </div>
+                                      </td>
+
+                                      <td style="width: 50%">
+                                        <div class="input-group">
+                                          <input
+                                            type="date"
+                                            class="form-control to hasDatepicker w-50"
+                                            id="todate"
+                                          />
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Servcie Type</td>
+                            <td>
+                              <div class="form-group pb-0 w-100">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="A2"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option
+                                    value="selectA"
+                                    tabindex="-1"
+                                    selected=""
+                                  >
+                                    Select
+                                  </option>
+                                  <option value="dhjs">DHJS</option>
+                                  <option value="djs">DJS</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Designation</td>
+                            <td>
+                              <div class="form-group">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="B2"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option value="SL" data-select2-id="219">
+                                    Select
+                                  </option>
+                                  <option value="CO" data-select2-id="220A">
+                                    ADJ (Additional District Judge)
+                                  </option>
+                                  <option value="ID" data-select2-id="221">
+                                    ARC (Additional Rent Controller)
+                                  </option>
+                                  <option value="DE" data-select2-id="222">
+                                    ASJ (Additional Sessions Judge)
+                                  </option>
+                                  <option value="WY" data-select2-id="223">
+                                    ACMM (Addl. Chief Metropolitan Magistrate)
+                                  </option>
+                                  <option value="AB" data-select2-id="224">
+                                    ACJ cum ARC (Administrative Civil Judge Cum
+                                    Addl. Rent Control)
+                                  </option>
+                                  <option value="CD" data-select2-id="225">
+                                    ASJ/SPECIAL.JUDGE(NDPS)
+                                  </option>
+                                  <option value="EF" data-select2-id="226">
+                                    CCJ cum ARC (CCJ cum Addl. Rent Controller)
+                                  </option>
+                                  <option value="GH" data-select2-id="227">
+                                    CMM (Chief Metropolitan Magistrate )
+                                  </option>
+                                  <option value="IJ" data-select2-id="228">
+                                    CJ (Civil Judge)
+                                  </option>
+                                  <option value="KL" data-select2-id="229">
+                                    DSJ (District and Sessions Judge)
+                                  </option>
+                                  <option value="MN" data-select2-id="230">
+                                    DJ (Comm) (District Judge (Commercial
+                                    Court))
+                                  </option>
+                                  <option value="OP" data-select2-id="231">
+                                    JSCC cum ASCJ cum GJ ( JSCC-cum-Addl.
+                                    SCJ-cum-Guardian Judge)
+                                  </option>
+                                  <option value="PQ" data-select2-id="232">
+                                    Judge FC ( Judge, Family Court )
+                                  </option>
+                                  <option value="QR" data-select2-id="233">
+                                    MM (Metropolitan Magistrate)
+                                  </option>
+                                  <option value="RS" data-select2-id="234">
+                                    MM [Mahila Court] (MM [METROPOLITAN
+                                    MAGISTRATE] Mahila Court)
+                                  </option>
+                                  <option value="ST" data-select2-id="235">
+                                    PO-MACT (Presiding Off.-MACT)
+                                  </option>
+                                  <option value="UV" data-select2-id="236">
+                                    PJ FC (Principal Judge, Family Court)
+                                  </option>
+                                  <option value="WX" data-select2-id="237">
+                                    SCJ cum RC (Senior Civil Judge Cum Rent
+                                    Controller)
+                                  </option>
+                                  <option value="YZ" data-select2-id="238">
+                                    Spl Judge (Special Judge)
+                                  </option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Court Type</td>
+                            <td>
+                              <div class="form-group m-0">
+                                <div
+                                  class="form-check form-check-inline form-check-right"
+                                >
+                                  <div class="uniform-choice">
+                                    <input
+                                      type="radio"
+                                      class="form-check-input-styled"
+                                      name="radio-inline-right"
+                                      checked=""
+                                      data-fouc=""
+                                    />
+                                  </div>
+                                  <label
+                                    class="form-check-label ml-3 font-size-lg"
+                                  >
+                                    Civil
+                                  </label>
+                                </div>
+
+                                <div
+                                  class="form-check form-check-inline form-check-right"
+                                >
+                                  <div class="uniform-choice">
+                                    <input
+                                      type="radio"
+                                      class="form-check-input-styled"
+                                      name="radio-inline-right"
+                                      data-fouc=""
+                                    />
+                                  </div>
+                                  <label
+                                    class="font-weight-semilight form-check-label ml-3 font-size-lg"
+                                  >
+                                    Criminal
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width: 20%">Exemption</td>
+                            <td>
+                              <div class="text-left">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="C2"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option value="sel">Select</option>
+                                  <option value="sel1">
+                                    DISTRICT & SESSION JUDGE
+                                  </option>
+                                  <option value="sel2">
+                                    ADMINISTRATIVE CIVIL JUDGE
+                                  </option>
+                                  <option value="sel3">
+                                    O.I.C (ADMINISTRATION)
+                                  </option>
+                                  <option value="sel4">
+                                    O.I.C (VIGILANCE)
+                                  </option>
+                                  <option value="sel5">
+                                    O.I.C (GENERAL BRANCHES)
+                                  </option>
+                                  <option value="sel6">
+                                    O.I.C (LITIGATION)
+                                  </option>
+                                  <option value="sel7">O.I.C (JUDICIAL)</option>
+                                  <option value="sel8">
+                                    CONTROLLING OFFICER (ACCOUNTS)
+                                  </option>
+                                  <option value="sel9">
+                                    CMM (CHIEF METROPOLITAN MAGISTRATES)
+                                  </option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn bg-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Quarter two modal -->
+        <!-- Quarter three modal -->
+        <div id="modal_quarter3_details" class="modal fade" tabindex="-1">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header bg-success">
+                <h6 class="modal-title">Quarter-3 (JULY-SEP, 2024)</h6>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="table-responsive table-bordered">
+                      <table
+                        class="table table-striped table-hover text-nowrap"
+                      >
+                        <tbody>
+                          <tr>
+                            <td style="width: 20%">Date</td>
+                            <td>
+                              <div class="table mt-2 mb-0">
+                                <table class="table text-nowrap" id="daterange">
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <span class="font-weight-semibold"
+                                          >From</span
+                                        >
+                                      </th>
+                                      <th>
+                                        <span class="font-weight-semibold"
+                                          >To</span
+                                        >
+                                      </th>
+                                    </tr>
+
+                                    <tr>
+                                      <td style="width: 50%">
+                                        <div class="input-group">
+                                          <input
+                                            type="date"
+                                            class="form-control from hasDatepicker w-50"
+                                            id="fromdate"
+                                          />
+                                        </div>
+                                      </td>
+
+                                      <td style="width: 50%">
+                                        <div class="input-group">
+                                          <input
+                                            type="date"
+                                            class="form-control to hasDatepicker w-50"
+                                            id="todate"
+                                          />
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Servcie Type</td>
+                            <td>
+                              <div class="form-group pb-0 w-100">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="A3"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option
+                                    value="selectA"
+                                    tabindex="-1"
+                                    selected=""
+                                  >
+                                    Select
+                                  </option>
+                                  <option value="dhjs">DHJS</option>
+                                  <option value="djs">DJS</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Designation</td>
+                            <td>
+                              <div class="form-group">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="B3"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option value="SL" data-select2-id="219">
+                                    Select
+                                  </option>
+                                  <option value="CO" data-select2-id="220A">
+                                    ADJ (Additional District Judge)
+                                  </option>
+                                  <option value="ID" data-select2-id="221B">
+                                    ARC (Additional Rent Controller)
+                                  </option>
+                                  <option value="DE" data-select2-id="222">
+                                    ASJ (Additional Sessions Judge)
+                                  </option>
+                                  <option value="WY" data-select2-id="223">
+                                    ACMM (Addl. Chief Metropolitan Magistrate)
+                                  </option>
+                                  <option value="AB" data-select2-id="224">
+                                    ACJ cum ARC (Administrative Civil Judge Cum
+                                    Addl. Rent Control)
+                                  </option>
+                                  <option value="CD" data-select2-id="225">
+                                    ASJ/SPECIAL.JUDGE(NDPS)
+                                  </option>
+                                  <option value="EF" data-select2-id="226">
+                                    CCJ cum ARC (CCJ cum Addl. Rent Controller)
+                                  </option>
+                                  <option value="GH" data-select2-id="227">
+                                    CMM (Chief Metropolitan Magistrate )
+                                  </option>
+                                  <option value="IJ" data-select2-id="228">
+                                    CJ (Civil Judge)
+                                  </option>
+                                  <option value="KL" data-select2-id="229">
+                                    DSJ (District and Sessions Judge)
+                                  </option>
+                                  <option value="MN" data-select2-id="230">
+                                    DJ (Comm) (District Judge (Commercial
+                                    Court))
+                                  </option>
+                                  <option value="OP" data-select2-id="231">
+                                    JSCC cum ASCJ cum GJ ( JSCC-cum-Addl.
+                                    SCJ-cum-Guardian Judge)
+                                  </option>
+                                  <option value="PQ" data-select2-id="232">
+                                    Judge FC ( Judge, Family Court )
+                                  </option>
+                                  <option value="QR" data-select2-id="233">
+                                    MM (Metropolitan Magistrate)
+                                  </option>
+                                  <option value="RS" data-select2-id="234">
+                                    MM [Mahila Court] (MM [METROPOLITAN
+                                    MAGISTRATE] Mahila Court)
+                                  </option>
+                                  <option value="ST" data-select2-id="235">
+                                    PO-MACT (Presiding Off.-MACT)
+                                  </option>
+                                  <option value="UV" data-select2-id="236">
+                                    PJ FC (Principal Judge, Family Court)
+                                  </option>
+                                  <option value="WX" data-select2-id="237">
+                                    SCJ cum RC (Senior Civil Judge Cum Rent
+                                    Controller)
+                                  </option>
+                                  <option value="YZ" data-select2-id="238">
+                                    Spl Judge (Special Judge)
+                                  </option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Court Type</td>
+                            <td>
+                              <div class="form-group m-0">
+                                <div
+                                  class="form-check form-check-inline form-check-right"
+                                >
+                                  <div class="uniform-choice">
+                                    <input
+                                      type="radio"
+                                      class="form-check-input-styled"
+                                      name="radio-inline-right"
+                                      checked=""
+                                      data-fouc=""
+                                    />
+                                  </div>
+                                  <label
+                                    class="form-check-label ml-3 font-size-lg"
+                                  >
+                                    Civil
+                                  </label>
+                                </div>
+
+                                <div
+                                  class="form-check form-check-inline form-check-right"
+                                >
+                                  <div class="uniform-choice">
+                                    <input
+                                      type="radio"
+                                      class="form-check-input-styled"
+                                      name="radio-inline-right"
+                                      data-fouc=""
+                                    />
+                                  </div>
+                                  <label
+                                    class="font-weight-semilight form-check-label ml-3 font-size-lg"
+                                  >
+                                    Criminal
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width: 20%">Exemption</td>
+                            <td>
+                              <div class="text-left">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="C3"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option value="sel">Select</option>
+                                  <option value="sel1">
+                                    DISTRICT & SESSION JUDGE
+                                  </option>
+                                  <option value="sel2">
+                                    ADMINISTRATIVE CIVIL JUDGE
+                                  </option>
+                                  <option value="sel3">
+                                    O.I.C (ADMINISTRATION)
+                                  </option>
+                                  <option value="sel4">
+                                    O.I.C (VIGILANCE)
+                                  </option>
+                                  <option value="sel5">
+                                    O.I.C (GENERAL BRANCHES)
+                                  </option>
+                                  <option value="sel6">
+                                    O.I.C (LITIGATION)
+                                  </option>
+                                  <option value="sel7">O.I.C (JUDICIAL)</option>
+                                  <option value="sel8">
+                                    CONTROLLING OFFICER (ACCOUNTS)
+                                  </option>
+                                  <option value="sel9">
+                                    CMM (CHIEF METROPOLITAN MAGISTRATES)
+                                  </option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn bg-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Quarter three modal -->
+
+        <!-- Quarter four modal -->
+        <div id="modal_quarter4_details" class="modal fade" tabindex="-1">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header bg-success">
+                <h6 class="modal-title">Quarter-4(OCT-DEC, 2024)</h6>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="table-responsive table-bordered">
+                      <table
+                        class="table table-striped table-hover text-nowrap"
+                      >
+                        <tbody>
+                          <tr>
+                            <td style="width: 20%">Date</td>
+                            <td>
+                              <div class="table mt-2 mb-0">
+                                <table class="table text-nowrap" id="daterange">
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <span class="font-weight-semibold"
+                                          >From</span
+                                        >
+                                      </th>
+                                      <th>
+                                        <span class="font-weight-semibold"
+                                          >To</span
+                                        >
+                                      </th>
+                                    </tr>
+
+                                    <tr>
+                                      <td style="width: 50%">
+                                        <div class="input-group">
+                                          <input
+                                            type="date"
+                                            class="form-control from hasDatepicker w-50"
+                                            id="fromdate"
+                                          />
+                                        </div>
+                                      </td>
+
+                                      <td style="width: 50%">
+                                        <div class="input-group">
+                                          <input
+                                            type="date"
+                                            class="form-control to hasDatepicker w-50"
+                                            id="todate"
+                                          />
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Servcie Type</td>
+                            <td>
+                              <div class="form-group pb-0 w-100">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="A4"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option
+                                    value="selectA"
+                                    tabindex="-1"
+                                    selected=""
+                                  >
+                                    Select
+                                  </option>
+                                  <option value="dhjs">DHJS</option>
+                                  <option value="djs">DJS</option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Designation</td>
+                            <td>
+                              <div class="form-group">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="B4"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option value="SL" data-select2-id="219">
+                                    Select
+                                  </option>
+                                  <option value="CO" data-select2-id="220A">
+                                    ADJ (Additional District Judge)
+                                  </option>
+                                  <option value="ID" data-select2-id="221">
+                                    ARC (Additional Rent Controller)
+                                  </option>
+                                  <option value="DE" data-select2-id="222">
+                                    ASJ (Additional Sessions Judge)
+                                  </option>
+                                  <option value="WY" data-select2-id="223">
+                                    ACMM (Addl. Chief Metropolitan Magistrate)
+                                  </option>
+                                  <option value="AB" data-select2-id="224">
+                                    ACJ cum ARC (Administrative Civil Judge Cum
+                                    Addl. Rent Control)
+                                  </option>
+                                  <option value="CD" data-select2-id="225">
+                                    ASJ/SPECIAL.JUDGE(NDPS)
+                                  </option>
+                                  <option value="EF" data-select2-id="226">
+                                    CCJ cum ARC (CCJ cum Addl. Rent Controller)
+                                  </option>
+                                  <option value="GH" data-select2-id="227">
+                                    CMM (Chief Metropolitan Magistrate )
+                                  </option>
+                                  <option value="IJ" data-select2-id="228">
+                                    CJ (Civil Judge)
+                                  </option>
+                                  <option value="KL" data-select2-id="229">
+                                    DSJ (District and Sessions Judge)
+                                  </option>
+                                  <option value="MN" data-select2-id="230">
+                                    DJ (Comm) (District Judge (Commercial
+                                    Court))
+                                  </option>
+                                  <option value="OP" data-select2-id="231">
+                                    JSCC cum ASCJ cum GJ ( JSCC-cum-Addl.
+                                    SCJ-cum-Guardian Judge)
+                                  </option>
+                                  <option value="PQ" data-select2-id="232">
+                                    Judge FC ( Judge, Family Court )
+                                  </option>
+                                  <option value="QR" data-select2-id="233">
+                                    MM (Metropolitan Magistrate)
+                                  </option>
+                                  <option value="RS" data-select2-id="234">
+                                    MM [Mahila Court] (MM [METROPOLITAN
+                                    MAGISTRATE] Mahila Court)
+                                  </option>
+                                  <option value="ST" data-select2-id="235">
+                                    PO-MACT (Presiding Off.-MACT)
+                                  </option>
+                                  <option value="UV" data-select2-id="236">
+                                    PJ FC (Principal Judge, Family Court)
+                                  </option>
+                                  <option value="WX" data-select2-id="237">
+                                    SCJ cum RC (Senior Civil Judge Cum Rent
+                                    Controller)
+                                  </option>
+                                  <option value="YZ" data-select2-id="238">
+                                    Spl Judge (Special Judge)
+                                  </option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 20%">Court Type</td>
+                            <td>
+                              <div class="form-group m-0">
+                                <div
+                                  class="form-check form-check-inline form-check-right"
+                                >
+                                  <div class="uniform-choice">
+                                    <input
+                                      type="radio"
+                                      class="form-check-input-styled"
+                                      name="radio-inline-right"
+                                      checked=""
+                                      data-fouc=""
+                                    />
+                                  </div>
+                                  <label
+                                    class="form-check-label ml-3 font-size-lg"
+                                  >
+                                    Civil
+                                  </label>
+                                </div>
+
+                                <div
+                                  class="form-check form-check-inline form-check-right"
+                                >
+                                  <div class="uniform-choice">
+                                    <input
+                                      type="radio"
+                                      class="form-check-input-styled"
+                                      name="radio-inline-right"
+                                      data-fouc=""
+                                    />
+                                  </div>
+                                  <label
+                                    class="font-weight-semilight form-check-label ml-3 font-size-lg"
+                                  >
+                                    Criminal
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td style="width: 20%">Exemption</td>
+                            <td>
+                              <div class="text-left">
+                                <select
+                                  class="form-control select select2-hidden-accessible"
+                                  data-select2-id="C4"
+                                  tabindex="-1"
+                                  aria-hidden="true"
+                                >
+                                  <option value="sel">Select</option>
+                                  <option value="sel1">
+                                    DISTRICT & SESSION JUDGE
+                                  </option>
+                                  <option value="sel2">
+                                    ADMINISTRATIVE CIVIL JUDGE
+                                  </option>
+                                  <option value="sel3">
+                                    O.I.C (ADMINISTRATION)
+                                  </option>
+                                  <option value="sel4">
+                                    O.I.C (VIGILANCE)
+                                  </option>
+                                  <option value="sel5">
+                                    O.I.C (GENERAL BRANCHES)
+                                  </option>
+                                  <option value="sel6">
+                                    O.I.C (LITIGATION)
+                                  </option>
+                                  <option value="sel7">O.I.C (JUDICIAL)</option>
+                                  <option value="sel8">
+                                    CONTROLLING OFFICER (ACCOUNTS)
+                                  </option>
+                                  <option value="sel9">
+                                    CMM (CHIEF METROPOLITAN MAGISTRATES)
+                                  </option>
+                                </select>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn bg-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Quarter four modal -->
+        <!-- /Modal -->
         <!-- Footer -->
         <div class="navbar navbar-expand-lg navbar-light">
           <div class="text-center d-lg-none w-100">

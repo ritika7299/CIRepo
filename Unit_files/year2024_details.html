@@ -597,7 +597,9 @@
                     <div
                       class="card-header bg-success-400 header-elements-inline"
                     >
-                      <h5 class="card-title">Officer Details (YEAR, 2024)</h5>
+                      <h5 class="card-title">
+                        Judicial Officer and Court details
+                      </h5>
                     </div>
                     <div class="card-body">
                       <div class="row">
@@ -667,12 +669,15 @@
                                     </td>
                                     <td>
                                       <div class="form-group pb-0 w-100">
-                                        <select class="form-control">
-                                          <option value="selectA">
+                                        <select
+                                          class="form-control"
+                                          data-select2-id="AB"
+                                        >
+                                          <option value="select-A1">
                                             Select
                                           </option>
-                                          <option value="dhjs">DHJS</option>
-                                          <option value="djs">DJS</option>
+                                          <option value="dhjs-1">DHJS</option>
+                                          <option value="djs-2">DJS</option>
                                         </select>
                                       </div>
                                     </td>
@@ -690,8 +695,9 @@
                                         <select
                                           class="form-control"
                                           name="judge_designation"
+                                          data-select2-id="CD1"
                                         >
-                                          <option value="">
+                                          <option value="selectA">
                                             Select Judge Designation
                                           </option>
                                           <option value="3">
@@ -821,14 +827,41 @@
                                     </td>
                                     <td>
                                       <div class="text-left">
-                                        <button
-                                          class="btn btn-primary legitRipple"
-                                          data-toggle="modal"
-                                          data-target="#modalExemption"
+                                        <select
+                                          class="form-control select select2-hidden-accessible"
+                                          data-select2-id="DE"
+                                          tabindex="-1"
+                                          aria-hidden="true"
                                         >
-                                          <i class="icon-add mr-2"></i>
-                                          Claim Exemption
-                                        </button>
+                                          <option value="sel">Select</option>
+                                          <option value="sel10">
+                                            DISTRICT & SESSION JUDGE
+                                          </option>
+                                          <option value="sel20">
+                                            ADMINISTRATIVE CIVIL JUDGE
+                                          </option>
+                                          <option value="sel30">
+                                            O.I.C (ADMINISTRATION)
+                                          </option>
+                                          <option value="sel40">
+                                            O.I.C (VIGILANCE)
+                                          </option>
+                                          <option value="sel50">
+                                            O.I.C (GENERAL BRANCHES)
+                                          </option>
+                                          <option value="sel60">
+                                            O.I.C (LITIGATION)
+                                          </option>
+                                          <option value="sel70">
+                                            O.I.C (JUDICIAL)
+                                          </option>
+                                          <option value="sel80">
+                                            CONTROLLING OFFICER (ACCOUNTS)
+                                          </option>
+                                          <option value="sel90">
+                                            CMM (CHIEF METROPOLITAN MAGISTRATES)
+                                          </option>
+                                        </select>
                                       </div>
                                     </td>
                                   </tr>
